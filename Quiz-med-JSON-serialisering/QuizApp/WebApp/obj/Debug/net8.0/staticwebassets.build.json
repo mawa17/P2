@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "XgUa43nRK1rsy33RpKMtzm/5isViU2rIbTmXNCgosbQ=",
+  "Source": "WebApp",
+  "BasePath": "_content/WebApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApp\\wwwroot",
+      "Source": "WebApp",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApp.styles.css",
+      "SourceId": "WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "WebApp#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "0i3fy3c875",
+      "Integrity": "eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApp.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
+      "SourceId": "WebApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "WebApp#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "0i3fy3c875",
+      "Integrity": "eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\app.css",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9tsjre4pz5",
+      "Integrity": "Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.9tsjre4pz5.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 12:21:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9tsjre4pz5"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2154"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 12:21:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y3QRrYDjsQ+Bj4noKNSCcSRxgRtgAn0QL1o5m5BNepk="
+        }
+      ]
+    },
+    {
+      "Route": "WebApp.0i3fy3c875.bundle.scp.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 12:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0i3fy3c875"
+        },
+        {
+          "Name": "label",
+          "Value": "WebApp.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg="
+        }
+      ]
+    },
+    {
+      "Route": "WebApp.0i3fy3c875.styles.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 12:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0i3fy3c875"
+        },
+        {
+          "Name": "label",
+          "Value": "WebApp.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg="
+        }
+      ]
+    },
+    {
+      "Route": "WebApp.bundle.scp.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 12:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg="
+        }
+      ]
+    },
+    {
+      "Route": "WebApp.styles.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2025 12:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eM3zdJ32n3kxEUjt0qx5DgF6941Terg2jeLqQMXWvZg="
+        }
+      ]
+    }
+  ]
+}
