@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XgUa43nRK1rsy33RpKMtzm/5isViU2rIbTmXNCgosbQ=",
+  "Hash": "vRsxbacoaqVQXhQxhKrL7fzDXGL5fPqbADU1TZQIhO8=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -78,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\Data\\Quiz.json",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "Data/Quiz#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ycys7lns25",
+      "Integrity": "Dhjpf5ltfBC4RksrfF/BfIYaIGUkeykvlpoTA4dSuj8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Data\\Quiz.json"
     }
   ],
   "Endpoints": [
@@ -164,6 +185,88 @@
       ]
     },
     {
+      "Route": "Data/Quiz.json",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\Data\\Quiz.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3077"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dhjpf5ltfBC4RksrfF/BfIYaIGUkeykvlpoTA4dSuj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 07:51:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dhjpf5ltfBC4RksrfF/BfIYaIGUkeykvlpoTA4dSuj8="
+        }
+      ]
+    },
+    {
+      "Route": "Data/Quiz.ycys7lns25.json",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\Data\\Quiz.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3077"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dhjpf5ltfBC4RksrfF/BfIYaIGUkeykvlpoTA4dSuj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 07:51:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ycys7lns25"
+        },
+        {
+          "Name": "label",
+          "Value": "Data/Quiz.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dhjpf5ltfBC4RksrfF/BfIYaIGUkeykvlpoTA4dSuj8="
+        }
+      ]
+    },
+    {
       "Route": "WebApp.0i3fy3c875.bundle.scp.css",
       "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
       "Selectors": [],
@@ -186,7 +289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Jan 2025 12:24:35 GMT"
+          "Value": "Tue, 21 Jan 2025 13:43:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -231,7 +334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Jan 2025 12:24:35 GMT"
+          "Value": "Tue, 21 Jan 2025 13:43:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -276,7 +379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Jan 2025 12:24:35 GMT"
+          "Value": "Tue, 21 Jan 2025 13:43:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -313,7 +416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Jan 2025 12:24:35 GMT"
+          "Value": "Tue, 21 Jan 2025 13:43:30 GMT"
         },
         {
           "Name": "Cache-Control",

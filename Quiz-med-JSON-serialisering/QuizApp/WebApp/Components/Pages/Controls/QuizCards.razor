@@ -1,0 +1,47 @@
+﻿@page "/t"
+@inject HttpClient Http
+@inject ILogger<QuizCards> logger
+@rendermode InteractiveServer
+
+@if (Questions == null)
+{
+    <h1>Quiz not found...</h1>
+}
+else
+{
+    <ul>
+        @foreach (var question in Questions)
+        {
+            <li>@question.QuestionText</li>
+            <ul>
+                @for (int index = 0; index < question.AnswerOptions.Length; index++)
+                {
+                    var option = question.AnswerOptions[index];
+                    int capturedIndex = index;
+                    <button value="@capturedIndex" @onclick="() => ValidateAnswer(capturedIndex)">@option</button>
+                }
+            </ul>
+        }
+    </ul>
+}
+
+@code {
+    private Question[]? Questions;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try 
+        {
+            Questions = await Http.GetFromJsonAsync<Question[]>("data/quiz.json");
+        }
+        catch (Exception ex) 
+        {
+            logger.LogError(ex, ex.Message);
+        }
+    }
+
+    private void ValidateAnswer(int index)
+    {
+        Console.WriteLine($"->{index}");
+    }
+}
