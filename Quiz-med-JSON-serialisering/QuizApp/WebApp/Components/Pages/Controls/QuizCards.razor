@@ -2,6 +2,7 @@
 @inject HttpClient Http
 @inject ILogger<QuizCards> logger
 @rendermode InteractiveServer
+@attribute [StreamRendering]
 
 @if (Questions == null)
 {
@@ -9,25 +10,37 @@
 }
 else
 {
+
     <ul>
-        @foreach (var question in Questions)
+
+        @foreach (var question in Questions.Skip(page).Take(1))
         {
             <li>@question.QuestionText</li>
             <ul>
                 @for (int index = 0; index < question.AnswerOptions.Length; index++)
                 {
                     var option = question.AnswerOptions[index];
-                    int capturedIndex = index;
-                    <button value="@capturedIndex" @onclick="() => ValidateAnswer(capturedIndex)">@option</button>
+                    int anwser = index; /*Duplicate allocation needed for lambda; Lambda uses Reference(Pointer) regardless of type;*/
+                    <text>
+                        <button @onclick="() => ValidateAnswer(question, anwser)">@option</button>
+
+                    </text>
                 }
+
+                <br />
+                <h4>@question.HintText</h4>
+                <br />
+                <button @ref="dd" @onclick="NextQuestion">Next</button>
             </ul>
         }
     </ul>
 }
 
 @code {
+    private ElementReference dd;
     private Question[]? Questions;
-
+    private int page = 0;
+    private bool AnwserGiven;
     protected override async Task OnInitializedAsync()
     {
         try 
@@ -39,9 +52,11 @@ else
             logger.LogError(ex, ex.Message);
         }
     }
-
-    private void ValidateAnswer(int index)
+    private void NextQuestion() => page = Math.Clamp(++page, 0, Questions.Length - 1);
+    private void ValidateAnswer(Question question, int anwser)
     {
-        Console.WriteLine($"->{index}");
+#if DEBUG
+        Console.WriteLine($"{question.AnwserIndex} -> {anwser}");
+#endif
     }
 }
