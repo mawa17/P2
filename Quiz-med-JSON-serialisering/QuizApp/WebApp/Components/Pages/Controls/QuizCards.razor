@@ -10,9 +10,11 @@
 }
 else
 {
-
+    @if(AnwserGiven) 
+    {
+        <h1>@(IsAnwserCorrect ? "Correct" : "Incorrect")</h1>
+    }
     <ul>
-
         @foreach (var question in Questions.Skip(page).Take(1))
         {
             <li>@question.QuestionText</li>
@@ -30,17 +32,17 @@ else
                 <br />
                 <h4>@question.HintText</h4>
                 <br />
-                <button @ref="dd" @onclick="NextQuestion">Next</button>
+                <button @onclick="NextQuestion">Next</button>
             </ul>
         }
     </ul>
 }
 
 @code {
-    private ElementReference dd;
     private Question[]? Questions;
     private int page = 0;
     private bool AnwserGiven;
+    private bool IsAnwserCorrect;
     protected override async Task OnInitializedAsync()
     {
         try 
@@ -52,9 +54,16 @@ else
             logger.LogError(ex, ex.Message);
         }
     }
-    private void NextQuestion() => page = Math.Clamp(++page, 0, Questions.Length - 1);
+    private void NextQuestion()
+    {
+        page = Math.Clamp(++page, 0, Questions.Length - 1);
+        AnwserGiven = false;
+        IsAnwserCorrect = false;
+    }
     private void ValidateAnswer(Question question, int anwser)
     {
+        AnwserGiven = true;
+        IsAnwserCorrect = question?.AnwserIndex == anwser;
 #if DEBUG
         Console.WriteLine($"{question.AnwserIndex} -> {anwser}");
 #endif

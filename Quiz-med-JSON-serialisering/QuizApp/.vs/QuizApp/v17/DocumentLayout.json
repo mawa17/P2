@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Controls\\QuizCards.razor",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\QuizCards.razor",
               "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\QuizCards.razor",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-22T10:45:43.54Z",
               "EditorCaption": ""
@@ -171,8 +171,7 @@
               "RelativeToolTip": "WebApp\\wwwroot\\Data\\Quiz.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-22T07:30:32.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T07:30:32.057Z"
             }
           ]
         }
