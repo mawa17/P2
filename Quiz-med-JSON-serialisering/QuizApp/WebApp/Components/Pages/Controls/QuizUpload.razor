@@ -1,0 +1,26 @@
+﻿@page "/d"
+
+<p>drop files on next area or click on it to select files:</p>
+
+<InputFile  multiple OnChange="FilesDropped"
+            style="width: 200px; height: 200px; background-color: lightgray; margin-top: 20px; display: flex; align-items: center; justify-content: center;">
+
+    ></InputFile>
+<InputFile OnChange="FilesDropped">
+
+    </InputFile>
+
+
+
+
+@code {
+    void FilesDropped(InputFileChangeEventArgs e)
+    {
+        foreach (var file in e.GetMultipleFiles())
+        {
+            Stream stream = file.OpenReadStream(maxAllowedSize: 100000000);
+            // TO DO: do whatever you need with the file
+            stream.Close();
+        }
+    }
+}

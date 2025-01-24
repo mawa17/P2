@@ -1,0 +1,56 @@
+﻿@page "/quiz"
+@inject HttpClient Http
+@inject ILogger<Quiz> logger
+@rendermode InteractiveServer
+
+@if (Questions == null)
+{
+    <h1>Quiz not found...</h1>
+}
+else
+{
+    @if(AnwserGiven) 
+    {
+        <h1 style="color: @(IsAnwserCorrect ? "green" : "red")">@(IsAnwserCorrect ? "Correct" : "Incorrect")</h1>
+    }
+    @if (Questions.Length - 1 > page)
+    {
+        <ul>
+            @foreach (var question in Questions.Skip(page).Take(1))
+            {
+                @if (!AnwserGiven)
+                {
+                    <li>@question.QuestionText</li>
+                }
+                <ul>
+                    @if (!AnwserGiven)
+                    {
+                        @for (int index = 0; index < question.AnswerOptions.Length; index++)
+                        {
+                            var option = question.AnswerOptions[index];
+                            int anwser = index; /*Duplicate allocation needed for lambda; Lambda uses Reference(Pointer) regardless of type;*/
+                            <text>
+                                <button @onclick="() => ValidateAnswer(question, anwser)">@option</button>
+                            </text>
+                        }
+                    }
+
+
+                    @if (AnwserGiven)
+                    {
+                        <br />
+                        <h4>@question.HintText</h4>
+                        <br />
+
+                        <button @onclick="NextQuestion">Next</button>
+                    }
+
+                </ul>
+            }
+        </ul>
+    }
+    else 
+    {
+        <h1>Quiz Complete</h1>
+    }
+}
