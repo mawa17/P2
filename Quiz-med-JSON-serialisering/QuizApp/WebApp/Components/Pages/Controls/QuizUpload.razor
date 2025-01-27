@@ -3,17 +3,18 @@
 <p>drop files on next area or click on it to select files:</p>
 
 <InputFile  multiple OnChange="FilesDropped"
-            style="width: 200px; height: 200px; background-color: lightgray; margin-top: 20px; display: flex; align-items: center; justify-content: center;">
+style="width: 200px; height: 200px; background-color: lightgray; margin-top: 20px; display: flex; align-items: center; justify-content: center;">
 
     ></InputFile>
-<InputFile OnChange="FilesDropped">
-
-    </InputFile>
 
 
+    
 
+<h1>@MyProperty</h1>
 
 @code {
+    [SupplyParameterFromQuery(Name = "param")]
+    public int MyProperty { get; set; }
     void FilesDropped(InputFileChangeEventArgs e)
     {
         foreach (var file in e.GetMultipleFiles())

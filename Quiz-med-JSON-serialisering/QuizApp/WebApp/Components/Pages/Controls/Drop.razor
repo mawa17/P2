@@ -1,0 +1,75 @@
+﻿@page "/drop"
+@rendermode InteractiveServer
+@inject IJSRuntime JS
+
+
+<div class="custom-filedrop">
+    <label for="InputFile">@dragStatus</label>
+    <InputFile id="InputFile"
+    OnChange="FilesDropped" 
+    @ondragover="OnDragOver"
+    @ondragleave="OnDragLeave"
+    />
+</div>
+
+
+
+@code {
+
+    private string dragStatus = "Upload Quiz";
+    private IBrowserFile file;
+    private void OnDragOver(DragEventArgs e)
+    {
+        dragStatus = "Drop Here...";
+        StateHasChanged(); 
+    }
+
+    private void OnDragLeave()
+    {
+        dragStatus = file?.Name ?? dragStatus;
+        StateHasChanged();
+    }
+
+    private void FilesDropped(InputFileChangeEventArgs e)
+    {
+        Console.WriteLine("DROPPP");
+        file = e.File;
+        dragStatus = file.Name;
+    }
+}
+
+
+<style>
+    .custom-filedrop #InputFile::file-selector-button {
+        display: none;
+    }
+
+    .custom-filedrop input[type='file'] {
+        font-size: 0px;
+    }
+
+    .custom-filedrop input {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .custom-filedrop label {
+        position: absolute;
+        user-select: none;
+    }
+
+    .custom-filedrop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        color: white;
+        border: 4px dashed white;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+    }
+</style>
