@@ -1,0 +1,52 @@
+/* _content/WebApp/Components/Layout/MainLayout.razor.rz.scp.css */
+#blazor-error-ui[b-pui3qmsk44] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-pui3qmsk44] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* _content/WebApp/Components/Pages/Controls/Drop.razor.rz.scp.css */
+.custom-filedrop #InputFile[b-56f0xf59uz]::file-selector-button {
+    display: none !important;
+}
+
+.custom-filedrop input[type='file'][b-56f0xf59uz] {
+    font-size: 0px !important;
+}
+
+.custom-filedrop input[b-56f0xf59uz] {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.custom-filedrop label[b-56f0xf59uz] {
+    position: absolute;
+    user-select: none;
+}
+
+.custom-filedrop[b-56f0xf59uz] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    color: white;
+    border: 4px dashed white;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}

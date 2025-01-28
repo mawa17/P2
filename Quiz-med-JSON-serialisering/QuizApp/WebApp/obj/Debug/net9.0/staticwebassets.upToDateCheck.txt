@@ -1,0 +1,4 @@
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\wwwroot\Data\Quiz.json
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\wwwroot\app.css
+wwwroot\app.css
+wwwroot\Data\Quiz.json

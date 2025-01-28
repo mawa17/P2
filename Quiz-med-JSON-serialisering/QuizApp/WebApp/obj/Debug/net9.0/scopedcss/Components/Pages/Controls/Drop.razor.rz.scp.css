@@ -1,0 +1,32 @@
+.custom-filedrop #InputFile[b-56f0xf59uz]::file-selector-button {
+    display: none !important;
+}
+
+.custom-filedrop input[type='file'][b-56f0xf59uz] {
+    font-size: 0px !important;
+}
+
+.custom-filedrop input[b-56f0xf59uz] {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.custom-filedrop label[b-56f0xf59uz] {
+    position: absolute;
+    user-select: none;
+}
+
+.custom-filedrop[b-56f0xf59uz] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    color: white;
+    border: 4px dashed white;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}

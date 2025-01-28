@@ -7,12 +7,40 @@
       "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\controls\\drop.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\controls\\quizupload.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\controls\\quizupload.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\controls\\drop.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\controls\\drop.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\controls\\drop.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\controls\\drop.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\webapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\controls\\quiz.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\controls\\quiz.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\webapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\webapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +51,8 @@
       "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\wwwroot\\data\\quiz.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\controls\\quiz.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\controls\\quiz.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -41,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\scripts\\datarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,8 +74,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WebApp",
+              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\WebApp.csproj",
+              "RelativeDocumentMoniker": "WebApp\\WebApp.csproj",
+              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\WebApp.csproj",
+              "RelativeToolTip": "WebApp\\WebApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-28T09:58:45.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Drop.razor.css",
+              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\Drop.razor.css",
+              "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Controls\\Drop.razor.css",
+              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\Drop.razor.css",
+              "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\Drop.razor.css",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-28T09:30:14.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Drop.razor.cs",
+              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\Drop.razor.cs",
+              "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Controls\\Drop.razor.cs",
+              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\Drop.razor.cs",
+              "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\Drop.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T09:26:08.893Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -72,27 +123,26 @@
               "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Controls\\Drop.razor",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\Drop.razor",
               "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\Drop.razor",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-27T08:21:29.162Z",
+              "WhenOpened": "2025-01-28T09:24:41.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuizUpload.razor",
-              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\QuizUpload.razor",
-              "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Controls\\QuizUpload.razor",
-              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\QuizUpload.razor",
-              "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\QuizUpload.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-24T13:08:59.702Z",
+              "DocumentIndex": 9,
+              "Title": "WebApp",
+              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\WebApp.csproj",
+              "RelativeDocumentMoniker": "WebApp\\WebApp.csproj",
+              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\WebApp.csproj",
+              "RelativeToolTip": "WebApp\\WebApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-28T08:36:42.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Quiz.razor.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\Quiz.razor.cs",
               "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Controls\\Quiz.razor.cs",
@@ -104,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Quiz.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Controls\\Quiz.razor",
               "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Controls\\Quiz.razor",
@@ -117,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "DataRepository.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Scripts\\DataRepository.cs",
               "RelativeDocumentMoniker": "WebApp\\Components\\Scripts\\DataRepository.cs",
@@ -129,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Error.razor",
@@ -141,19 +191,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "WebApp\\Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "WebApp\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T13:01:36.701Z"
+              "WhenOpened": "2025-01-21T13:01:36.701Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "WebApp\\Components\\_Imports.razor",
@@ -165,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Models\\Question.cs",
               "RelativeDocumentMoniker": "WebApp\\Components\\Models\\Question.cs",
@@ -173,24 +224,24 @@
               "RelativeToolTip": "WebApp\\Components\\Models\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T12:33:48.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:33:48.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\App.razor",
               "RelativeDocumentMoniker": "WebApp\\Components\\App.razor",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\App.razor",
               "RelativeToolTip": "WebApp\\Components\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:25:24.13Z"
+              "WhenOpened": "2025-01-21T12:25:24.13Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "WebApp\\Components\\Routes.razor",
@@ -198,23 +249,25 @@
               "RelativeToolTip": "WebApp\\Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:25:23.141Z"
+              "WhenOpened": "2025-01-21T12:25:23.141Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Program.cs",
               "RelativeDocumentMoniker": "WebApp\\Program.cs",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Program.cs",
               "RelativeToolTip": "WebApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAArwCkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T12:22:49.966Z"
+              "WhenOpened": "2025-01-21T12:22:49.966Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Quiz.json",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\Data\\Quiz.json",
               "RelativeDocumentMoniker": "WebApp\\wwwroot\\Data\\Quiz.json",
@@ -222,8 +275,7 @@
               "RelativeToolTip": "WebApp\\wwwroot\\Data\\Quiz.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-22T07:30:32.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T07:30:32.057Z"
             }
           ]
         }
