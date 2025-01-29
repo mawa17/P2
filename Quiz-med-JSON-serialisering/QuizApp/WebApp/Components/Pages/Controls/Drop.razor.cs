@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components;
+using System.Text;
 
 namespace WebApp.Components.Pages.Controls;
 
@@ -16,6 +17,19 @@ public partial class Drop
         get => this._fileExtensions;
         init
         {
+            var extensions = value.Split(new char[3] { '.', ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            for (int i = 0; i < extensions.Length; i++)
+            {
+                string ext = extensions[i];
+                StringBuilder builder = new();
+
+
+            }
+            foreach (var extension in extensions)
+            {
+                StringBuilder builder = new();
+                //builder.Append($".{extension}")
+            }
         }
     }
 

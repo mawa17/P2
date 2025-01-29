@@ -18,23 +18,24 @@
         top: 0.5rem;
     }
 /* _content/WebApp/Components/Pages/Controls/Drop.razor.rz.scp.css */
-.custom-filedrop #InputFile[b-56f0xf59uz]::file-selector-button {
-    display: none !important;
+.custom-filedrop[b-56f0xf59uz] #InputFile::file-selector-button {
+    display: none;
 }
 
-.custom-filedrop input[type='file'][b-56f0xf59uz] {
-    font-size: 0px !important;
+.custom-filedrop[b-56f0xf59uz] input[type='file'] {
+    font-size: 0px;
 }
 
-.custom-filedrop input[b-56f0xf59uz] {
+.custom-filedrop[b-56f0xf59uz] input {
     width: 100%;
     height: 100%;
     cursor: pointer;
 }
 
-.custom-filedrop label[b-56f0xf59uz] {
+.custom-filedrop[b-56f0xf59uz] label {
     position: absolute;
     user-select: none;
+    z-index: -1;
 }
 
 .custom-filedrop[b-56f0xf59uz] {

@@ -34,5 +34,5 @@ C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.pdb
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.genruntimeconfig.cache
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\ref\WebApp.dll
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\tya4lddc6q-j4yzh3pg3s.gz
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\woqmgvgciv-j4yzh3pg3s.gz
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\tya4lddc6q-bnbgdjc92p.gz
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\woqmgvgciv-bnbgdjc92p.gz

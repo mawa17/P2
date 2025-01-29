@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dG3dw5P6iKTlReyT4RLtPQGCBn41l3XgOd6dqvPr6bo=",
+  "Hash": "rBO3yr0qmuZszpoJszJylOtbK1CbHVONJ0a4YZlxaXY=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -59,12 +59,12 @@
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-j4yzh3pg3s.gz",
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-bnbgdjc92p.gz",
       "SourceId": "WebApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApp",
-      "RelativePath": "WebApp#[.{fingerprint=j4yzh3pg3s}]?.styles.css.gz",
+      "RelativePath": "WebApp#[.{fingerprint=bnbgdjc92p}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -73,19 +73,19 @@
       "RelatedAsset": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5o2gjpl1gn",
-      "Integrity": "ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=",
+      "Fingerprint": "314tknr4z0",
+      "Integrity": "p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-j4yzh3pg3s.gz",
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-bnbgdjc92p.gz",
       "SourceId": "WebApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/WebApp",
-      "RelativePath": "WebApp#[.{fingerprint=j4yzh3pg3s}]!.bundle.scp.css.gz",
+      "RelativePath": "WebApp#[.{fingerprint=bnbgdjc92p}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5o2gjpl1gn",
-      "Integrity": "ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=",
+      "Fingerprint": "314tknr4z0",
+      "Integrity": "p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css"
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "j4yzh3pg3s",
-      "Integrity": "fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=",
+      "Fingerprint": "bnbgdjc92p",
+      "Integrity": "CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebApp.styles.css"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "j4yzh3pg3s",
-      "Integrity": "fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=",
+      "Fingerprint": "bnbgdjc92p",
+      "Integrity": "CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css"
@@ -783,13 +783,13 @@
       ]
     },
     {
-      "Route": "WebApp.bundle.scp.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-j4yzh3pg3s.gz",
+      "Route": "WebApp.bnbgdjc92p.bundle.scp.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-bnbgdjc92p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001811594203"
+          "Quality": "0.001834862385"
         }
       ],
       "ResponseHeaders": [
@@ -799,19 +799,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "551"
+          "Value": "544"
         },
         {
           "Name": "ETag",
-          "Value": "\"ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=\""
+          "Value": "\"p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -827,18 +827,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=\""
+          "Value": "W/\"CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "bnbgdjc92p"
+        },
+        {
+          "Name": "label",
+          "Value": "WebApp.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg="
+          "Value": "sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="
         }
       ]
     },
     {
-      "Route": "WebApp.bundle.scp.css",
+      "Route": "WebApp.bnbgdjc92p.bundle.scp.css",
       "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -848,7 +856,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1260"
+          "Value": "1256"
         },
         {
           "Name": "Content-Type",
@@ -856,121 +864,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=\""
+          "Value": "\"CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg="
-        }
-      ]
-    },
-    {
-      "Route": "WebApp.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-j4yzh3pg3s.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "551"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g="
-        }
-      ]
-    },
-    {
-      "Route": "WebApp.j4yzh3pg3s.bundle.scp.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-j4yzh3pg3s.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001811594203"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "551"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j4yzh3pg3s"
+          "Value": "bnbgdjc92p"
         },
         {
           "Name": "label",
@@ -978,13 +886,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg="
+          "Value": "sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="
         }
       ]
     },
     {
-      "Route": "WebApp.j4yzh3pg3s.bundle.scp.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
+      "Route": "WebApp.bnbgdjc92p.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-bnbgdjc92p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -993,7 +901,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1260"
+          "Value": "544"
         },
         {
           "Name": "Content-Type",
@@ -1001,56 +909,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=\""
+          "Value": "\"p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "j4yzh3pg3s"
-        },
-        {
-          "Name": "label",
-          "Value": "WebApp.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg="
-        }
-      ]
-    },
-    {
-      "Route": "WebApp.j4yzh3pg3s.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-j4yzh3pg3s.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "551"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1068,7 +931,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j4yzh3pg3s"
+          "Value": "bnbgdjc92p"
         },
         {
           "Name": "label",
@@ -1076,18 +939,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g="
+          "Value": "sha256-p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg="
         }
       ]
     },
     {
-      "Route": "WebApp.j4yzh3pg3s.styles.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-j4yzh3pg3s.gz",
+      "Route": "WebApp.bnbgdjc92p.styles.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-bnbgdjc92p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001811594203"
+          "Quality": "0.001834862385"
         }
       ],
       "ResponseHeaders": [
@@ -1097,15 +960,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "551"
+          "Value": "544"
         },
         {
           "Name": "ETag",
-          "Value": "\"ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=\""
+          "Value": "\"p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1125,13 +988,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=\""
+          "Value": "W/\"CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j4yzh3pg3s"
+          "Value": "bnbgdjc92p"
         },
         {
           "Name": "label",
@@ -1139,12 +1002,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg="
+          "Value": "sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="
         }
       ]
     },
     {
-      "Route": "WebApp.j4yzh3pg3s.styles.css",
+      "Route": "WebApp.bnbgdjc92p.styles.css",
       "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\WebApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1154,7 +1017,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1260"
+          "Value": "1256"
         },
         {
           "Name": "Content-Type",
@@ -1162,11 +1025,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=\""
+          "Value": "\"CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1176,7 +1039,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j4yzh3pg3s"
+          "Value": "bnbgdjc92p"
         },
         {
           "Name": "label",
@@ -1184,13 +1047,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg="
+          "Value": "sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="
         }
       ]
     },
     {
-      "Route": "WebApp.j4yzh3pg3s.styles.css.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-j4yzh3pg3s.gz",
+      "Route": "WebApp.bnbgdjc92p.styles.css.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-bnbgdjc92p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1199,7 +1062,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "551"
+          "Value": "544"
         },
         {
           "Name": "Content-Type",
@@ -1207,11 +1070,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=\""
+          "Value": "\"p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1229,7 +1092,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j4yzh3pg3s"
+          "Value": "bnbgdjc92p"
         },
         {
           "Name": "label",
@@ -1237,18 +1100,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g="
+          "Value": "sha256-p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg="
         }
       ]
     },
     {
-      "Route": "WebApp.styles.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-j4yzh3pg3s.gz",
+      "Route": "WebApp.bundle.scp.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-bnbgdjc92p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001811594203"
+          "Quality": "0.001834862385"
         }
       ],
       "ResponseHeaders": [
@@ -1258,15 +1121,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "551"
+          "Value": "544"
         },
         {
           "Name": "ETag",
-          "Value": "\"ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=\""
+          "Value": "\"p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1286,13 +1149,150 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=\""
+          "Value": "W/\"CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg="
+          "Value": "sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="
+        }
+      ]
+    },
+    {
+      "Route": "WebApp.bundle.scp.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\WebApp.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1256"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="
+        }
+      ]
+    },
+    {
+      "Route": "WebApp.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\woqmgvgciv-bnbgdjc92p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg="
+        }
+      ]
+    },
+    {
+      "Route": "WebApp.styles.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-bnbgdjc92p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001834862385"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "544"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="
         }
       ]
     },
@@ -1307,7 +1307,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1260"
+          "Value": "1256"
         },
         {
           "Name": "Content-Type",
@@ -1315,11 +1315,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg=\""
+          "Value": "\"CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1329,13 +1329,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fTsDYxfeh7Omot02WGo54+2bbcU73qWOJnR2JtbTiVg="
+          "Value": "sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="
         }
       ]
     },
     {
       "Route": "WebApp.styles.css.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-j4yzh3pg3s.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\obj\\Debug\\net9.0\\compressed\\tya4lddc6q-bnbgdjc92p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1344,7 +1344,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "551"
+          "Value": "544"
         },
         {
           "Name": "Content-Type",
@@ -1352,11 +1352,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g=\""
+          "Value": "\"p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 11:09:57 GMT"
+          "Value": "Wed, 29 Jan 2025 09:18:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1374,7 +1374,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ewfNOkiyWDO0oWWOw4qXXTHSJvYi6BhLPzUG24sCO9g="
+          "Value": "sha256-p7mcapCiNPpKkw1Ufgd6enJr3hdTbXx7XLvew3msthg="
         }
       ]
     }

@@ -24,17 +24,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ycys7lns25"},{"Name":"integrity","Value":"sha256-Dhjpf5ltfBC4RksrfF/BfIYaIGUkeykvlpoTA4dSuj8="},{"Name":"label","Value":"_content/WebApp/Data/Quiz.json"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3077"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022Dhjpf5ltfBC4RksrfF/BfIYaIGUkeykvlpoTA4dSuj8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 22 Jan 2025 07:51:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebApp/WebApp.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WebApp.j4yzh3pg3s.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/WebApp/WebApp.bnbgdjc92p.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WebApp.bnbgdjc92p.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fTsDYxfeh7Omot02WGo54\u002B2bbcU73qWOJnR2JtbTiVg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1260"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fTsDYxfeh7Omot02WGo54\u002B2bbcU73qWOJnR2JtbTiVg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 28 Jan 2025 11:09:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"bnbgdjc92p"},{"Name":"integrity","Value":"sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="},{"Name":"label","Value":"_content/WebApp/WebApp.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1256"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 09:18:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebApp/WebApp.j4yzh3pg3s.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WebApp.j4yzh3pg3s.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/WebApp/WebApp.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\WebApp.bnbgdjc92p.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j4yzh3pg3s"},{"Name":"integrity","Value":"sha256-fTsDYxfeh7Omot02WGo54\u002B2bbcU73qWOJnR2JtbTiVg="},{"Name":"label","Value":"_content/WebApp/WebApp.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1260"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fTsDYxfeh7Omot02WGo54\u002B2bbcU73qWOJnR2JtbTiVg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 28 Jan 2025 11:09:57 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1256"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022CQjyvIY4jVr6QFPKqED2wwNF1wJB6gX6khdxy91p2D0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 09:18:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

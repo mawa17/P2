@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using WebApp.Components.Models;
+using WebApp.Components.Services;
 
 namespace WebApp.Components.Pages.Controls;
 
@@ -12,6 +13,13 @@ public partial class Quiz
 
     [Parameter, EditorRequired]
     public string? QuizFile { get; set; }
+
+    [Inject]
+    public HttpClient Http { get; init; }
+
+    [Inject]
+    public ILogger<Quiz> Logger { get; init; }
+
     protected override async Task OnInitializedAsync()
     {
         try
@@ -20,7 +28,7 @@ public partial class Quiz
         }
         catch (Exception ex)
         {
-            logger.LogError(ex, ex.Message);
+            Logger.LogError(ex, ex.Message);
         }
     }
     private void NextQuestion()
@@ -33,8 +41,20 @@ public partial class Quiz
     {
         AnwserGiven = true;
         IsAnwserCorrect = question?.AnwserIndex == anwser;
-#if DEBUG
-        Console.WriteLine($"{question.AnwserIndex} -> {anwser}");
-#endif
+    #if DEBUG
+            Console.WriteLine($"{question.AnwserIndex} -> {anwser}");
+    #endif
     }
+
+
+
+
+
+
+
+
+
+
+
+
 }

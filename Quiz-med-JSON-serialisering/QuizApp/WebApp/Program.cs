@@ -1,4 +1,5 @@
 using WebApp.Components;
+using WebApp.Components.Services;
 namespace WebApp;
 public class Program
 {
@@ -22,6 +23,9 @@ public class Program
             };
             return client;
         });
+
+
+
 
         var app = builder.Build();
 
