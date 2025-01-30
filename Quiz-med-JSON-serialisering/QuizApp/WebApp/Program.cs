@@ -1,3 +1,4 @@
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using WebApp.Components;
 using WebApp.Components.Services;
 namespace WebApp;
@@ -15,16 +16,10 @@ public class Program
         builder.Logging.AddConsole();
         builder.Logging.AddDebug();
 
-        builder.Services.AddSingleton(sp =>
+        builder.Services.AddSingleton(new HttpClient
         {
-            var client = new HttpClient
-            {
-                BaseAddress = new Uri("http://localhost:5002")
-            };
-            return client;
+            BaseAddress = new Uri("http://localhost:5002")
         });
-
-
 
 
         var app = builder.Build();

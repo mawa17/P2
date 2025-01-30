@@ -35,14 +35,6 @@ public enum QuizDifficulty
     Hard = 3,
 }
 
-public class MyService
-{
-    public string GetMessage()
-    {
-        return "Hello from MyService!";
-    }
-}
-
 public sealed class QuizApi
 {
     public async Task GenerateQuiz(byte limit = 10, QuizDifficulty difficulty = QuizDifficulty.Easy, QuizCatagory category = QuizCatagory.Code)

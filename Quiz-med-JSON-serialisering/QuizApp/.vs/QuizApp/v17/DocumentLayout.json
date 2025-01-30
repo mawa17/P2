@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\services\\quizapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\services\\quizapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\services\\quizapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|solutionrelative:webapp\\components\\services\\quizapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21036D89-3413-4D52-B74D-C33D0E458958}|WebApp\\WebApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz-med-json-serialisering\\quizapp\\webapp\\components\\pages\\controls\\quiz.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -94,8 +94,7 @@
               "RelativeToolTip": "WebApp\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T13:01:36.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T13:01:36.701Z"
             },
             {
               "$type": "Document",
@@ -107,8 +106,7 @@
               "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\QuizUpload.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-29T11:16:29.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T11:16:29.505Z"
             },
             {
               "$type": "Document",
@@ -120,8 +118,7 @@
               "RelativeToolTip": "WebApp\\Components\\Pages\\Error.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T13:14:11.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T13:14:11.21Z"
             },
             {
               "$type": "Document",
@@ -133,8 +130,7 @@
               "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\Drop.razor.css",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-28T09:30:14.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T09:30:14.885Z"
             },
             {
               "$type": "Document",
@@ -146,8 +142,7 @@
               "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\Drop.razor.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAzwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T09:26:08.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T09:26:08.893Z"
             },
             {
               "$type": "Document",
@@ -159,18 +154,17 @@
               "RelativeToolTip": "WebApp\\Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:25:23.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:25:23.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Program.cs",
               "RelativeDocumentMoniker": "WebApp\\Program.cs",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Program.cs",
               "RelativeToolTip": "WebApp\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAywBgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T12:22:49.966Z",
               "EditorCaption": ""
@@ -185,18 +179,17 @@
               "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\Quiz.razor.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T12:14:15.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T12:14:15.699Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QuizApi.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Services\\QuizApi.cs",
               "RelativeDocumentMoniker": "WebApp\\Components\\Services\\QuizApi.cs",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz-med-JSON-serialisering\\QuizApp\\WebApp\\Components\\Services\\QuizApi.cs",
               "RelativeToolTip": "WebApp\\Components\\Services\\QuizApi.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADUAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-29T10:53:27.566Z",
               "EditorCaption": ""
@@ -211,8 +204,7 @@
               "RelativeToolTip": "WebApp\\Components\\App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:25:24.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:25:24.13Z"
             },
             {
               "$type": "Document",
@@ -224,8 +216,7 @@
               "RelativeToolTip": "WebApp\\Components\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-21T12:33:54.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T12:33:54.294Z"
             },
             {
               "$type": "Document",
@@ -237,8 +228,7 @@
               "RelativeToolTip": "WebApp\\Components\\Pages\\Controls\\Quiz.razor",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-29T11:56:20.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T11:56:20.103Z"
             },
             {
               "$type": "Document",
