@@ -1,0 +1,15 @@
+﻿@rendermode InteractiveServer
+
+
+<h1>@SurveyData.Title</h1>
+@for (int i = 0; i < SurveyData.Questions.Length; i++)
+{
+	var question = SurveyData.Questions[i];
+	<h2>@question.Text</h2>
+	@foreach (var option in question.Options)
+	{
+		<h3>@option</h3>
+	}
+}
+
+

@@ -1,0 +1,14 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<Survey SurveyData="Data"></Survey>
+
+
+@code {
+	public SurveyModel Data { get; set; } = new SurveyModel("Survey Title", [
+		new("HvadHedderDu", "Bob", "Bo", "Bobby"),
+		new("HvorGammelErDu", "20år", "<10år", ">50år"),
+		new("BorDuVedKøbenhavn", "ja", "nej", "måske"),
+	]);
+}

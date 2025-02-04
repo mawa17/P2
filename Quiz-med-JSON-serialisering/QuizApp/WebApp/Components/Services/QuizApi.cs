@@ -49,18 +49,18 @@ public sealed class QuizApi
             $"&category={categoryValue}");
 
 
-        //using (HttpClient client = new())
-        //{
-        //    try
-        //    {
-        //        HttpResponseMessage response = await client.GetAsync(url);
-        //        response.EnsureSuccessStatusCode();
-        //        Console.WriteLine(await response.Content.ReadAsStringAsync());
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex);
-        //    }
-        //}
+        using (HttpClient client = new())
+        {
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(url);
+                response.EnsureSuccessStatusCode();
+                Console.WriteLine(await response.Content.ReadAsStringAsync());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
     }
 }

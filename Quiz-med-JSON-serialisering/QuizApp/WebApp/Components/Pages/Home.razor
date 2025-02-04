@@ -1,5 +1,13 @@
 ﻿@page "/"
-
+@inject QuizApi quiz
 <PageTitle>Quiz</PageTitle>
-<Quiz></Quiz>
 <Drop FileExtensions="png.gif"></Drop>
+
+@code {
+	protected override void OnInitialized()
+	{
+		string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+		Console.WriteLine(userName);
+		base.OnInitialized();
+	}
+}

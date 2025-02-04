@@ -20,6 +20,7 @@ public class Program
         {
             BaseAddress = new Uri("http://localhost:5002")
         });
+        builder.Services.AddScoped<QuizApi>();
 
 
         var app = builder.Build();

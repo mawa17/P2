@@ -1,3 +1,9 @@
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.AssemblyInfoInputs.cache
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.AssemblyInfo.cs
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.csproj.CoreCompileInputs.cache
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.sourcelink.json
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\bin\Debug\net9.0\appsettings.json
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\bin\Debug\net9.0\WebApp.staticwebassets.runtime.json
@@ -7,18 +13,14 @@ C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\bin\Debug\net
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\bin\Debug\net9.0\WebApp.runtimeconfig.json
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\bin\Debug\net9.0\WebApp.dll
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\bin\Debug\net9.0\WebApp.pdb
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.AssemblyInfoInputs.cache
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.AssemblyInfo.cs
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.csproj.CoreCompileInputs.cache
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.sourcelink.json
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\scopedcss\Components\Pages\Controls\Drop.razor.rz.scp.css
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\scopedcss\bundle\WebApp.styles.css
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\scopedcss\projectbundle\WebApp.bundle.scp.css
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\pfkw32qpck-9tsjre4pz5.gz
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\2mft3mvkw0-ycys7lns25.gz
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\tya4lddc6q-bnbgdjc92p.gz
+C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\woqmgvgciv-bnbgdjc92p.gz
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -34,5 +36,3 @@ C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.pdb
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\WebApp.genruntimeconfig.cache
 C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\ref\WebApp.dll
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\tya4lddc6q-bnbgdjc92p.gz
-C:\Users\maw\Desktop\P2\Quiz-med-JSON-serialisering\QuizApp\WebApp\obj\Debug\net9.0\compressed\woqmgvgciv-bnbgdjc92p.gz
