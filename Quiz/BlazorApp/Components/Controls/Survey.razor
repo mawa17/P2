@@ -5,11 +5,17 @@
 @for (int i = 0; i < SurveyData.Questions.Length; i++)
 {
 	var question = SurveyData.Questions[i];
-	<h2>@question.Text</h2>
-	@foreach (var option in question.Options)
-	{
-		<h3>@option</h3>
-	}
+	<EditForm Model="SurveyAnwsers">
+		<h2>@question.Text</h2>
+		@for (int j = 0; j < question.Options.Length; j++)
+		{
+				var option = question.Options[j];
+				<h3>@option</h3>
+				string id = $"SurveyCheckbox-{i + "-" + j}";
+				<label for="@id"></label>
+			<InputCheckbox id="@id"></InputCheckbox>
+		}
+	</EditForm>
 }
 
 
