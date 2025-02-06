@@ -9,7 +9,7 @@ public partial class Survey
     public SurveyModel SurveyData { get; set; } = default!;
 
     [SupplyParameterFromForm]
-    private Question[]? SurveyAnwsers { get; set; } = { };
+    private QuestionModel[]? SurveyAnswers { get; set; } = { };
 
     private uint SurvayPage;
     private void NextPage()

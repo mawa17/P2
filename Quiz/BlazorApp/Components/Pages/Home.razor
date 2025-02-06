@@ -2,13 +2,14 @@
 
 <PageTitle>Home</PageTitle>
 
-<Survey SurveyData="Data"></Survey>
-
+<QuestionPrompt Question="question"></QuestionPrompt>
 
 @code {
 	public SurveyModel Data { get; set; } = new SurveyModel("Survey Title", [
 		new("HvadHedderDu", "Bob", "Bo", "Bobby"),
-		new("HvorGammelErDu", "20år", "<10år", ">50år"),
-		new("BorDuVedKøbenhavn", "ja", "nej", "måske"),
+	new("HvorGammelErDu", "20år", "<10år", ">50år"),
+	new("BorDuVedKøbenhavn", "ja", "nej", "måske"),
 	]);
+
+	private QuestionModel question = new("HvadHedderDu", "Bob", "Bo", "Bobby");
 }

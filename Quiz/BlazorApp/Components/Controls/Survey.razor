@@ -1,21 +1,51 @@
 ﻿@rendermode InteractiveServer
 
+    <table class="table table-bordered text-center">
+        <thead class="table-dark">
+            <tr>
+                @{
+                    var question = SurveyData.Questions[0];
+                }
+                <th 
+                scope="col" 
+                class="text-start"
+                >@question.Text</th>
+                @for (int j = 0; j < question.Options.Length; j++)
+                {
+                    <th scope="col">@(j+1)</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < question.Options.Length; i++)
+            {
+                var option = question.Options[i];
+                int index = i;
+                <tr>
+                    <td class="table-dark text-start">@option</td>
+                    <InputRadioGroup @bind-Value="shit">
 
-<h1>@SurveyData.Title</h1>
-@for (int i = 0; i < SurveyData.Questions.Length; i++)
-{
-	var question = SurveyData.Questions[i];
-	<EditForm Model="SurveyAnwsers">
-		<h2>@question.Text</h2>
-		@for (int j = 0; j < question.Options.Length; j++)
-		{
-				var option = question.Options[j];
-				<h3>@option</h3>
-				string id = $"SurveyCheckbox-{i + "-" + j}";
-				<label for="@id"></label>
-			<InputCheckbox id="@id"></InputCheckbox>
-		}
-	</EditForm>
+                        @for (int j = 0; j < question.Options.Length; j++)
+                        {
+                            string InputRadioId = $"input-{index}-{j}";
+                            <td class="position-relative p-0 m-0">
+                                <label for="@InputRadioId"
+                                style="cursor: pointer;" 
+                                class="position-absolute d-flex align-items-center justify-content-center w-100 h-100"
+                                >
+                                    <InputRadio Value="@InputRadioId" id="@InputRadioId" style="cursor: pointer;" class="form-check-input" />
+                                </label>
+                            </td>
+                        }
+                    </InputRadioGroup>
+                </tr>
+            }
+        </tbody>
+    </table>
+<h1>@shit</h1>
+
+
+@code {
+    private string shit;
+
 }
-
-

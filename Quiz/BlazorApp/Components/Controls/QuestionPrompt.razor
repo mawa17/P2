@@ -1,0 +1,46 @@
+﻿@rendermode InteractiveServer
+
+<table class="table table-bordered text-center">
+    <thead class="table-dark">
+        <tr>
+         
+            <th scope="col"
+                class="text-start">@Question.Text</th>
+            @for (int j = 0; j < Question.Options.Length; j++)
+            {
+                <th scope="col">@(j + 1)</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Question.Options.Length; i++)
+        {
+            var option = Question.Options[i];
+            int index = i;
+            <tr>
+                <td class="table-dark text-start">@option</td>
+                <InputRadioGroup @bind-Value="shit">
+
+                    @for (int j = 0; j < Question.Options.Length; j++)
+                    {
+                        string InputRadioId = $"input-{index}-{j}";
+                        <td class="position-relative p-0 m-0">
+                            <label for="@InputRadioId"
+                                   style="cursor: pointer;"
+                                   class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                                <InputRadio Value="@InputRadioId" id="@InputRadioId" style="cursor: pointer;" class="form-check-input" />
+                            </label>
+                        </td>
+                    }
+                </InputRadioGroup>
+            </tr>
+        }
+    </tbody>
+</table>
+<h1>@shit</h1>
+
+
+@code {
+    private string shit;
+
+}
