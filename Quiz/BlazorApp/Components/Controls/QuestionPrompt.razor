@@ -1,51 +1,96 @@
 ﻿@rendermode InteractiveServer
-@attribute [StreamRendering]
 
 <table class="table table-bordered text-center">
     <thead class="table-dark">
         <tr>
 
             <th scope="col"
-                class="text-start">@Question.Text</th>
+            class="text-start">@Question.Text</th>
             @for (int j = 0; j < Question.Options.Length; j++)
             {
-                <th scope="col">Mit @((j == 0) ? "første" : 
-                         (j == Question.Options.Length - 1) ? "sidste" : $"{j+1}.") valg</th>
+                <th scope="col">Mit @((j == 0) ? "første" : (j == Question.Options.Length - 1) ? "sidste" : $"{j+1}.") valg</th>
             }
         </tr>
     </thead>
     <tbody>
-        @for (int i = 0; i < Question.Options.Length; i++)
+        @for (int _ = 0; _ < Question.Options.Length; _++)
         {
+            int i = _;
             var option = Question.Options[i];
-            int index = i;
             <tr>
                 <td class="table-dark text-start">@option</td>
-                <InputRadioGroup @bind-Value="selectedValue" ValueChanged="@((string newValue) => OnChange(newValue))">
-                    @for (int j = 0; j < Question.Options.Length; j++)
-                    {
-                        string InputRadioId = $"input-{index}-{j}";
+
+                @for (int __ = 0; __ < Question.Options.Length; __++)
+                {
+                    int j = __;
+                    var target = grid[i, j];
+                    string InputRadioId = $"InputRadioId-{i}-{j}";
+                    <InputRadioGroup @bind-Value="target" >
                         <td class="position-relative p-0 m-0">
                             <label for="@InputRadioId"
                             style="cursor: pointer;"
                             class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
-                                <InputRadio Value="@($"{option}-{j}")" id="@InputRadioId" style="cursor: pointer;" class="form-check-input" />
+                                <InputRadio @onclick="() => OnClick(option, i, j)" Value="@(true)" @(truetrue ? "disabled" : "") id="@InputRadioId" style="cursor: pointer;" class="form-check-input" />
                             </label>
                         </td>
-                    }
-                </InputRadioGroup>
+                    </InputRadioGroup>
+
+                }
+
             </tr>
         }
     </tbody>
 </table>
 
-<h1>@selectedValue</h1>
+<h1>@(String.Join(',', values) ?? "null")</h1>
 
 @code {
-    private string selectedValue = "DEFAULT";
-    private void OnChange(string value)
-    {
+    private volatile LinkedList<string?> values = new();
 
-        selectedValue = value;
+    private volatile bool[,] grid;
+
+    protected override void OnInitialized()
+    {
+        int size = Question.Options.Length;
+        grid = new bool[size, size];
+        base.OnInitialized();
+    }
+
+
+    private void OnClick(string value, params int[] indexes)
+    {
+        Console.WriteLine($"CLICK {value} {indexes[0]}-{indexes[1]}");
+        grid[indexes[0], indexes[1]] = true;
+        // var args = value.Split('-');
+        // string? option = args.ElementAtOrDefault(0);
+        // uint.TryParse(args.ElementAtOrDefault(1), out uint index);
+        // Console.WriteLine($"CLICK");
+        // if(prevValue[index,0] == value) {
+        //     prevValue[index,0] = null;
+        //     values.Remove(option);
+        //     Console.WriteLine($"REMOVE {option}-{index}");
+        // }
+    }
+    private void OnChange(string value, params int[] indexes)
+    {
+        Console.WriteLine($"CHANGE {value} {indexes[0]}");
+        // var args = value.Split('-');
+        // string? option = args.ElementAtOrDefault(0);
+        // uint.TryParse(args.ElementAtOrDefault(1), out uint index);
+        // Console.WriteLine($"CHANGE {option}-{index}");
+        // prevValue[index,0] = value;
+        // if (values.Contains(option)) return;
+        // InsertAt(values, index, option);
+    }
+
+    private void InsertAt<T>(LinkedList<T> list, T value, params int[] indexes)
+    {
+        // Console.WriteLine($"INSERT {value}-{index}");
+        // if (index < 0 || index > Question.Options.Length)
+        //     throw new ArgumentOutOfRangeException(nameof(index));
+        // var node = list.First;
+        // for (int i = 0; i < index; i++) node = node?.Next;
+        // if (node != null) list.AddBefore(node, value);
+        // else list.AddLast(value);
     }
 }
