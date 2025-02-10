@@ -13,54 +13,56 @@
         </tr>
     </thead>
     <tbody>
+
+
         @for (int _ = 0; _ < Question.Options.Length; _++)
         {
-            int i = _;
-            var option = Question.Options[i];
+            int y = _;
+            var option = Question.Options[y];
             <tr>
                 <td class="table-dark text-start">@option</td>
-
-                @for (int __ = 0; __ < Question.Options.Length; __++)
-                {
-                    int j = __;
-                    var target = grid[i, j];
-                    string InputRadioId = $"InputRadioId-{i}-{j}";
-                    <InputRadioGroup @bind-Value="target" >
+                <InputRadioGroup @bind-Value="grid[y]">
+                    @for (int __ = 0; __ < Question.Options.Length; __++)
+                    {
+                        int x = __;
+                        string idPrefix = $"{y}{x}";
+                        string InputRadioId = $"InputRadioId-{idPrefix}";
+                        bool isSelected = !String.IsNullOrEmpty(grid[y]);
                         <td class="position-relative p-0 m-0">
                             <label for="@InputRadioId"
-                            style="cursor: pointer;"
-                            class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
-                                <InputRadio @onclick="() => OnClick(option, i, j)" Value="@(true)" @(truetrue ? "disabled" : "") id="@InputRadioId" style="cursor: pointer;" class="form-check-input" />
+                                style="cursor: pointer; @(isSelected ? "background-color: red;" : null)"
+                                class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                                <InputRadio @onclick="() => OnSelect(y,x)" Value="@($"SET{idPrefix}")" id="@InputRadioId" style="cursor: pointer;" class="form-check-input" />
                             </label>
                         </td>
-                    </InputRadioGroup>
-
-                }
-
+                    }
+                 </InputRadioGroup>
             </tr>
         }
+
     </tbody>
 </table>
 
 <h1>@(String.Join(',', values) ?? "null")</h1>
+<h1>@($"x:{X}, y:{Y}")</h1>
+
+
 
 @code {
     private volatile LinkedList<string?> values = new();
-
-    private volatile bool[,] grid;
-
+    private volatile string[] grid = { };
+    private int X, Y;
     protected override void OnInitialized()
     {
-        int size = Question.Options.Length;
-        grid = new bool[size, size];
+        grid = new string[Question.Options.Length];
         base.OnInitialized();
     }
 
 
-    private void OnClick(string value, params int[] indexes)
+    private void OnSelect(int i, int extra)
     {
-        Console.WriteLine($"CLICK {value} {indexes[0]}-{indexes[1]}");
-        grid[indexes[0], indexes[1]] = true;
+        Console.WriteLine($"CLICK");
+        grid[i] = $"SET{i}{extra}";
         // var args = value.Split('-');
         // string? option = args.ElementAtOrDefault(0);
         // uint.TryParse(args.ElementAtOrDefault(1), out uint index);
