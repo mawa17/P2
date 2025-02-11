@@ -3,18 +3,14 @@
 <table class="table table-bordered text-center">
     <thead class="table-dark">
         <tr>
-
-            <th scope="col"
-            class="text-start">@Question.Text</th>
+            <th scope="col" class="text-start">@Question.Text</th>
             @for (int j = 0; j < Question.Options.Length; j++)
             {
-                <th scope="col">Mit @((j == 0) ? "første" : (j == Question.Options.Length - 1) ? "sidste" : $"{j+1}.") valg</th>
+                <th scope="col">Mit @((j == 0) ? "første" : (j == Question.Options.Length - 1) ? "sidste" : $"{j + 1}.") valg</th>
             }
         </tr>
     </thead>
     <tbody>
-
-
         @for (int _ = 0; _ < Question.Options.Length; _++)
         {
             int y = _;
@@ -25,74 +21,52 @@
                     @for (int __ = 0; __ < Question.Options.Length; __++)
                     {
                         int x = __;
-                        string idPrefix = $"{y}{x}";
-                        string InputRadioId = $"InputRadioId-{idPrefix}";
-                        bool isSelected = !String.IsNullOrEmpty(grid[y]);
-                        <td class="position-relative p-0 m-0">
+                        string prefix = $"{x}{y}";
+                        string InputRadioId = $"InputRadioId-{prefix}";
+                        bool isSelected = grid[y] == $"SET{x}{y}";
+                        bool isColumnSelected = grid.Any(val => val?.StartsWith($"SET{x}") == true);
+                        bool isCellDisabled = isColumnSelected && !isSelected;
+                        <td class="position-relative p-0 m-0" style="@(isColumnSelected ? "background-color: red;" : null)">
                             <label for="@InputRadioId"
-                                style="cursor: pointer; @(isSelected ? "background-color: red;" : null)"
-                                class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
-                                <InputRadio @onclick="() => OnSelect(y,x)" Value="@($"SET{idPrefix}")" id="@InputRadioId" style="cursor: pointer;" class="form-check-input" />
+                                   style="cursor: pointer; @(isCellDisabled ? "pointer-events: none; opacity: 0.5;" : "")"
+                                   class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                                <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@InputRadioId" style="cursor: pointer;" class="form-check-input" disabled="@(isCellDisabled)" />
                             </label>
                         </td>
                     }
-                 </InputRadioGroup>
+                </InputRadioGroup>
             </tr>
         }
-
     </tbody>
 </table>
 
 <h1>@(String.Join(',', values) ?? "null")</h1>
 <h1>@($"x:{X}, y:{Y}")</h1>
 
-
-
 @code {
     private volatile LinkedList<string?> values = new();
-    private volatile string[] grid = { };
+    private volatile string?[] grid = { };
     private int X, Y;
+
     protected override void OnInitialized()
     {
         grid = new string[Question.Options.Length];
         base.OnInitialized();
     }
 
-
-    private void OnSelect(int i, int extra)
+    private void ToggleColumnSelection(int x, int y)
     {
-        Console.WriteLine($"CLICK");
-        grid[i] = $"SET{i}{extra}";
-        // var args = value.Split('-');
-        // string? option = args.ElementAtOrDefault(0);
-        // uint.TryParse(args.ElementAtOrDefault(1), out uint index);
-        // Console.WriteLine($"CLICK");
-        // if(prevValue[index,0] == value) {
-        //     prevValue[index,0] = null;
-        //     values.Remove(option);
-        //     Console.WriteLine($"REMOVE {option}-{index}");
-        // }
-    }
-    private void OnChange(string value, params int[] indexes)
-    {
-        Console.WriteLine($"CHANGE {value} {indexes[0]}");
-        // var args = value.Split('-');
-        // string? option = args.ElementAtOrDefault(0);
-        // uint.TryParse(args.ElementAtOrDefault(1), out uint index);
-        // Console.WriteLine($"CHANGE {option}-{index}");
-        // prevValue[index,0] = value;
-        // if (values.Contains(option)) return;
-        // InsertAt(values, index, option);
-    }
-
-    private void InsertAt<T>(LinkedList<T> list, T value, params int[] indexes)
-    {
-        // Console.WriteLine($"INSERT {value}-{index}");
-        // if (index < 0 || index > Question.Options.Length)
-        //     throw new ArgumentOutOfRangeException(nameof(index));
-        // var node = list.First;
-        // for (int i = 0; i < index; i++) node = node?.Next;
-        // if (node != null) list.AddBefore(node, value);
-        // else list.AddLast(value);
+        string selection = $"SET{x}{y}";
+        if (grid[y] == selection)
+        {
+            grid[y] = null;
+        }
+        else
+        {
+            grid[y] = selection;
+        }
+        X = x;
+        Y = y;
+        StateHasChanged();
     }
 }
