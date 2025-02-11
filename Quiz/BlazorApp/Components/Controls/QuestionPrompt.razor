@@ -26,11 +26,13 @@
                         bool isSelected = grid[y] == $"SET{x}{y}";
                         bool isColumnSelected = grid.Any(val => val?.StartsWith($"SET{x}") == true);
                         bool isCellDisabled = isColumnSelected && !isSelected;
-                        <td class="position-relative p-0 m-0" style="@(isColumnSelected ? "background-color: red;" : null)">
+                        var cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
+                        <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle} background-color: red;" : null)">
                             <label for="@InputRadioId"
-                                   style="cursor: pointer; @(isCellDisabled ? "pointer-events: none; opacity: 0.5;" : "")"
+                                   style="cursor: pointer; @(isSelected ? "background-color: green;" : null)  @(isCellDisabled ? "pointer-events: none; opacity: 0.5;" : "")"
                                    class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
-                                <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@InputRadioId" style="cursor: pointer;" class="form-check-input" disabled="@(isCellDisabled)" />
+                                    
+                                <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@InputRadioId" disabled="@(isCellDisabled)" />
                             </label>
                         </td>
                     }
