@@ -1,46 +1,59 @@
 ﻿@rendermode InteractiveServer
 
-<table class="table table-bordered text-center">
-    <thead class="table-dark">
-        <tr>
-            <th scope="col" class="text-start">@Question.Text</th>
-            @for (int j = 0; j < Question.Options.Length; j++)
-            {
-                <th scope="col">Mit @((j == 0) ? "første" : (j == Question.Options.Length - 1) ? "sidste" : $"{j + 1}.") valg</th>
-            }
-        </tr>
-    </thead>
-    <tbody>
-        @for (int _ = 0; _ < Question.Options.Length; _++)
-        {
-            int y = _;
-            var option = Question.Options[y];
-            <tr>
-                <td class="table-dark text-start">@option</td>
-                <InputRadioGroup @bind-Value="grid[y]">
-                    @for (int __ = 0; __ < Question.Options.Length; __++)
+
+
+
+<div class="position-relative overflow-auto">
+    <div class="table-responsive mb-5">
+        <table class="table table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col" class="text-start">@Question.Text</th>
+                    @for (int j = 0; j < Question.Options.Length; j++)
                     {
-                        int x = __;
-                        string prefix = $"{x}{y}";
-                        string InputRadioId = $"InputRadioId-{prefix}";
-                        bool isSelected = grid[y] == $"SET{x}{y}";
-                        bool isColumnSelected = grid.Any(val => val?.StartsWith($"SET{x}") == true);
-                        bool isCellDisabled = isColumnSelected && !isSelected;
-                        var cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
-                        <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle} background-color: red;" : null)">
-                            <label for="@InputRadioId"
-                                   style="cursor: pointer; @(isSelected ? "background-color: green;" : null)  @(isCellDisabled ? "pointer-events: none; opacity: 0.5;" : "")"
-                                   class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
-                                    
-                                <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@InputRadioId" disabled="@(isCellDisabled)" />
-                            </label>
-                        </td>
+                        <th scope="col">Mit @((j == 0) ? "første" : (j == Question.Options.Length - 1) ? "sidste" : $"{j + 1}.") valg</th>
                     }
-                </InputRadioGroup>
-            </tr>
-        }
-    </tbody>
-</table>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int _ = 0; _ < Question.Options.Length; _++)
+                {
+                    int y = _;
+                    var option = Question.Options[y];
+                    <tr>
+                        <td class="table-dark text-start">@option</td>
+                        <InputRadioGroup @bind-Value="grid[y]">
+                            @for (int __ = 0; __ < Question.Options.Length; __++)
+                            {
+                                int x = __;
+                                string prefix = $"{x}{y}";
+                                string InputRadioId = $"InputRadioId-{prefix}";
+                                bool isSelected = grid[y] == $"SET{x}{y}";
+                                bool isColumnSelected = grid.Any(val => val?.StartsWith($"SET{x}") == true);
+                                bool isCellDisabled = isColumnSelected && !isSelected;
+                                var cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
+                                <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle}" : null)">
+                                    <label for="@InputRadioId"
+                                           style="cursor: pointer; @(isSelected ? "background-color: green;" : null)  @(isCellDisabled ? "pointer-events: none; opacity: 0.5;" : "")"
+                                           class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                                        @(isSelected ? new MarkupString("<big>X</big>") : null)
+                                        <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@InputRadioId" disabled="@(isCellDisabled)" />
+                                    </label>
+                                </td>
+                            }
+                        </InputRadioGroup>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3">
+        <button type="submit" class="btn btn-dark">Submit</button>
+    </div>
+</div>
+
+
 
 <h1>@(String.Join(',', values) ?? "null")</h1>
 <h1>@($"x:{X}, y:{Y}")</h1>
