@@ -1,11 +1,9 @@
 ﻿@rendermode InteractiveServer
 
 
-
-
 <div class="position-relative overflow-auto">
     <div class="table-responsive mb-5">
-        <table class="table table-bordered text-center">
+        <table class="table table-bordered text-center m-0">
             <thead class="table-dark">
                 <tr>
                     <th scope="col" class="text-start">@Question.Text</th>
@@ -27,17 +25,19 @@
                             {
                                 int x = __;
                                 string prefix = $"{x}{y}";
-                                string InputRadioId = $"InputRadioId-{prefix}";
-                                bool isSelected = grid[y] == $"SET{x}{y}";
-                                bool isColumnSelected = grid.Any(val => val?.StartsWith($"SET{x}") == true);
+                                string elementPrefix = $"InputRadioId-{guid}{prefix}";
+                                string columnPrefix = $"SET{x}";
+                                string valuePrefix = $"SET{prefix}";
+                                bool isSelected = grid[y] == valuePrefix;
+                                bool isColumnSelected = grid.Any(val => val?.StartsWith(columnPrefix) == true);
                                 bool isCellDisabled = isColumnSelected && !isSelected;
-                                var cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
+                                string cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
                                 <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle}" : null)">
-                                    <label for="@InputRadioId"
-                                           style="cursor: pointer; @(isSelected ? "background-color: green;" : null)  @(isCellDisabled ? "pointer-events: none; opacity: 0.5;" : "")"
-                                           class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                                    <label for="@elementPrefix"
+                                    style="cursor: pointer; @(isSelected ? "background-color: green;" : null)  @(isCellDisabled ? "pointer-events: none;" : "")"
+                                    class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
                                         @(isSelected ? new MarkupString("<big>X</big>") : null)
-                                        <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@InputRadioId" disabled="@(isCellDisabled)" />
+                                        <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@elementPrefix" disabled="@(isCellDisabled)" />
                                     </label>
                                 </td>
                             }
@@ -47,41 +47,78 @@
             </tbody>
         </table>
     </div>
-
-    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3">
-        <button type="submit" class="btn btn-dark">Submit</button>
+    <div class="position-absolute bottom-0 start-50 translate-middle-x">
+        <button @onclick="OnSubmit" hidden="@(!CanSubmit)" class="btn btn-dark">Submit</button>
     </div>
 </div>
 
 
-
-<h1>@(String.Join(',', values) ?? "null")</h1>
-<h1>@($"x:{X}, y:{Y}")</h1>
+@{
+#if DEBUG 
+    MarkupString[] markups = {
+        new($"<h1>x:{X}, y:{Y}</h1>"),
+        new($"<h1>{String.Join(',', values) ?? "null"}</h1>"),
+    };
+    for (int i = 0; i < markups.Length; i++) @markups[i];
+#endif
+}
 
 @code {
-    private volatile LinkedList<string?> values = new();
-    private volatile string?[] grid = { };
+    [Parameter, EditorRequired]
+    public QuestionModel Question { get; init; }
+
+
+
+    private readonly string guid = Guid.NewGuid().ToString();
+    private LinkedList<string?> values = new();
+    private string?[] grid = { };
     private int X, Y;
+    private bool CanSubmit => values.Count == Question.Options.Length;
 
     protected override void OnInitialized()
     {
         grid = new string[Question.Options.Length];
-        base.OnInitialized();
+    }
+
+
+    private void OnSubmit() 
+    {
+        if(!CanSubmit) 
+        {
+            return;
+        }
+        Console.WriteLine("SUBMIT");
     }
 
     private void ToggleColumnSelection(int x, int y)
     {
         string selection = $"SET{x}{y}";
+        string value = Question.Options[y];
+        Console.WriteLine($"{value} ({x})");
         if (grid[y] == selection)
         {
             grid[y] = null;
+            values.Remove(value);
         }
         else
         {
+            string? existing = grid[y];
+            if (existing != null) values.Remove(value);
             grid[y] = selection;
+            InsertAt(values, value, x);
         }
         X = x;
         Y = y;
         StateHasChanged();
+    }
+
+    private void InsertAt<T>(LinkedList<T> list, T value, int index)
+    {
+        if (index < 0 || index > Question.Options.Length)
+            throw new ArgumentOutOfRangeException(nameof(index));
+        var node = list.First;
+        for (int i = 0; i < index; i++) node = node?.Next;
+        if (node != null) list.AddBefore(node, value);
+        else list.AddLast(value);
     }
 }
