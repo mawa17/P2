@@ -30,11 +30,13 @@
                                 string valuePrefix = $"SET{prefix}";
                                 bool isSelected = grid[y] == valuePrefix;
                                 bool isColumnSelected = grid.Any(val => val?.StartsWith(columnPrefix) == true);
+                                bool isRowSelected = grid[y] != null;
                                 bool isCellDisabled = isColumnSelected && !isSelected;
+                                bool isCellFree = !isCellDisabled;
                                 string cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
                                 <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle}" : null)">
                                     <label for="@elementPrefix"
-                                    style="cursor: pointer; @(isSelected ? "background-color: green;" : null)  @(isCellDisabled ? "pointer-events: none;" : "")"
+                                    style="cursor: pointer; @(isSelected ? "background-color: green;" : null) @(isCellFree ? "background-color: gold;" : null)  @(isCellDisabled ? "pointer-events: none;" : null)"
                                     class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
                                         @(isSelected ? new MarkupString("<big>X</big>") : null)
                                         <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@elementPrefix" disabled="@(isCellDisabled)" />
