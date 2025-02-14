@@ -35,8 +35,8 @@
                                 bool isRowColFree = !isColumnSelected && !isRowSelected;
                                 string cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
                                 string? cellColor = isCellSelected ? "green" :
-                                                    isRowColFree ? "orange" :
-                                                    !isCellDisabled ? "blue" : "red";
+                                                    isRowColFree ? "" :
+                                                    !isCellDisabled ? "" : "";
                                 string? cellText = isCellSelected ? "X" :
                                                     isRowColFree ? "O" :
                                                     !isCellDisabled ? "⨂" : "";
