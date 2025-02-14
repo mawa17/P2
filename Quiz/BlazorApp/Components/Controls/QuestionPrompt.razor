@@ -28,17 +28,23 @@
                                 string elementPrefix = $"InputRadioId-{guid}{prefix}";
                                 string columnPrefix = $"SET{x}";
                                 string valuePrefix = $"SET{prefix}";
-                                bool isSelected = grid[y] == valuePrefix;
+                                bool isCellSelected = grid[y] == valuePrefix;
                                 bool isColumnSelected = grid.Any(val => val?.StartsWith(columnPrefix) == true);
                                 bool isRowSelected = grid[y] != null;
-                                bool isCellDisabled = isColumnSelected && !isSelected;
-                                bool isCellFree = !isCellDisabled;
+                                bool isCellDisabled = isColumnSelected && !isCellSelected;
+                                bool isRowColFree = !isColumnSelected && !isRowSelected;
                                 string cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
+                                string? cellColor = isCellSelected ? "green" :
+                                                    isRowColFree ? "orange" :
+                                                    !isCellDisabled ? "blue" : "red";
+                                string? cellText = isCellSelected ? "X" :
+                                                    isRowColFree ? "O" :
+                                                    !isCellDisabled ? "⨂" : "";
                                 <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle}" : null)">
                                     <label for="@elementPrefix"
-                                    style="cursor: pointer; @(isSelected ? "background-color: green;" : null) @(isCellFree ? "background-color: gold;" : null)  @(isCellDisabled ? "pointer-events: none;" : null)"
+                                    style="cursor: pointer; background-color: @cellColor; @(isCellDisabled ? "pointer-events: none;" : null)"
                                     class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
-                                        @(isSelected ? new MarkupString("<big>X</big>") : null)
+                                        @(new MarkupString($"<big>{cellText}</big>"))
                                         <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@elementPrefix" disabled="@(isCellDisabled)" />
                                     </label>
                                 </td>

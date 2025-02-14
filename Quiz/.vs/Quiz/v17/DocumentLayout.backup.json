@@ -87,7 +87,7 @@
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\QuestionPrompt.razor",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\QuestionPrompt.razor",
               "RelativeToolTip": "BlazorApp\\Components\\Controls\\QuestionPrompt.razor",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowB4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-13T09:31:30.505Z",
               "EditorCaption": ""
@@ -102,8 +102,7 @@
               "RelativeToolTip": "BlazorApp\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T11:41:41.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T11:41:41.909Z"
             },
             {
               "$type": "Document",
@@ -127,8 +126,7 @@
               "RelativeToolTip": "BlazorApp\\wwwroot\\bootstrap.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-04T09:39:35.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T09:39:35.927Z"
             },
             {
               "$type": "Document",
@@ -188,8 +186,7 @@
               "RelativeToolTip": "BlazorApp\\Components\\App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-04T11:22:24.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T11:22:24.962Z"
             },
             {
               "$type": "Document",
@@ -201,8 +198,7 @@
               "RelativeToolTip": "BlazorApp\\Components\\Controls\\#QuestionPrompt.razor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T09:48:40.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T09:48:40.669Z"
             },
             {
               "$type": "Document",
