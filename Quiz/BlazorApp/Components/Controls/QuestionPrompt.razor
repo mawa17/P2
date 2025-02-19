@@ -35,11 +35,11 @@
                                 bool isRowColFree = !isColumnSelected && !isRowSelected;
                                 string cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
                                 string? cellColor = isCellSelected ? "green" :
-                                                    isRowColFree ? "" :
-                                                    !isCellDisabled ? "" : "";
+                        isRowColFree ? "" :
+                        !isCellDisabled ? "" : "";
                                 string? cellText = isCellSelected ? "X" :
-                                                    isRowColFree ? "O" :
-                                                    !isCellDisabled ? "⨂" : "";
+                        isRowColFree ? "O" :
+                        !isCellDisabled ? "⨂" : "";
                                 <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle}" : null)">
                                     <label for="@elementPrefix"
                                     style="cursor: pointer; background-color: @cellColor; @(isCellDisabled ? "pointer-events: none;" : null)"
@@ -65,7 +65,7 @@
 #if DEBUG 
     MarkupString[] markups = {
         new($"<h1>x:{X}, y:{Y}</h1>"),
-        new($"<h1>{String.Join(',', values) ?? "null"}</h1>"),
+        new($"<h1>{String.Join(',', anwsers.Values) ?? "null"}</h1>"),
     };
     for (int i = 0; i < markups.Length; i++) @markups[i];
 #endif
@@ -78,10 +78,10 @@
 
 
     private readonly string guid = Guid.NewGuid().ToString();
-    private LinkedList<string?> values = new();
+    private SortedDictionary<int, string> anwsers = new();
     private string?[] grid = { };
     private int X, Y;
-    private bool CanSubmit => values.Count == Question.Options.Length;
+    private bool CanSubmit => anwsers.Count == Question.Options.Length;
 
     protected override void OnInitialized()
     {
@@ -102,31 +102,33 @@
     {
         string selection = $"SET{x}{y}";
         string value = Question.Options[y];
-        Console.WriteLine($"{value} ({x})");
+#if DEBUG
+    Console.WriteLine($"{value} ({x})");
+#endif
         if (grid[y] == selection)
         {
             grid[y] = null;
-            values.Remove(value);
+            UpdateAnwsers(value, x, true);
         }
         else
         {
-            string? existing = grid[y];
-            if (existing != null) values.Remove(value);
             grid[y] = selection;
-            InsertAt(values, value, x);
+            UpdateAnwsers(value, x);
         }
+
         X = x;
         Y = y;
         StateHasChanged();
     }
 
-    private void InsertAt<T>(LinkedList<T> list, T value, int index)
+    private void UpdateAnwsers(string value, int index, bool onlyRemove = false)
     {
-        if (index < 0 || index > Question.Options.Length)
-            throw new ArgumentOutOfRangeException(nameof(index));
-        var node = list.First;
-        for (int i = 0; i < index; i++) node = node?.Next;
-        if (node != null) list.AddBefore(node, value);
-        else list.AddLast(value);
+        var keys = anwsers.Where(x => x.Value == value);
+        bool hasKey = keys.Count() > 0;
+        if(hasKey) {
+            anwsers.Remove(keys.ElementAt(0).Key);
+            anwsers.Remove(index);
+        }
+        if(!onlyRemove) anwsers[index] = value;
     }
 }
