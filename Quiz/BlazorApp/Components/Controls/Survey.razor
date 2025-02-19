@@ -1,51 +1,22 @@
 ﻿@rendermode InteractiveServer
 
-    <table class="table table-bordered text-center">
-        <thead class="table-dark">
-            <tr>
-                @{
-                    var question = SurveyData.Questions[0];
-                }
-                <th 
-                scope="col" 
-                class="text-start"
-                >@question.Text</th>
-                @for (int j = 0; j < question.Options.Length; j++)
-                {
-                    <th scope="col">@(j+1)</th>
-                }
-            </tr>
-        </thead>
-        <tbody>
-            @for (int i = 0; i < question.Options.Length; i++)
-            {
-                var option = question.Options[i];
-                int index = i;
-                <tr>
-                    <td class="table-dark text-start">@option</td>
-                    <InputRadioGroup @bind-Value="shit">
+<h1 class="d-flex justify-content-center my-4">@SurveyData.Title</h1>
+@foreach(var question in SurveyData.Questions.Skip(SurvayPage).Take(1)) 
+{
+	<QuestionPrompt Question="question" OnSubmit="Submit" />
+}
 
-                        @for (int j = 0; j < question.Options.Length; j++)
-                        {
-                            string InputRadioId = $"input-{index}-{j}";
-                            <td class="position-relative p-0 m-0">
-                                <label for="@InputRadioId"
-                                style="cursor: pointer;" 
-                                class="position-absolute d-flex align-items-center justify-content-center w-100 h-100"
-                                >
-                                    <InputRadio Value="@InputRadioId" id="@InputRadioId" style="cursor: pointer;" class="form-check-input" />
-                                </label>
-                            </td>
-                        }
-                    </InputRadioGroup>
-                </tr>
-            }
-        </tbody>
-    </table>
-<h1>@shit</h1>
+<button class="btn btn-dark" @onclick="PrevPage">Prev</button>
+<button class="btn btn-success" @onclick="NextPage">Next</button>
 
-
+@markup1;
+@markup2;
 @code {
-    private string shit;
-
+	MarkupString markup1;
+	MarkupString markup2;
+	private void Submit(QuestionModel question) 
+	{
+		this.markup1 = new($"<h1>{question.Text}</h1>");
+		this.markup2 = new($"<h2>{String.Join(',', question.Options)}</h2>");
+	}
 }

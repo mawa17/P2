@@ -11,13 +11,13 @@ public partial class Survey
     [SupplyParameterFromForm]
     private QuestionModel[]? SurveyAnswers { get; set; } = { };
 
-    private uint SurvayPage;
+    private int SurvayPage;
     private void NextPage()
     {
-        this.SurvayPage = (uint)Math.Clamp(++SurvayPage, 0, SurveyData.Questions.Length);
+        this.SurvayPage = Math.Clamp(++SurvayPage, 0, SurveyData.Questions.Length);
     }
     private void PrevPage()
     {
-        this.SurvayPage = (uint)Math.Clamp(--SurvayPage, 0, SurveyData.Questions.Length);
+        this.SurvayPage = Math.Clamp(--SurvayPage, 0, SurveyData.Questions.Length);
     }
 }

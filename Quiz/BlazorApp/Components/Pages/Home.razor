@@ -2,11 +2,11 @@
 
 <PageTitle>Home</PageTitle>
 
-<QuestionPrompt Question="question1"></QuestionPrompt>
-
-
+<Survey SurveyData="surveyModel" />
+@* <QuestionPrompt Question="question1"></QuestionPrompt> *@
 @code {
 
-	private QuestionModel question1 = new("HvadHedderDu", "Bob", "Bo", "Bobby", "Bart", "Brian", "Bjørn", "Bjarne", "Bill", "Ben");
-	private QuestionModel question2 = new("DuHedderHvad", "Ben", "Bill", "Bjarne", "Bjørn", "Brian", "Bart", "Bobby", "Bo", "Bob");
+	private SurveyModel surveyModel = new("VAK Lærningstile SelvTtest", question1, question2);
+	private static QuestionModel question1 = new("HvadHedderDu", "Bob", "Bo", "Bobby", "Bart", "Brian", "Bjørn", "Bjarne", "Bill", "Ben");
+	private static QuestionModel question2 = new("DuHedderHvad", "Ben", "Bill", "Bjarne", "Bjørn", "Brian", "Bart", "Bobby", "Bo", "Bob");
 }

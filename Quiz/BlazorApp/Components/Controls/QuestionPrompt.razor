@@ -3,7 +3,7 @@
 
 <div class="position-relative overflow-auto">
     <div class="table-responsive mb-5">
-        <table class="table table-bordered text-center m-0">
+        <table class="table table-secondary table-bordered text-center m-0 table-striped">
             <thead class="table-dark">
                 <tr>
                     <th scope="col" class="text-start">@Question.Text</th>
@@ -34,16 +34,13 @@
                                 bool isCellDisabled = isColumnSelected && !isCellSelected;
                                 bool isRowColFree = !isColumnSelected && !isRowSelected;
                                 string cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
-                                string? cellColor = isCellSelected ? "green" :
-                        isRowColFree ? "" :
-                        !isCellDisabled ? "" : "";
                                 string? cellText = isCellSelected ? "X" :
-                        isRowColFree ? "O" :
-                        !isCellDisabled ? "⨂" : "";
+                           isRowColFree ? "O" :
+                           !isCellDisabled ? "⨂" : "";
                                 <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle}" : null)">
                                     <label for="@elementPrefix"
-                                    style="cursor: pointer; background-color: @cellColor; @(isCellDisabled ? "pointer-events: none;" : null)"
-                                    class="position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                                    style="cursor: pointer; @(isCellDisabled ? "pointer-events: none;" : null)"
+                                    class="@(isCellSelected ? "bg-success" : null) bg-opacity-50 position-absolute d-flex align-items-center justify-content-center w-100 h-100">
                                         @(new MarkupString($"<big>{cellText}</big>"))
                                         <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@elementPrefix" disabled="@(isCellDisabled)" />
                                     </label>
@@ -56,7 +53,7 @@
         </table>
     </div>
     <div class="position-absolute bottom-0 start-50 translate-middle-x">
-        <button @onclick="OnSubmit" hidden="@(!CanSubmit)" class="btn btn-dark">Submit</button>
+        <button @onclick="OnSubmitEvent" hidden="@(!CanSubmit)" class="btn btn-dark">Submit</button>
     </div>
 </div>
 
@@ -73,9 +70,10 @@
 
 @code {
     [Parameter, EditorRequired]
-    public QuestionModel Question { get; init; }
+    public QuestionModel Question { get; init; } = default!;
 
-
+    [Parameter]
+    public EventCallback<QuestionModel> OnSubmit { get; set; }
 
     private readonly string guid = Guid.NewGuid().ToString();
     private SortedDictionary<int, string> anwsers = new();
@@ -83,18 +81,21 @@
     private int X, Y;
     private bool CanSubmit => anwsers.Count == Question.Options.Length;
 
+
+
     protected override void OnInitialized()
     {
         grid = new string[Question.Options.Length];
     }
 
 
-    private void OnSubmit() 
+    private void OnSubmitEvent() 
     {
         if(!CanSubmit) 
         {
             return;
         }
+        this.OnSubmit.InvokeAsync(new(this.Question.Text, this.anwsers.Values.ToArray()));
         Console.WriteLine("SUBMIT");
     }
 
