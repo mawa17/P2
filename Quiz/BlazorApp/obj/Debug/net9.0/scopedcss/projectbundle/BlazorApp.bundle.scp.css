@@ -1,6 +1,6 @@
 /* _content/BlazorApp/Components/Controls/QuestionPrompt.razor.rz.scp.css */
-table > tbody > tr > td[b-nnw9fpzr55] > label > input {
-    appearance: none;
+table > tbody > tr > td[b-nnw9fpzr55] > label > input[type="radio"] {
+    appearance: none; /*Disable default o circle for radio-input*/
 }
 /* _content/BlazorApp/Components/Controls/Survey.razor.rz.scp.css */
 body[b-9d7oszyeuv] {

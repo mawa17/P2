@@ -1,22 +1,60 @@
 ﻿@rendermode InteractiveServer
 
-<h1 class="d-flex justify-content-center my-4">@SurveyData.Title</h1>
-@foreach(var question in SurveyData.Questions.Skip(SurvayPage).Take(1)) 
-{
-	<QuestionPrompt Question="question" OnSubmit="Submit" />
-}
+<h1 class="d-flex justify-content-center my-4">@SurveyModel.Title</h1>
+<div class="container-md">
+	<div class="progress rounded-0" role="progressbar">
+		<div class="progress-bar" style="width: 25%">25%</div>
+	</div>
+	@foreach (var question in SurveyModel.Questions.Skip(SurvayPage).Take(1))
+	{
+		Guid guid = Guid.NewGuid();
+		<QuestionPrompt @key="guid" Question="question" OnSubmit="Submit" />
+
+	}
+</div>
+
 
 <button class="btn btn-dark" @onclick="PrevPage">Prev</button>
 <button class="btn btn-success" @onclick="NextPage">Next</button>
 
-@markup1;
-@markup2;
+@markup1
+@markup2
 @code {
 	MarkupString markup1;
 	MarkupString markup2;
+	public float Progress => ((float)SurvayPage / (float)SurveyModel.Questions.Length) * 100;
 	private void Submit(QuestionModel question) 
 	{
 		this.markup1 = new($"<h1>{question.Text}</h1>");
 		this.markup2 = new($"<h2>{String.Join(',', question.Options)}</h2>");
 	}
+
+	[Parameter, EditorRequired]
+	public SurveyModel SurveyModel { get; set; } = default!;
+
+	private int SurvayPage;
+	private void NextPage()
+	{
+		this.SurvayPage = Math.Clamp(++SurvayPage, 0, SurveyModel.Questions.Length-1);
+	}
+	private void PrevPage()
+	{
+		this.SurvayPage = Math.Clamp(--SurvayPage, 0, SurveyModel.Questions.Length-1);
+	}
+
+
+	// private Dictionary<Guid, QuestionState> questionStates = new();
+
+	// private QuestionState GetQuestionState(Guid guid)
+	// {
+	// 	if (!questionStates.ContainsKey(guid))
+	// 	{
+	// 		questionStates[guid] = new QuestionState();
+	// 	}
+	// 	return questionStates[guid];
+	// }
+
 }
+
+
+

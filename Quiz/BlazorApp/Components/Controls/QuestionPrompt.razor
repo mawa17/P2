@@ -1,6 +1,5 @@
 ﻿@rendermode InteractiveServer
 
-
 <div class="position-relative overflow-auto">
     <div class="table-responsive mb-5">
         <table class="table table-secondary table-bordered text-center m-0 table-striped">
@@ -35,12 +34,12 @@
                                 bool isRowColFree = !isColumnSelected && !isRowSelected;
                                 string cursorStyle = isCellDisabled ? "cursor: not-allowed;" : "cursor: pointer;";
                                 string? cellText = isCellSelected ? "X" :
-                           isRowColFree ? "O" :
-                           !isCellDisabled ? "⨂" : "";
+                                                   isRowColFree ? "O" :
+                                                   !isCellDisabled ? "⨂" : "";
                                 <td class="position-relative p-0 m-0" style="@(isColumnSelected ? $"{cursorStyle}" : null)">
                                     <label for="@elementPrefix"
-                                    style="cursor: pointer; @(isCellDisabled ? "pointer-events: none;" : null)"
-                                    class="@(isCellSelected ? "bg-success" : null) bg-opacity-50 position-absolute d-flex align-items-center justify-content-center w-100 h-100">
+                                        style="cursor: pointer; @(isCellDisabled ? "pointer-events: none;" : null)"
+                                        class="@(isCellSelected ? "bg-success" : null) bg-opacity-50 position-absolute d-flex align-items-center justify-content-center w-100 h-100">
                                         @(new MarkupString($"<big>{cellText}</big>"))
                                         <InputRadio @onclick="() => ToggleColumnSelection(x, y)" Value="@($"SET{prefix}")" id="@elementPrefix" disabled="@(isCellDisabled)" />
                                     </label>
@@ -57,79 +56,12 @@
     </div>
 </div>
 
-
 @{
 #if DEBUG 
     MarkupString[] markups = {
-        new($"<h1>x:{X}, y:{Y}</h1>"),
+        new($"<h1>x:{x}, y:{y}</h1>"),
         new($"<h1>{String.Join(',', anwsers.Values) ?? "null"}</h1>"),
     };
     for (int i = 0; i < markups.Length; i++) @markups[i];
 #endif
-}
-
-@code {
-    [Parameter, EditorRequired]
-    public QuestionModel Question { get; init; } = default!;
-
-    [Parameter]
-    public EventCallback<QuestionModel> OnSubmit { get; set; }
-
-    private readonly string guid = Guid.NewGuid().ToString();
-    private SortedDictionary<int, string> anwsers = new();
-    private string?[] grid = { };
-    private int X, Y;
-    private bool CanSubmit => anwsers.Count == Question.Options.Length;
-
-
-
-    protected override void OnInitialized()
-    {
-        grid = new string[Question.Options.Length];
-    }
-
-
-    private void OnSubmitEvent() 
-    {
-        if(!CanSubmit) 
-        {
-            return;
-        }
-        this.OnSubmit.InvokeAsync(new(this.Question.Text, this.anwsers.Values.ToArray()));
-        Console.WriteLine("SUBMIT");
-    }
-
-    private void ToggleColumnSelection(int x, int y)
-    {
-        string selection = $"SET{x}{y}";
-        string value = Question.Options[y];
-#if DEBUG
-    Console.WriteLine($"{value} ({x})");
-#endif
-        if (grid[y] == selection)
-        {
-            grid[y] = null;
-            UpdateAnwsers(value, x, true);
-        }
-        else
-        {
-            grid[y] = selection;
-            UpdateAnwsers(value, x);
-        }
-
-        X = x;
-        Y = y;
-        StateHasChanged();
-    }
-
-    private void UpdateAnwsers(string value, int index, bool onlyRemove = false)
-    {
-        var keys = anwsers.Where(x => x.Value == value);
-        bool hasKey = keys.Count() > 0;
-        if(hasKey) {
-            anwsers.Remove(keys.ElementAt(0).Key);
-            anwsers.Remove(index);
-        }
-        if(!onlyRemove) anwsers[index] = value;
-    }
 }
