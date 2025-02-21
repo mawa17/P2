@@ -11,6 +11,9 @@ public partial class QuestionPrompt : ComponentBase
     [Parameter]
     public EventCallback<QuestionModel> OnSubmit { get; set; }
 
+    [Parameter]
+    public EventCallback OnStateChange { get; set; }
+
     private readonly string guid = Guid.NewGuid().ToString();
     private SortedDictionary<int, string> anwsers = new();
     private string?[] grid = { };
@@ -67,6 +70,7 @@ public partial class QuestionPrompt : ComponentBase
             anwsers.Remove(index);
         }
         if (!onlyRemove) anwsers[index] = value;
+        OnStateChange.InvokeAsync();
     }
 }
 

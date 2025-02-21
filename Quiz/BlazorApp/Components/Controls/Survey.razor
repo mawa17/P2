@@ -8,8 +8,9 @@
 	@foreach (var question in SurveyModel.Questions.Skip(SurvayPage).Take(1))
 	{
 		Guid guid = Guid.NewGuid();
-		<QuestionPrompt @key="guid" Question="question" OnSubmit="Submit" />
-
+		string key = index != SurvayPage ? guid.ToString() : null;
+		<QuestionPrompt  Question="question" OnSubmit="Submit" OnStateChange="OnStateChange" />
+		index++;
 	}
 </div>
 
@@ -20,6 +21,7 @@
 @markup1
 @markup2
 @code {
+	private int index;
 	MarkupString markup1;
 	MarkupString markup2;
 	public float Progress => ((float)SurvayPage / (float)SurveyModel.Questions.Length) * 100;
@@ -27,6 +29,11 @@
 	{
 		this.markup1 = new($"<h1>{question.Text}</h1>");
 		this.markup2 = new($"<h2>{String.Join(',', question.Options)}</h2>");
+	}
+
+	private void OnStateChange()
+	{
+		Console.WriteLine("CHANGE");
 	}
 
 	[Parameter, EditorRequired]
