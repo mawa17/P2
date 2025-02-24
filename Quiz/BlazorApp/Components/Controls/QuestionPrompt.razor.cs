@@ -9,32 +9,33 @@ public partial class QuestionPrompt : ComponentBase
     public QuestionModel Question { get; init; } = default!;
 
     [Parameter]
-    public EventCallback<QuestionModel> OnSubmit { get; set; }
+    public QuestionState State { get; 
+        set; }
 
     [Parameter]
-    public EventCallback OnStateChange { get; set; }
+    public EventCallback<QuestionState> OnStateChange { get; set; }
+
+    [Parameter]
+    public EventCallback<QuestionModel> OnSubmit { get; set; }
+    private bool CanSubmit => !EqualityComparer<QuestionState>.Default.Equals(State, default) ? State.answers.Count == Question.Options.Length : false;
 
     private readonly string guid = Guid.NewGuid().ToString();
-    private SortedDictionary<int, string> anwsers = new();
-    private string?[] grid = { };
     private int x, y; /*For Visualisation*/
-    private bool CanSubmit => anwsers.Count == Question.Options.Length;
+
     protected override void OnInitialized()
     {
-        grid = new string[Question.Options.Length];
-    }
-
-    protected override void OnParametersSet()
-    {
-        Console.WriteLine($"New QuestionPrompt Instance: {guid}");
+        if (Question == null) throw new NullReferenceException($"{nameof(Question)} cannot be null!");
+        bool isDefault = EqualityComparer<QuestionState>.Default.Equals(State, default);
+        if (isDefault) 
+            State = new(Question.Options.Length);
     }
 
     private void OnSubmitEvent()
     {
         if (!CanSubmit) return;
-        OnSubmit.InvokeAsync(new(Question.Text, anwsers.Values.ToArray()));
+        OnSubmit.InvokeAsync(new(Question.Text, State.answers.Values.ToArray()));
 #if DEBUG
-        Console.WriteLine("SUBMIT");
+        Console.WriteLine("INVOKE OnSubmit");
 #endif
     }
 
@@ -45,14 +46,14 @@ public partial class QuestionPrompt : ComponentBase
 #if DEBUG
         Console.WriteLine($"{value} ({x})");
 #endif
-        if (grid[y] == selection)
+        if (State.grid[y] == selection)
         {
-            grid[y] = null;
+            State.grid[y] = null;
             UpdateAnwsers(value, x, true);
         }
         else
         {
-            grid[y] = selection;
+            State.grid[y] = selection;
             UpdateAnwsers(value, x);
         }
         this.x = x;
@@ -62,16 +63,25 @@ public partial class QuestionPrompt : ComponentBase
 
     private void UpdateAnwsers(string value, int index, bool onlyRemove = false)
     {
-        var keys = anwsers.Where(x => x.Value == value);
+        var keys = State.answers.Where(x => x.Value == value);
         bool hasKey = keys.Count() > 0;
         if (hasKey)
         {
-            anwsers.Remove(keys.ElementAt(0).Key);
-            anwsers.Remove(index);
+            State.answers.Remove(keys.ElementAt(0).Key);
+            State.answers.Remove(index);
         }
-        if (!onlyRemove) anwsers[index] = value;
-        OnStateChange.InvokeAsync();
+        if (!onlyRemove) State.answers[index] = value;
+        OnStateChange.InvokeAsync(State);
+#if DEBUG
+        Console.WriteLine("INVOKE OnStateChange");
+#endif
     }
 }
 
+public readonly struct QuestionState(int gridSize)
+{
+    public readonly SortedDictionary<int, string> answers = new();
+    public readonly string?[] grid = new string?[gridSize];
+    public QuestionState() : this(default) { }
+}
 

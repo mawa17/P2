@@ -7,9 +7,7 @@
 	</div>
 	@foreach (var question in SurveyModel.Questions.Skip(SurvayPage).Take(1))
 	{
-		Guid guid = Guid.NewGuid();
-		string key = index != SurvayPage ? guid.ToString() : null;
-		<QuestionPrompt  Question="question" OnSubmit="Submit" OnStateChange="OnStateChange" />
+		//<QuestionPrompt Question="question" OnSubmit="Submit" />
 		index++;
 	}
 </div>
@@ -31,7 +29,7 @@
 		this.markup2 = new($"<h2>{String.Join(',', question.Options)}</h2>");
 	}
 
-	private void OnStateChange()
+	private void OnStateChange(QuestionState state)
 	{
 		Console.WriteLine("CHANGE");
 	}
@@ -49,17 +47,16 @@
 		this.SurvayPage = Math.Clamp(--SurvayPage, 0, SurveyModel.Questions.Length-1);
 	}
 
+	private Dictionary<int, QuestionState> questionStates = new();
 
-	// private Dictionary<Guid, QuestionState> questionStates = new();
-
-	// private QuestionState GetQuestionState(Guid guid)
-	// {
-	// 	if (!questionStates.ContainsKey(guid))
-	// 	{
-	// 		questionStates[guid] = new QuestionState();
-	// 	}
-	// 	return questionStates[guid];
-	// }
+	private QuestionState GetQuestionState(int key)
+	{
+		if (!questionStates.ContainsKey(key))
+		{
+			questionStates[key] = new QuestionState(100);
+		}
+		return questionStates[key];
+	}
 
 }
 

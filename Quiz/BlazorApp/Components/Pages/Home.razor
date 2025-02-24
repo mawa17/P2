@@ -1,12 +1,23 @@
 ﻿@page "/"
-
+@rendermode InteractiveServer
 <PageTitle>Home</PageTitle>
 
-<Survey SurveyModel="surveyModel" />
+<QuestionPrompt Question="question1" OnStateChange="this.OnStateChange" />
+<QuestionPrompt Question="question1" State="state" />
 @code {
 
+	QuestionState state;
 	private SurveyModel surveyModel = new("VAK Lærningstile SelvTtest", question1, question2, question3);
 	private static QuestionModel question1 = new("HvadHedderDu", "Bob", "Bo", "Bobby", "Bart", "Brian", "Bjørn", "Bjarne", "Bill", "Ben");
 	private static QuestionModel question2 = new("DuHedderHvad", "Ben", "Bill", "Bjarne", "Bjørn", "Brian", "Bart", "Bobby", "Bo", "Bob");
 	private static QuestionModel question3 = new("HvorBorDu", "NEJ", "Ja", "Måske");
+	private void OnStateChange(QuestionState state)
+	{
+		this.state = state;
+	}
+	private void HandleSubmit()
+	{
+		Console.WriteLine("TRIGGER OnSubmit");
+
+	}
 }
