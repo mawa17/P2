@@ -6,11 +6,10 @@ namespace BlazorApp.Components.Controls;
 public partial class QuestionPrompt : ComponentBase
 {
     [Parameter, EditorRequired]
-    public QuestionModel Question { get; init; } = default!;
+    public QuestionModel Question { get; set; } = default!;
 
     [Parameter]
-    public QuestionState State { get; 
-        set; }
+    public QuestionState State { get; set; } = default;
 
     [Parameter]
     public EventCallback<QuestionState> OnStateChange { get; set; }
@@ -26,8 +25,8 @@ public partial class QuestionPrompt : ComponentBase
     {
         if (Question == null) throw new NullReferenceException($"{nameof(Question)} cannot be null!");
         bool isDefault = EqualityComparer<QuestionState>.Default.Equals(State, default);
-        if (isDefault) 
-            State = new(Question.Options.Length);
+        if (isDefault) State = new(Question.Options.Length);
+        Console.WriteLine($"QuestionPrompt INIT {Question is null}");
     }
 
     private void OnSubmitEvent()

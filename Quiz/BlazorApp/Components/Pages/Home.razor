@@ -3,17 +3,18 @@
 <PageTitle>Home</PageTitle>
 
 <QuestionPrompt Question="question1" OnStateChange="this.OnStateChange" />
-<QuestionPrompt Question="question1" State="state" />
-@code {
+<QuestionPrompt Question="question2" State="state1" />
 
-	QuestionState state;
-	private SurveyModel surveyModel = new("VAK Lærningstile SelvTtest", question1, question2, question3);
-	private static QuestionModel question1 = new("HvadHedderDu", "Bob", "Bo", "Bobby", "Bart", "Brian", "Bjørn", "Bjarne", "Bill", "Ben");
-	private static QuestionModel question2 = new("DuHedderHvad", "Ben", "Bill", "Bjarne", "Bjørn", "Brian", "Bart", "Bobby", "Bo", "Bob");
-	private static QuestionModel question3 = new("HvorBorDu", "NEJ", "Ja", "Måske");
+@code {
+	
+	private QuestionModel question1 = new("HvadHedderDu", "Bob", "Bo", "Bobby", "Bart", "Brian", "Bjørn", "Bjarne", "Bill", "Ben");
+	private QuestionModel question2 = new("DuHedderHvad", "Ben", "Bill", "Bjarne", "Bjørn", "Brian", "Bart", "Bobby", "Bo", "Bob");
+	private QuestionModel question3 = new("HvorBorDu", "NEJ", "Ja", "Måske");
+	private QuestionState state1;
 	private void OnStateChange(QuestionState state)
 	{
-		this.state = state;
+		//state1 = state;
+		Console.WriteLine("TRIGGER OnStateChange");
 	}
 	private void HandleSubmit()
 	{

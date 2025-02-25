@@ -47,16 +47,7 @@
 		this.SurvayPage = Math.Clamp(--SurvayPage, 0, SurveyModel.Questions.Length-1);
 	}
 
-	private Dictionary<int, QuestionState> questionStates = new();
 
-	private QuestionState GetQuestionState(int key)
-	{
-		if (!questionStates.ContainsKey(key))
-		{
-			questionStates[key] = new QuestionState(100);
-		}
-		return questionStates[key];
-	}
 
 }
 
