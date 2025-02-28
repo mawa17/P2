@@ -1,5 +1,6 @@
 ﻿using BlazorApp.Data.Models;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
 
 namespace BlazorApp.Components.Controls;
 
@@ -9,14 +10,15 @@ public partial class QuestionPrompt : ComponentBase
     public QuestionModel Question { get; set; } = default!;
 
     [Parameter]
-    public QuestionState State { get; set; } = default;
+    public QuestionState State { get; set; }
 
     [Parameter]
     public EventCallback<QuestionState> OnStateChange { get; set; }
 
     [Parameter]
     public EventCallback<QuestionModel> OnSubmit { get; set; }
-    private bool CanSubmit => !EqualityComparer<QuestionState>.Default.Equals(State, default) ? State.answers.Count == Question.Options.Length : false;
+
+    private bool CanSubmit => State.answers.Count == Question.Options.Length;
 
     private readonly string guid = Guid.NewGuid().ToString();
     private int x, y; /*For Visualisation*/
@@ -24,18 +26,20 @@ public partial class QuestionPrompt : ComponentBase
     protected override void OnInitialized()
     {
         if (Question == null) throw new NullReferenceException($"{nameof(Question)} cannot be null!");
-        bool isDefault = EqualityComparer<QuestionState>.Default.Equals(State, default);
-        if (isDefault) State = new(Question.Options.Length);
-        Console.WriteLine($"QuestionPrompt INIT {Question is null}");
+        if (EqualityComparer<QuestionState>.Default.Equals(State, default)) State = new(Question.Options.Length);
+        if (EqualityComparer<QuestionState>.Default.Equals(State, default)) throw new NullReferenceException($"{nameof(State)} cannot be null!");
     }
 
-    private void OnSubmitEvent()
+    private async Task OnSubmitEventAsync()
     {
         if (!CanSubmit) return;
-        OnSubmit.InvokeAsync(new(Question.Text, State.answers.Values.ToArray()));
+        if(OnSubmit.HasDelegate)
+        {
+            await OnSubmit.InvokeAsync(new(Question.Text, State.answers.Values.ToArray()));
 #if DEBUG
-        Console.WriteLine("INVOKE OnSubmit");
+            Console.WriteLine("INVOKE OnSubmit");
 #endif
+        }
     }
 
     private void ToggleColumnSelection(int x, int y)
@@ -48,19 +52,19 @@ public partial class QuestionPrompt : ComponentBase
         if (State.grid[y] == selection)
         {
             State.grid[y] = null;
-            UpdateAnwsers(value, x, true);
+            UpdateAnwsersAsync(value, x, true);
         }
         else
         {
             State.grid[y] = selection;
-            UpdateAnwsers(value, x);
+            UpdateAnwsersAsync(value, x);
         }
         this.x = x;
         this.y = y;
         StateHasChanged();
     }
 
-    private void UpdateAnwsers(string value, int index, bool onlyRemove = false)
+    private async Task UpdateAnwsersAsync(string value, int index, bool onlyRemove = false)
     {
         var keys = State.answers.Where(x => x.Value == value);
         bool hasKey = keys.Count() > 0;
@@ -70,10 +74,16 @@ public partial class QuestionPrompt : ComponentBase
             State.answers.Remove(index);
         }
         if (!onlyRemove) State.answers[index] = value;
-        OnStateChange.InvokeAsync(State);
+        OnStateChange.InvokeAsync(State).RunSynchronously();
+        if (OnStateChange.HasDelegate)
+        {
+            await OnStateChange.InvokeAsync(State);
 #if DEBUG
-        Console.WriteLine("INVOKE OnStateChange");
+            Console.WriteLine("INVOKE OnStateChange");
 #endif
+        }
+
+
     }
 }
 
@@ -81,6 +91,5 @@ public readonly struct QuestionState(int gridSize)
 {
     public readonly SortedDictionary<int, string> answers = new();
     public readonly string?[] grid = new string?[gridSize];
-    public QuestionState() : this(default) { }
 }
 

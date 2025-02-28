@@ -2,23 +2,26 @@
 @rendermode InteractiveServer
 <PageTitle>Home</PageTitle>
 
-<QuestionPrompt Question="question1" OnStateChange="this.OnStateChange" />
-<QuestionPrompt Question="question2" State="state1" />
+
+@if(username == null) {
+	<NameForm OnSubmit="SetUsername" />
+}
+else {
+	<Survey SurveyModel="surveyModel" SurvayNotice="BlablablaBLA" OnComplete="OnSurvayComplete" />
+}
+
 
 @code {
-	
-	private QuestionModel question1 = new("HvadHedderDu", "Bob", "Bo", "Bobby", "Bart", "Brian", "Bjørn", "Bjarne", "Bill", "Ben");
-	private QuestionModel question2 = new("DuHedderHvad", "Ben", "Bill", "Bjarne", "Bjørn", "Brian", "Bart", "Bobby", "Bo", "Bob");
-	private QuestionModel question3 = new("HvorBorDu", "NEJ", "Ja", "Måske");
-	private QuestionState state1;
-	private void OnStateChange(QuestionState state)
-	{
-		//state1 = state;
-		Console.WriteLine("TRIGGER OnStateChange");
-	}
-	private void HandleSubmit()
-	{
-		Console.WriteLine("TRIGGER OnSubmit");
+	private string? username;
+	private void SetUsername(string username) => this.username = username;
 
+	private SurveyModel surveyModel = new("Survay Title", question2, question3);
+	//private static QuestionModel question1 = new("HvadHedderDu", "Bob", "Bo", "Bobby", "Bart", "Brian", "Bjørn", "Bjarne", "Bill", "Ben");
+	private static QuestionModel question2 = new("DuHedderHvad", "Ben", "Bill", "Bjarne", "Bjørn", "Brian", "Bart", "Bobby", "Bo", "Bob");
+	private static QuestionModel question3 = new("HvorBorDu", "NEJ", "Ja", "Måske");
+
+	private void OnSurvayComplete(SurveyModel survey) 
+	{
+		Console.WriteLine("TITEL" + survey.Title);
 	}
 }

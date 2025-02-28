@@ -1,4 +1,6 @@
-﻿<div class="position-relative overflow-auto">
+﻿@rendermode InteractiveServer
+
+<div class="position-relative overflow-auto">
     <div class="table-responsive mb-5">
         <table class="table table-secondary table-bordered text-center m-0 table-striped">
             <thead class="table-dark">
@@ -14,7 +16,6 @@
                 @for (int _ = 0; _ < Question.Options.Length; _++)
                 {
                     int y = _;
-                    int len = Question.Options.Length;
                     var option = Question.Options[y];
                     <tr>
                         <td class="table-dark text-start">@option</td>
@@ -51,7 +52,7 @@
         </table>
     </div>
     <div class="position-absolute bottom-0 start-50 translate-middle-x">
-        <button @onclick="OnSubmitEvent" hidden="@(!CanSubmit)" class="btn btn-dark">Submit</button>
+        <button @onclick="OnSubmitEventAsync" hidden="@(!CanSubmit)" class="btn btn-dark">Submit</button>
     </div>
 </div>
 

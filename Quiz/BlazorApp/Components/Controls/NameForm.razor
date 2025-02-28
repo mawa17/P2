@@ -1,0 +1,30 @@
+﻿
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="text-center">
+        <h3>Enter Your Name</h3>
+
+        <EditForm Model="@this" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <div class="d-flex align-items-center gap-2 justify-content-center">
+                <InputText id="name" @bind-Value="Username" class="form-control w-auto" placeholder="Enter your name..." />
+                <button type="submit" class="btn btn-dark">Submit</button>
+            </div>
+            <span class="text-danger d-block mt-2">
+                <ValidationMessage For="@(() => Username)" />
+            </span>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    [Required(ErrorMessage = "Name is required.")]
+    public string Username { get; set; } = string.Empty;
+
+    [Parameter] public EventCallback<string> OnSubmit { get; set; }
+
+    private async Task HandleValidSubmit()
+    {
+        await OnSubmit.InvokeAsync(Username);
+    }
+}
