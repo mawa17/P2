@@ -1,27 +1,91 @@
 ﻿@page "/"
 @rendermode InteractiveServer
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject AppDbContextService DbService
 <PageTitle>Home</PageTitle>
 
 
-@if(username == null) {
-	<NameForm OnSubmit="SetUsername" />
+@{
+#if DEBUG 
+    username = "Unknown";
+#endif
 }
-else {
-	<Survey SurveyModel="surveyModel" SurvayNotice="BlablablaBLA" OnComplete="OnSurvayComplete" />
+@if(username == null) {
+    <NameForm OnSubmit="SetUsername" />
+}
+else if (surveyModel != null)
+{
+    <Survey 
+    SurveyModel="surveyModel" 
+    OnComplete="OnSurvayComplete"
+    SurvayNotice="For hvert af nedenstående udsagn skal du tage stilling til tre svar. Det svar der passer bedst på dig giver du et 3-tal, det svar der passer næstbedst giver du et 2-tal og det svar der passer dårligst giver du et 1-tal." 
+    />
 }
 
 
 @code {
-	private string? username;
-	private void SetUsername(string username) => this.username = username;
+    private string? username;
+    private void SetUsername(string username) => this.username = username;
 
-	private SurveyModel surveyModel = new("Survay Title", question2, question3);
-	//private static QuestionModel question1 = new("HvadHedderDu", "Bob", "Bo", "Bobby", "Bart", "Brian", "Bjørn", "Bjarne", "Bill", "Ben");
-	private static QuestionModel question2 = new("DuHedderHvad", "Ben", "Bill", "Bjarne", "Bjørn", "Brian", "Bart", "Bobby", "Bo", "Bob");
-	private static QuestionModel question3 = new("HvorBorDu", "NEJ", "Ja", "Måske");
+    private SurveyModel? surveyModel;
+    protected override async Task OnInitializedAsync()
+    {
+        // Dynamically get the base address
+        Http.BaseAddress = new Uri(NavigationManager.Uri);
 
-	private void OnSurvayComplete(SurveyModel survey) 
-	{
-		Console.WriteLine("TITEL" + survey.Title);
-	}
+        // Ensure that HttpClient reads the content as UTF-8 encoded JSON.
+        var jsonString = await Http.GetStringAsync("Survey.json");
+
+        // Deserialize the JSON
+        surveyModel = System.Text.Json.JsonSerializer.Deserialize<SurveyModel>(jsonString);
+    }
+
+    private void OnSurvayComplete(SurveyModel survey) 
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("OnSurvayComplete");
+        Console.ResetColor();
+        Console.WriteLine(survey);
+
+        int len = survey.Questions.Max(x => x.Options.Length);
+        int[] points = new int[len]; // Track total points for each option index
+
+        for (int i = 0; i < survey.Questions.Length; i++)
+        {
+            QuestionModel? questionOriginal = surveyModel?.Questions.Length > i ? surveyModel.Questions[i] : null;
+            QuestionModel? questionAnswer = survey.Questions[i];
+
+            if (questionOriginal == null) continue;
+
+            for (int j = 0; j < questionAnswer.Options.Length; j++)
+            {
+                // Find index of the original option in the answered list
+                int result = Array.FindIndex(questionAnswer.Options, x => x == questionOriginal.Options[j]);
+
+                if (result != -1) // Ensure option exists in answered list
+                {
+                    // Calculate inverse score
+                    int inverse = questionAnswer.Options.Length - result;
+
+                    // Add score to the corresponding index
+                    points[j] += inverse;
+
+#if DEBUG
+                Console.WriteLine($"Option {questionOriginal.Options[j]} (Index {j}) -> +{inverse} points");
+#endif
+                }
+            }
+        }
+
+#if DEBUG
+    // Display final points for debugging
+    Console.WriteLine("\nTotal Points:");
+    for (int i = 0; i < points.Length; i++)
+    {
+        Console.WriteLine($"Index {i} -> {points[i]} points");
+    }
+#endif
+        DbService.AddAnswer(new(username, survey, points));
+    }
 }

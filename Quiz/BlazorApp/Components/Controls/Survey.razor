@@ -1,5 +1,9 @@
 ﻿@rendermode InteractiveServer
 
+@if (SurveyModel.Questions.Length != SurvayPage) {
+	<NavigationLock ConfirmExternalNavigation="true" />
+}
+
 @if (SurvayNotice == null || IsSurvayNoticeAccepcted)
 {
 	<h1 class="d-flex justify-content-center my-4">@(SurveyModel.Questions.Length != SurvayPage ? $"{SurveyModel.Title}" : $"Tak for dine svar")</h1>

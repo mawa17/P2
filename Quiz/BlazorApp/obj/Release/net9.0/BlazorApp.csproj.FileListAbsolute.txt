@@ -23,8 +23,6 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\dv30ctcifg-
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\734wzl6opd-6pdc2jztkx.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\orid3unrtq-s35ty4nyc5.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\qe14k3n7xc-pj5nd1wqec.gz
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\io2m3ndci8-w80imzcp93.gz
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\wo77s772mi-w80imzcp93.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\staticwebassets.build.json
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\staticwebassets.development.json
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\staticwebassets.build.endpoints.json
@@ -40,3 +38,5 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\refint\BlazorApp.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\BlazorApp.pdb
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\BlazorApp.genruntimeconfig.cache
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\ref\BlazorApp.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\io2m3ndci8-98gvjr7foy.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\wo77s772mi-98gvjr7foy.gz
