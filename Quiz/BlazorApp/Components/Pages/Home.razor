@@ -48,25 +48,25 @@ else if (surveyModel != null)
         Console.ResetColor();
         Console.WriteLine(survey);
 
-        int len = survey.Questions.Max(x => x.Options.Length);
+        int len = survey.Questions.Max(x => x.Options.Count);
         int[] points = new int[len]; // Track total points for each option index
 
-        for (int i = 0; i < survey.Questions.Length; i++)
+        for (int i = 0; i < survey.Questions.Count; i++)
         {
-            QuestionModel? questionOriginal = surveyModel?.Questions.Length > i ? surveyModel.Questions[i] : null;
+            QuestionModel? questionOriginal = surveyModel?.Questions.Count > i ? surveyModel.Questions[i] : null;
             QuestionModel? questionAnswer = survey.Questions[i];
 
             if (questionOriginal == null) continue;
 
-            for (int j = 0; j < questionAnswer.Options.Length; j++)
+            for (int j = 0; j < questionAnswer.Options.Count; j++)
             {
                 // Find index of the original option in the answered list
-                int result = Array.FindIndex(questionAnswer.Options, x => x == questionOriginal.Options[j]);
+                int result = questionAnswer.Options.FindIndex(x => x == questionOriginal.Options[j]);
 
                 if (result != -1) // Ensure option exists in answered list
                 {
                     // Calculate inverse score
-                    int inverse = questionAnswer.Options.Length - result;
+                    int inverse = questionAnswer.Options.Count - result;
 
                     // Add score to the corresponding index
                     points[j] += inverse;

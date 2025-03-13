@@ -18,7 +18,7 @@ public partial class QuestionPrompt : ComponentBase
     [Parameter]
     public EventCallback<QuestionModel> OnSubmit { get; set; }
 
-    private bool CanSubmit => State.answers.Count == Question.Options.Length;
+    private bool CanSubmit => State.answers.Count == Question.Options.Count;
 
     private readonly string guid = Guid.NewGuid().ToString();
     private int x, y; /*For Visualisation*/
@@ -26,7 +26,7 @@ public partial class QuestionPrompt : ComponentBase
     protected override void OnInitialized()
     {
         if (Question == null) throw new NullReferenceException($"{nameof(Question)} cannot be null!");
-        if (EqualityComparer<QuestionState>.Default.Equals(State, default)) State = new(Question.Options.Length);
+        if (EqualityComparer<QuestionState>.Default.Equals(State, default)) State = new(Question.Options.Count);
         if (EqualityComparer<QuestionState>.Default.Equals(State, default)) throw new NullReferenceException($"{nameof(State)} cannot be null!");
     }
 

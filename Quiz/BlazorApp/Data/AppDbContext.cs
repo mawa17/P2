@@ -1,18 +1,28 @@
 ﻿using BlazorApp.Data.Models;
 using Microsoft.EntityFrameworkCore;
-
 namespace BlazorApp.Data;
-
-
-file static class Config
-{
-    internal const string server = "10.0.1.222";
-    internal const string database = "quizdb";
-    internal const string user = "Administrator";
-    internal const string pass = "1";
-}
 
 public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
     public DbSet<AnswerModel> AnswersTable { get; set; } = null!;
+}
+
+public class AppDbContextService
+{
+    private readonly AppDbContext _context;
+
+    public AppDbContextService(AppDbContext context)
+    {
+        _context = context;
+    }
+
+    public void AddAnswer(AnswerModel answer)
+    {
+
+        _context.AnswersTable.Add(answer);
+        _context.SaveChanges();
+#if DEBUG
+        Console.WriteLine("DB SAVE");
+#endif
+    }
 }

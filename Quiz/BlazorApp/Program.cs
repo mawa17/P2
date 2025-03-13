@@ -26,6 +26,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 #endif
 });
 
+builder.Services.AddScoped<AppDbContextService>();
+
+
 
 
 var app = builder.Build();

@@ -3,6 +3,304 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "#Survey.json",
+      "AssetFile": "#Survey.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003194888179"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
+        }
+      ]
+    },
+    {
+      "Route": "#Survey.json",
+      "AssetFile": "#Survey.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
+        }
+      ]
+    },
+    {
+      "Route": "#Survey.json.gz",
+      "AssetFile": "#Survey.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ="
+        }
+      ]
+    },
+    {
+      "Route": "#Survey.uo5gvo3g9w.json",
+      "AssetFile": "#Survey.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003194888179"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uo5gvo3g9w"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
+        },
+        {
+          "Name": "label",
+          "Value": "#Survey.json"
+        }
+      ]
+    },
+    {
+      "Route": "#Survey.uo5gvo3g9w.json",
+      "AssetFile": "#Survey.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uo5gvo3g9w"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
+        },
+        {
+          "Name": "label",
+          "Value": "#Survey.json"
+        }
+      ]
+    },
+    {
+      "Route": "#Survey.uo5gvo3g9w.json.gz",
+      "AssetFile": "#Survey.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uo5gvo3g9w"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ="
+        },
+        {
+          "Name": "label",
+          "Value": "#Survey.json.gz"
+        }
+      ]
+    },
+    {
       "Route": "BlazorApp.98gvjr7foy.styles.css",
       "AssetFile": "BlazorApp.styles.css.gz",
       "Selectors": [
@@ -297,6 +595,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo="
+        }
+      ]
+    },
+    {
+      "Route": "Survey.80wymxouzf.json",
+      "AssetFile": "Survey.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000485436893"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"inWzQgFeiU+fQIWw2Er0Eel1ZGMDaWOXi5wn6TLiK+A=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "80wymxouzf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY="
+        },
+        {
+          "Name": "label",
+          "Value": "Survey.json"
+        }
+      ]
+    },
+    {
+      "Route": "Survey.80wymxouzf.json",
+      "AssetFile": "Survey.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12374"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "80wymxouzf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY="
+        },
+        {
+          "Name": "label",
+          "Value": "Survey.json"
+        }
+      ]
+    },
+    {
+      "Route": "Survey.80wymxouzf.json.gz",
+      "AssetFile": "Survey.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"inWzQgFeiU+fQIWw2Er0Eel1ZGMDaWOXi5wn6TLiK+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "80wymxouzf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-inWzQgFeiU+fQIWw2Er0Eel1ZGMDaWOXi5wn6TLiK+A="
+        },
+        {
+          "Name": "label",
+          "Value": "Survey.json.gz"
+        }
+      ]
+    },
+    {
+      "Route": "Survey.json",
+      "AssetFile": "Survey.json.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000485436893"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"inWzQgFeiU+fQIWw2Er0Eel1ZGMDaWOXi5wn6TLiK+A=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY="
+        }
+      ]
+    },
+    {
+      "Route": "Survey.json",
+      "AssetFile": "Survey.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12374"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY="
+        }
+      ]
+    },
+    {
+      "Route": "Survey.json.gz",
+      "AssetFile": "Survey.json.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"inWzQgFeiU+fQIWw2Er0Eel1ZGMDaWOXi5wn6TLiK+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-inWzQgFeiU+fQIWw2Er0Eel1ZGMDaWOXi5wn6TLiK+A="
         }
       ]
     },

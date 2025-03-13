@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\BlazorApp.98gvjr7foy.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\#Survey.json",
+      "PackagePath": "staticwebassets\\#Survey.json"
+    },
+    {
+      "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\Survey.json",
+      "PackagePath": "staticwebassets\\Survey.json"
+    },
+    {
       "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },

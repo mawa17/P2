@@ -33,6 +33,10 @@ namespace BlazorApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.PrimitiveCollection<string>("Points")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("SurveyId")
                         .HasColumnType("int");
 
@@ -53,20 +57,24 @@ namespace BlazorApp.Migrations
 
                     b.PrimitiveCollection<string>("Options")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasAnnotation("Relational:JsonPropertyName", "Options");
 
                     b.Property<int?>("SurveyModelId")
                         .HasColumnType("int");
 
                     b.Property<string>("Text")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasAnnotation("Relational:JsonPropertyName", "Question");
 
                     b.HasKey("Id");
 
                     b.HasIndex("SurveyModelId");
 
                     b.ToTable("QuestionModel");
+
+                    b.HasAnnotation("Relational:JsonPropertyName", "Questions");
                 });
 
             modelBuilder.Entity("BlazorApp.Data.Models.SurveyModel", b =>
@@ -79,7 +87,8 @@ namespace BlazorApp.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(max)")
+                        .HasAnnotation("Relational:JsonPropertyName", "Title");
 
                     b.HasKey("Id");
 

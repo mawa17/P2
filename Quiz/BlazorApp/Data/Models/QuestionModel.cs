@@ -10,11 +10,11 @@ public sealed record QuestionModel
     public string Text { get; set; } = null!;
 
     [JsonPropertyName("Options"), JsonPropertyOrder(1)]
-    public string[] Options { get; set; } = null!;
+    public List<string> Options { get; set; } = new();
     public QuestionModel() { }
     public QuestionModel(string text, params string[] options) : this()
     {
         this.Text = text;
-        this.Options = options;
+        this.Options.AddRange(options);
     }
 }

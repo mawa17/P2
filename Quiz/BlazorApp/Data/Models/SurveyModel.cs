@@ -10,11 +10,11 @@ public sealed record SurveyModel
     public string Title { get; set; } = null!;
 
     [JsonPropertyName("Questions"), JsonPropertyOrder(2)]
-    public QuestionModel[] Questions { get; set; } = null!;
+    public List<QuestionModel> Questions { get; set; } = new();
     public SurveyModel() { }
     public SurveyModel(string title, params QuestionModel[] questions) : this()
     {
         this.Title = title;
-        this.Questions = questions;
+        this.Questions.AddRange(questions);
     }
 }
