@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace BlazorApp.Data.Models;
+﻿namespace BlazorApp.Data.Models;
 public sealed record AnswerModel
 {
     public int Id { get; set; }

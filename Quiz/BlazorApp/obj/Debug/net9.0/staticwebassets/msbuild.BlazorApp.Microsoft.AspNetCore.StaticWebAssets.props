@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>80wymxouzf</Fingerprint>
-      <Integrity>iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY=</Integrity>
+      <Fingerprint>uo5gvo3g9w</Fingerprint>
+      <Integrity>MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\#Survey.json'))</OriginalItemSpec>
@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uo5gvo3g9w</Fingerprint>
-      <Integrity>MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=</Integrity>
+      <Fingerprint>80wymxouzf</Fingerprint>
+      <Integrity>iNAvHK0DJJxnusfl4rcc4pqY+Z6ls2XE4ZWVbltmNgY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Survey.json'))</OriginalItemSpec>

@@ -174,5 +174,5 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\ru\Microsoft.CodeAnalysi
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\avpy3yf8ui-80wymxouzf.gz
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\5q2kff2jxk-uo5gvo3g9w.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\avpy3yf8ui-uo5gvo3g9w.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\5q2kff2jxk-80wymxouzf.gz

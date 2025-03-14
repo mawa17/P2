@@ -8,7 +8,7 @@
                     <th scope="col" class="text-start">@Question.Text</th>
                     @for (int j = 0; j < Question.Options.Count; j++)
                     {
-                        <th scope="col">Mit @((j == 0) ? "første" : (j == Question.Options.Count - 1) ? "sidste" : $"{j + 1}.") valg</th>
+                        <th scope="col" class="text-center" style="width: 160px;">Mit @((j == 0) ? "første" : (j == Question.Options.Count - 1) ? "sidste" : $"{j + 1}.") valg</th>
                     }
                 </tr>
             </thead>
