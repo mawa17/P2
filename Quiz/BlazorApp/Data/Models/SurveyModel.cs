@@ -10,7 +10,7 @@ public sealed record SurveyModel
     public string Title { get; set; } = null!;
 
     [JsonPropertyName("Questions"), JsonPropertyOrder(2)]
-    public List<QuestionModel> Questions { get; set; } = new();
+    public List<QuestionModel> Questions { get; set; } = [];
     public SurveyModel() { }
     public SurveyModel(string title, params QuestionModel[] questions) : this()
     {

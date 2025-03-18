@@ -1,10 +1,6 @@
 using BlazorApp.Components;
 using BlazorApp.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-
-
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,16 +15,16 @@ builder.Services.AddHttpClient();
 // Register the database context
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 #if DEBUG
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"));
     options.EnableSensitiveDataLogging();
     options.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()));
+#else
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProdConnection"));
 #endif
 });
 
 builder.Services.AddScoped<AppDbContextService>();
-
-
 
 
 var app = builder.Build();

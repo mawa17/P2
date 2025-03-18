@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+3Qdp4GhQtWEK6FsZPMJ6wHTi+XskrEqK5kTRDeYdvs=",
+  "Hash": "R05L1dboaXP8bfMrW6L0hmFJym/MYpcXuhWbg/9BvJc=",
   "Source": "BlazorApp",
   "BasePath": "_content/BlazorApp",
   "Mode": "Default",
@@ -59,25 +59,25 @@
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\avpy3yf8ui-uo5gvo3g9w.gz",
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\7loymvhq1e-ilfy1hbp47.gz",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "#Survey#[.{fingerprint=uo5gvo3g9w}]?.json.gz",
+      "RelativePath": "favicon#[.{fingerprint=ilfy1hbp47}]?.ico.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\#Survey.json",
+      "RelatedAsset": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.ico",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qdstujiezb",
-      "Integrity": "EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=",
+      "Fingerprint": "h2k6swzkew",
+      "Integrity": "GfcwOQU2ePoJ0ICMer3h02jt3MQru2RsOHinue5UPNc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\#Survey.json"
+      "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.ico"
     },
     {
       "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\dv30ctcifg-6cfz1n2cew.gz",
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-98gvjr7foy.gz",
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-5c5wj4dpgj.gz",
       "SourceId": "BlazorApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "BlazorApp#[.{fingerprint=98gvjr7foy}]?.styles.css.gz",
+      "RelativePath": "BlazorApp#[.{fingerprint=5c5wj4dpgj}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -115,11 +115,32 @@
       "RelatedAsset": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\bundle\\BlazorApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rv2m6y3ec8",
-      "Integrity": "6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=",
+      "Fingerprint": "fg4941d9ts",
+      "Integrity": "z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\bundle\\BlazorApp.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\m2ovrdilc6-uo5gvo3g9w.gz",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "SurveyDEBUG#[.{fingerprint=uo5gvo3g9w}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\SurveyDEBUG.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qdstujiezb",
+      "Integrity": "EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\SurveyDEBUG.json"
     },
     {
       "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\niqfivrdr6-tqqzl9m4fa.gz",
@@ -185,12 +206,12 @@
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-98gvjr7foy.gz",
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-5c5wj4dpgj.gz",
       "SourceId": "BlazorApp",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/BlazorApp",
-      "RelativePath": "BlazorApp#[.{fingerprint=98gvjr7foy}]!.bundle.scp.css.gz",
+      "RelativePath": "BlazorApp#[.{fingerprint=5c5wj4dpgj}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -199,8 +220,8 @@
       "RelatedAsset": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\BlazorApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rv2m6y3ec8",
-      "Integrity": "6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=",
+      "Fingerprint": "fg4941d9ts",
+      "Integrity": "z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\BlazorApp.bundle.scp.css"
@@ -220,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "98gvjr7foy",
-      "Integrity": "Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=",
+      "Fingerprint": "5c5wj4dpgj",
+      "Integrity": "BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\bundle\\BlazorApp.styles.css"
@@ -241,32 +262,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "98gvjr7foy",
-      "Integrity": "Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=",
+      "Fingerprint": "5c5wj4dpgj",
+      "Integrity": "BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\BlazorApp.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\#Survey.json",
-      "SourceId": "BlazorApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\",
-      "BasePath": "_content/BlazorApp",
-      "RelativePath": "#Survey#[.{fingerprint}]?.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "uo5gvo3g9w",
-      "Integrity": "MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\#Survey.json"
     },
     {
       "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\app.css",
@@ -374,6 +374,48 @@
       "OriginalItemSpec": "wwwroot\\bootstrap.css.map"
     },
     {
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.ico",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ilfy1hbp47",
+      "Integrity": "igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.png",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "favicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0jm14yuene",
+      "Integrity": "TNQLpksIY3grbgPrvqXdNtqPo/mZcCp8gfBiQBGzSEw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
       "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\Survey.json",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
@@ -393,307 +435,30 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Survey.json"
+    },
+    {
+      "Identity": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\SurveyDEBUG.json",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\",
+      "BasePath": "_content/BlazorApp",
+      "RelativePath": "SurveyDEBUG#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uo5gvo3g9w",
+      "Integrity": "MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\SurveyDEBUG.json"
     }
   ],
   "Endpoints": [
-    {
-      "Route": "#Survey.json",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\avpy3yf8ui-uo5gvo3g9w.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003194888179"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
-        }
-      ]
-    },
-    {
-      "Route": "#Survey.json",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\#Survey.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "854"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
-        }
-      ]
-    },
-    {
-      "Route": "#Survey.json.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\avpy3yf8ui-uo5gvo3g9w.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ="
-        }
-      ]
-    },
-    {
-      "Route": "#Survey.uo5gvo3g9w.json",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\avpy3yf8ui-uo5gvo3g9w.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.003194888179"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uo5gvo3g9w"
-        },
-        {
-          "Name": "label",
-          "Value": "#Survey.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
-        }
-      ]
-    },
-    {
-      "Route": "#Survey.uo5gvo3g9w.json",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\#Survey.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "854"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uo5gvo3g9w"
-        },
-        {
-          "Name": "label",
-          "Value": "#Survey.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
-        }
-      ]
-    },
-    {
-      "Route": "#Survey.uo5gvo3g9w.json.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\avpy3yf8ui-uo5gvo3g9w.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "312"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uo5gvo3g9w"
-        },
-        {
-          "Name": "label",
-          "Value": "#Survey.json.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ="
-        }
-      ]
-    },
     {
       "Route": "app.css",
       "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\niqfivrdr6-tqqzl9m4fa.gz",
@@ -993,13 +758,13 @@
       ]
     },
     {
-      "Route": "BlazorApp.98gvjr7foy.bundle.scp.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-98gvjr7foy.gz",
+      "Route": "BlazorApp.5c5wj4dpgj.bundle.scp.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-5c5wj4dpgj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002159827214"
+          "Quality": "0.002277904328"
         }
       ],
       "ResponseHeaders": [
@@ -1009,15 +774,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "462"
+          "Value": "438"
         },
         {
           "Name": "ETag",
-          "Value": "\"6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=\""
+          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1037,13 +802,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=\""
+          "Value": "W/\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "98gvjr7foy"
+          "Value": "5c5wj4dpgj"
         },
         {
           "Name": "label",
@@ -1051,12 +816,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M="
+          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
         }
       ]
     },
     {
-      "Route": "BlazorApp.98gvjr7foy.bundle.scp.css",
+      "Route": "BlazorApp.5c5wj4dpgj.bundle.scp.css",
       "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\BlazorApp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1066,7 +831,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "875"
+          "Value": "780"
         },
         {
           "Name": "Content-Type",
@@ -1074,11 +839,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=\""
+          "Value": "\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1088,7 +853,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "98gvjr7foy"
+          "Value": "5c5wj4dpgj"
         },
         {
           "Name": "label",
@@ -1096,13 +861,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M="
+          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
         }
       ]
     },
     {
-      "Route": "BlazorApp.98gvjr7foy.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-98gvjr7foy.gz",
+      "Route": "BlazorApp.5c5wj4dpgj.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-5c5wj4dpgj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1111,7 +876,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "462"
+          "Value": "438"
         },
         {
           "Name": "Content-Type",
@@ -1119,11 +884,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=\""
+          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1141,7 +906,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "98gvjr7foy"
+          "Value": "5c5wj4dpgj"
         },
         {
           "Name": "label",
@@ -1149,18 +914,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo="
+          "Value": "sha256-z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4="
         }
       ]
     },
     {
-      "Route": "BlazorApp.98gvjr7foy.styles.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-98gvjr7foy.gz",
+      "Route": "BlazorApp.5c5wj4dpgj.styles.css",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-5c5wj4dpgj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002159827214"
+          "Quality": "0.002277904328"
         }
       ],
       "ResponseHeaders": [
@@ -1170,15 +935,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "462"
+          "Value": "438"
         },
         {
           "Name": "ETag",
-          "Value": "\"6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=\""
+          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1198,13 +963,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=\""
+          "Value": "W/\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "98gvjr7foy"
+          "Value": "5c5wj4dpgj"
         },
         {
           "Name": "label",
@@ -1212,12 +977,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M="
+          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
         }
       ]
     },
     {
-      "Route": "BlazorApp.98gvjr7foy.styles.css",
+      "Route": "BlazorApp.5c5wj4dpgj.styles.css",
       "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\bundle\\BlazorApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1227,7 +992,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "875"
+          "Value": "780"
         },
         {
           "Name": "Content-Type",
@@ -1235,11 +1000,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=\""
+          "Value": "\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1249,7 +1014,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "98gvjr7foy"
+          "Value": "5c5wj4dpgj"
         },
         {
           "Name": "label",
@@ -1257,13 +1022,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M="
+          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
         }
       ]
     },
     {
-      "Route": "BlazorApp.98gvjr7foy.styles.css.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-98gvjr7foy.gz",
+      "Route": "BlazorApp.5c5wj4dpgj.styles.css.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-5c5wj4dpgj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1272,7 +1037,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "462"
+          "Value": "438"
         },
         {
           "Name": "Content-Type",
@@ -1280,11 +1045,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=\""
+          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1302,7 +1067,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "98gvjr7foy"
+          "Value": "5c5wj4dpgj"
         },
         {
           "Name": "label",
@@ -1310,18 +1075,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo="
+          "Value": "sha256-z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4="
         }
       ]
     },
     {
       "Route": "BlazorApp.bundle.scp.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-98gvjr7foy.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-5c5wj4dpgj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002159827214"
+          "Quality": "0.002277904328"
         }
       ],
       "ResponseHeaders": [
@@ -1331,15 +1096,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "462"
+          "Value": "438"
         },
         {
           "Name": "ETag",
-          "Value": "\"6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=\""
+          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1359,13 +1124,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=\""
+          "Value": "W/\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M="
+          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
         }
       ]
     },
@@ -1380,7 +1145,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "875"
+          "Value": "780"
         },
         {
           "Name": "Content-Type",
@@ -1388,11 +1153,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=\""
+          "Value": "\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1402,13 +1167,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M="
+          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
         }
       ]
     },
     {
       "Route": "BlazorApp.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-98gvjr7foy.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\wo77s772mi-5c5wj4dpgj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1417,7 +1182,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "462"
+          "Value": "438"
         },
         {
           "Name": "Content-Type",
@@ -1425,11 +1190,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=\""
+          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1447,18 +1212,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo="
+          "Value": "sha256-z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4="
         }
       ]
     },
     {
       "Route": "BlazorApp.styles.css",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-98gvjr7foy.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-5c5wj4dpgj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002159827214"
+          "Quality": "0.002277904328"
         }
       ],
       "ResponseHeaders": [
@@ -1468,15 +1233,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "462"
+          "Value": "438"
         },
         {
           "Name": "ETag",
-          "Value": "\"6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=\""
+          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1496,13 +1261,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=\""
+          "Value": "W/\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M="
+          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
         }
       ]
     },
@@ -1517,7 +1282,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "875"
+          "Value": "780"
         },
         {
           "Name": "Content-Type",
@@ -1525,11 +1290,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M=\""
+          "Value": "\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1539,13 +1304,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Fy1k4boM7aeGT5JDRmPamRAEG7zYzO0RHTfbd7c7C9M="
+          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
         }
       ]
     },
     {
       "Route": "BlazorApp.styles.css.gz",
-      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-98gvjr7foy.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\io2m3ndci8-5c5wj4dpgj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1554,7 +1319,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "462"
+          "Value": "438"
         },
         {
           "Name": "Content-Type",
@@ -1562,11 +1327,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo=\""
+          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 12:27:07 GMT"
+          "Value": "Tue, 18 Mar 2025 10:29:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1584,7 +1349,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6Qls7suANhv82T1Je4I4Bm4cGRaZTvXyBkiWxUnBZbo="
+          "Value": "sha256-z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4="
         }
       ]
     },
@@ -2781,6 +2546,386 @@
       ]
     },
     {
+      "Route": "favicon.0jm14yuene.png",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "552"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TNQLpksIY3grbgPrvqXdNtqPo/mZcCp8gfBiQBGzSEw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 11:03:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0jm14yuene"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TNQLpksIY3grbgPrvqXdNtqPo/mZcCp8gfBiQBGzSEw="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\7loymvhq1e-ilfy1hbp47.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002747252747"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "363"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GfcwOQU2ePoJ0ICMer3h02jt3MQru2RsOHinue5UPNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 11:04:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 11:04:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\7loymvhq1e-ilfy1hbp47.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "363"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GfcwOQU2ePoJ0ICMer3h02jt3MQru2RsOHinue5UPNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 11:04:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GfcwOQU2ePoJ0ICMer3h02jt3MQru2RsOHinue5UPNc="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ilfy1hbp47.ico",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\7loymvhq1e-ilfy1hbp47.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002747252747"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "363"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GfcwOQU2ePoJ0ICMer3h02jt3MQru2RsOHinue5UPNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 11:04:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ilfy1hbp47"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ilfy1hbp47.ico",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 11:04:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ilfy1hbp47"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-igf/2Go1j56ww+SDSGxxPsJcM9EfVHX5j3TSGFlgynI="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ilfy1hbp47.ico.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\7loymvhq1e-ilfy1hbp47.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "363"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GfcwOQU2ePoJ0ICMer3h02jt3MQru2RsOHinue5UPNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 11:04:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ilfy1hbp47"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GfcwOQU2ePoJ0ICMer3h02jt3MQru2RsOHinue5UPNc="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.png",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "552"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TNQLpksIY3grbgPrvqXdNtqPo/mZcCp8gfBiQBGzSEw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 11:03:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TNQLpksIY3grbgPrvqXdNtqPo/mZcCp8gfBiQBGzSEw="
+        }
+      ]
+    },
+    {
       "Route": "Survey.80wymxouzf.json",
       "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\5q2kff2jxk-80wymxouzf.gz",
       "Selectors": [
@@ -2805,7 +2950,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+          "Value": "Fri, 14 Mar 2025 08:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2866,7 +3011,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+          "Value": "Fri, 14 Mar 2025 08:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2911,7 +3056,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+          "Value": "Fri, 14 Mar 2025 08:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2966,7 +3111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+          "Value": "Fri, 14 Mar 2025 08:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3019,7 +3164,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+          "Value": "Fri, 14 Mar 2025 08:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3056,7 +3201,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 09:44:36 GMT"
+          "Value": "Fri, 14 Mar 2025 08:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3075,6 +3220,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-inWzQgFeiU+fQIWw2Er0Eel1ZGMDaWOXi5wn6TLiK+A="
+        }
+      ]
+    },
+    {
+      "Route": "SurveyDEBUG.json",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\m2ovrdilc6-uo5gvo3g9w.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003194888179"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
+        }
+      ]
+    },
+    {
+      "Route": "SurveyDEBUG.json",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\SurveyDEBUG.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
+        }
+      ]
+    },
+    {
+      "Route": "SurveyDEBUG.json.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\m2ovrdilc6-uo5gvo3g9w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ="
+        }
+      ]
+    },
+    {
+      "Route": "SurveyDEBUG.uo5gvo3g9w.json",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\m2ovrdilc6-uo5gvo3g9w.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003194888179"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uo5gvo3g9w"
+        },
+        {
+          "Name": "label",
+          "Value": "SurveyDEBUG.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
+        }
+      ]
+    },
+    {
+      "Route": "SurveyDEBUG.uo5gvo3g9w.json",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\SurveyDEBUG.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uo5gvo3g9w"
+        },
+        {
+          "Name": "label",
+          "Value": "SurveyDEBUG.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnCgPCEmRhq+EqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="
+        }
+      ]
+    },
+    {
+      "Route": "SurveyDEBUG.uo5gvo3g9w.json.gz",
+      "AssetFile": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\compressed\\m2ovrdilc6-uo5gvo3g9w.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uo5gvo3g9w"
+        },
+        {
+          "Name": "label",
+          "Value": "SurveyDEBUG.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EiHaB5LNYhnLhjPrvyrHTao5kZ+VTEIfTsz6mgwO0rQ="
         }
       ]
     }

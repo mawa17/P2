@@ -2,9 +2,6 @@
 table > tbody > tr > td[b-nnw9fpzr55] > label > input[type="radio"] {
     appearance: none; /*Disable default o circle for radio-input*/
 }
-/* _content/BlazorApp/Components/Controls/Survey.razor.rz.scp.css */
-body[b-9d7oszyeuv] {
-}
 /* _content/BlazorApp/Components/Layout/MainLayout.razor.rz.scp.css */
 #blazor-error-ui[b-qgsvw684bo] {
     color-scheme: light only;

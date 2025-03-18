@@ -6,10 +6,10 @@ namespace BlazorApp.Components.Controls;
 public partial class Survey
 {
     private int index;
-    public float Progress => ((float)(SurvayPage+1) / (float)SurveyModel.Questions.Count) * 100;
+    public float Progress => ((float)(SurveyPage+1) / (float)SurveyModel.Questions.Count) * 100;
     private void Submit(QuestionModel question)
     {
-        anwsers.Add(question);
+        answers.Add(question);
         NextPage();
     }
 
@@ -17,28 +17,27 @@ public partial class Survey
     public SurveyModel SurveyModel { get; set; } = default!;
 
     [Parameter]
-    public string? SurvayNotice { get; set; }
+    public string? SurveyNotice { get; set; }
 
     [Parameter]
     public EventCallback<SurveyModel> OnComplete { get; set; }
 
-    private bool IsSurvayNoticeAccepcted;
-    private int SurvayPage;
+    private bool IsSurveyNoticeAccepted;
+    private int SurveyPage;
     private void NextPage()
     {
-        this.SurvayPage = Math.Clamp(++SurvayPage, 0, SurveyModel.Questions.Count);
+        this.SurveyPage = Math.Clamp(++SurveyPage, 0, SurveyModel.Questions.Count);
 
-        if (SurvayPage == SurveyModel.Questions.Count)
+        if (SurveyPage == SurveyModel.Questions.Count)
         {
-            OnComplete.InvokeAsync(new(this.SurveyModel.Title, anwsers.ToArray()));
+            OnComplete.InvokeAsync(new(this.SurveyModel.Title, [.. answers]));
         }
     }
     private void PrevPage()
     {
-        this.SurvayPage = Math.Clamp(--SurvayPage, 0, SurveyModel.Questions.Count);
+        this.SurveyPage = Math.Clamp(--SurveyPage, 0, SurveyModel.Questions.Count);
     }
 
 
-
-    private List<QuestionModel> anwsers = new();
+    private readonly List<QuestionModel> answers = [];
 }

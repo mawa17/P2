@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace BlazorApp.Data.Models;
 public sealed record QuestionModel
@@ -10,7 +11,7 @@ public sealed record QuestionModel
     public string Text { get; set; } = null!;
 
     [JsonPropertyName("Options"), JsonPropertyOrder(1)]
-    public List<string> Options { get; set; } = new();
+    public List<string> Options { get; set; } = [];
     public QuestionModel() { }
     public QuestionModel(string text, params string[] options) : this()
     {

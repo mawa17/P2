@@ -2,15 +2,15 @@
   "Files": [
     {
       "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\BlazorApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\BlazorApp.98gvjr7foy.bundle.scp.css"
-    },
-    {
-      "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\#Survey.json",
-      "PackagePath": "staticwebassets\\#Survey.json"
+      "PackagePath": "staticwebassets\\BlazorApp.5c5wj4dpgj.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\Survey.json",
       "PackagePath": "staticwebassets\\Survey.json"
+    },
+    {
+      "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\SurveyDEBUG.json",
+      "PackagePath": "staticwebassets\\SurveyDEBUG.json"
     },
     {
       "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\app.css",
@@ -31,6 +31,14 @@
     {
       "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
     },
     {
       "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.BlazorApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

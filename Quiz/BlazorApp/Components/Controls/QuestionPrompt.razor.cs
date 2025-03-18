@@ -1,6 +1,5 @@
 ﻿using BlazorApp.Data.Models;
 using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Forms;
 
 namespace BlazorApp.Components.Controls;
 
@@ -21,7 +20,7 @@ public partial class QuestionPrompt : ComponentBase
     private bool CanSubmit => State.answers.Count == Question.Options.Count;
 
     private readonly string guid = Guid.NewGuid().ToString();
-    private int x, y; /*For Visualisation*/
+    private int x, y; /*For Visualization*/
 
     protected override void OnInitialized()
     {
@@ -35,7 +34,7 @@ public partial class QuestionPrompt : ComponentBase
         if (!CanSubmit) return;
         if(OnSubmit.HasDelegate)
         {
-            await OnSubmit.InvokeAsync(new(Question.Text, State.answers.Values.ToArray()));
+            await OnSubmit.InvokeAsync(new(Question.Text, [.. State.answers.Values]));
 #if DEBUG
             Console.WriteLine("INVOKE OnSubmit");
 #endif
@@ -52,22 +51,22 @@ public partial class QuestionPrompt : ComponentBase
         if (State.grid[y] == selection)
         {
             State.grid[y] = null;
-            UpdateAnwsersAsync(value, x, true);
+            _ = UpdateAnswersAsync(value, x, true);
         }
         else
         {
             State.grid[y] = selection;
-            UpdateAnwsersAsync(value, x);
+            _ = UpdateAnswersAsync(value, x);
         }
         this.x = x;
         this.y = y;
         StateHasChanged();
     }
 
-    private async Task UpdateAnwsersAsync(string value, int index, bool onlyRemove = false)
+    private async Task UpdateAnswersAsync(string value, int index, bool onlyRemove = false)
     {
         var keys = State.answers.Where(x => x.Value == value);
-        bool hasKey = keys.Count() > 0;
+        bool hasKey = keys.Any();
         if (hasKey)
         {
             State.answers.Remove(keys.ElementAt(0).Key);
@@ -89,7 +88,7 @@ public partial class QuestionPrompt : ComponentBase
 
 public readonly struct QuestionState(int gridSize)
 {
-    public readonly SortedDictionary<int, string> answers = new();
+    public readonly SortedDictionary<int, string> answers = [];
     public readonly string?[] grid = new string?[gridSize];
 }
 

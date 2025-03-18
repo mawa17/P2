@@ -55,7 +55,7 @@ namespace BlazorApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.PrimitiveCollection<string>("Options")
+                    b.Property<string>("Options")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
                         .HasAnnotation("Relational:JsonPropertyName", "Options");
@@ -93,6 +93,33 @@ namespace BlazorApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("SurveyModel");
+                });
+
+            modelBuilder.Entity("BlazorApp.Data.SurveyAnswerView", b =>
+                {
+                    b.Property<string>("AnswerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.PrimitiveCollection<string>("AnswerPoints")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("QuestionOptions")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("QuestionText")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SurveyTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.ToTable((string)null);
+
+                    b.ToView("SurveyAnswerView", (string)null);
                 });
 
             modelBuilder.Entity("BlazorApp.Data.Models.AnswerModel", b =>
