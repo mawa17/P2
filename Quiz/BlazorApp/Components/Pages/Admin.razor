@@ -1,0 +1,70 @@
+﻿@page "/admin"
+@inject AppDbContextService DbService
+@rendermode InteractiveServer
+
+
+<div class="position-relative overflow-auto">
+    <div class="table-responsive mb-5">
+        <QuickGrid Items="Answers.AsQueryable()" class="table table-secondary table-bordered text-center m-0 table-striped">
+            <PropertyColumn Property="@(p => p.Survey.Title)" Title="SurveyTitle" Sortable="true" />
+            <PropertyColumn Property="@(p => p.Name)" Title="Participant's name" Sortable="true" />
+            <PropertyColumn Property="@(p => String.Join(" | ", GetPoints(p.Points)))" Title="Points" Sortable="true" />
+            <TemplateColumn>
+                <button @onclick="() => OnClick(context.Id)" class="btn btn-dark">View Answers</button>
+            </TemplateColumn>
+        </QuickGrid>
+    </div>
+</div>
+
+<QuickGrid Items="Answers.AsQueryable().Where(x => x.Id == this.Id)" class="table table-secondary table-bordered text-center m-0 table-striped">
+    <TemplateColumn>
+        @foreach (var question in context.Survey.Questions)
+        {
+            <br />
+            <br />
+            <tr>
+                <td>@question.Text</td>  @* Display the question text *@
+
+                @* Loop through the options for each question *@
+                @foreach (var option in question.Options)
+                {
+                    <td>@option</td>  @* Display the option text *@
+                }
+            </tr>
+        }
+    </TemplateColumn>
+</QuickGrid>
+
+CREATE VIEW dbo.SurveyAnswerView AS
+SELECT
+a.Id AS AnswerID,
+s.Title AS SurveyTitle,
+q.Text AS Question,
+q.Options AS [Participant's answers],
+a.Name AS [Participant's name],
+a.Points AS [Participant's points]
+FROM
+SurveyModel s
+JOIN
+QuestionModel q ON s.Id = q.SurveyModelId
+JOIN
+AnswersTable a ON s.Id = a.SurveyId;
+
+
+@code {
+    private uint Id;
+    static char ToAlphaChar(int index) => (char)('A' + (index % 26));
+
+    private AnswerModel[] Answers => DbService.Entity.ToArray();
+
+    private IEnumerable<string> GetPoints(IList<int> values) 
+    {
+        for (int i = 0; i < values.Count; i++) yield return $"{ToAlphaChar(i)} {values[i]}";
+    }
+
+    private void OnClick(int index) 
+    {
+        Console.WriteLine(index);
+        this.Id = (uint)index;
+    }
+}

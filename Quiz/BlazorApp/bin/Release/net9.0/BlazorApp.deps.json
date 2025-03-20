@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v9.0": {
       "BlazorApp/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Components.QuickGrid": "9.0.2",
+          "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "9.0.2",
           "Microsoft.EntityFrameworkCore": "9.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.2"
@@ -56,6 +58,89 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/9.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "9.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.2",
+          "Microsoft.Extensions.Options": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components/9.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "9.0.2",
+          "Microsoft.AspNetCore.Components.Analyzers": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/9.0.2": {},
+      "Microsoft.AspNetCore.Components.Forms/9.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.Forms.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.QuickGrid/9.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.QuickGrid.dll": {
+            "assemblyVersion": "9.0.2.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter/9.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.QuickGrid": "9.0.2",
+          "Microsoft.EntityFrameworkCore": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll": {
+            "assemblyVersion": "9.0.2.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/9.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "9.0.2",
+          "Microsoft.AspNetCore.Components.Forms": "9.0.2",
+          "Microsoft.Extensions.DependencyInjection": "9.0.2",
+          "Microsoft.Extensions.Primitives": "9.0.2",
+          "Microsoft.JSInterop": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Components.Web.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/9.0.2": {
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.Metadata.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
           }
         }
       },
@@ -701,6 +786,14 @@
           }
         }
       },
+      "Microsoft.JSInterop/9.0.2": {
+        "runtime": {
+          "lib/net9.0/Microsoft.JSInterop.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6704"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.SqlServer.Server/1.0.0": {
@@ -1037,6 +1130,62 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authorization/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XpB+xelGR4xxV8UX0Sa2OXr1ZsZgNyF5Xv1Yn3K5GCnzl7wkwczmnER5/E2A+7tBRf424OSPrBdN3gzz5wa14Q==",
+      "path": "microsoft.aspnetcore.authorization/9.0.2",
+      "hashPath": "microsoft.aspnetcore.authorization.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mzGLA29vYXczpSTDTCN/VpP2bz76yw4uAIAF9gI177rpsN5h+Vp7GyBpFMvfThYAJUmLcIcZhg3TNb2SjS9oLQ==",
+      "path": "microsoft.aspnetcore.components/9.0.2",
+      "hashPath": "microsoft.aspnetcore.components.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9yKCoBGAhcwfWNn1U3ZnB2Seqh9vFm7D2OfcS6wNriYbCTWQyRLTvDDj1Xov+H9tgxq7FMpz9+lb46Y/2GeIaQ==",
+      "path": "microsoft.aspnetcore.components.analyzers/9.0.2",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Forms/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-clU2grfLt7t7YsBft7laWtxGRtIRf5EQO1SaI05WvMfJNn2gm/IvyutGZLnYLsfgS9kyh+5qw8HR3Ku9dkcVaA==",
+      "path": "microsoft.aspnetcore.components.forms/9.0.2",
+      "hashPath": "microsoft.aspnetcore.components.forms.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.QuickGrid/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gP/tPJFsD+DVPf7vPHd6FIZW1lQHBerX2dO1FG8oW+wifcTMcY/1ha9nzlEx40wNbcRbLwZQ0TNMdVilIycFOQ==",
+      "path": "microsoft.aspnetcore.components.quickgrid/9.0.2",
+      "hashPath": "microsoft.aspnetcore.components.quickgrid.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dG47UuNLATfZseNcZtATlI+E8GFT+wegnUYOgMve7ObIo5/mK04b4r3rXxb9V3+TgYmBBkczRZZAf4uICu9mGw==",
+      "path": "microsoft.aspnetcore.components.quickgrid.entityframeworkadapter/9.0.2",
+      "hashPath": "microsoft.aspnetcore.components.quickgrid.entityframeworkadapter.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Web/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IsY38Fdzm4B7fy1FXzjITDFYxsR4bc/qQgyPJzMOtEcde31NeQTak0apIQKfaIXDU2jNjgt07ztWfqcCpWGHEQ==",
+      "path": "microsoft.aspnetcore.components.web/9.0.2",
+      "hashPath": "microsoft.aspnetcore.components.web.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sYLasa9sXXkVJ3BLsMi8Y7B0QnyedIJHQ3Jqh45ibABiPwJ4J13XioAa6oyP7VekmBIy7nq/BMAz1lX63P2fsg==",
+      "path": "microsoft.aspnetcore.metadata/9.0.2",
+      "hashPath": "microsoft.aspnetcore.metadata.9.0.2.nupkg.sha512"
+    },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1295,6 +1444,13 @@
       "sha512": "sha512-RN7lvp7s3Boucg1NaNAbqDbxtlLj5Qeb+4uSS1TeK5FSBVM40P4DKaTKChT43sHyKfh7V0zkrMph6DdHvyA4bg==",
       "path": "microsoft.identitymodel.tokens/6.35.0",
       "hashPath": "microsoft.identitymodel.tokens.6.35.0.nupkg.sha512"
+    },
+    "Microsoft.JSInterop/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s3gOF+SDeKacf2s1WbN/cRhtxtcPAK6iolv9xA5uIup1NMCgW0+UzAvBZUhBCCPUDQd1N8VUPhyP7+7p/iaDXQ==",
+      "path": "microsoft.jsinterop/9.0.2",
+      "hashPath": "microsoft.jsinterop.9.0.2.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

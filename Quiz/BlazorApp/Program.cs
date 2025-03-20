@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+// Register QuickGrid's EF Adapter
+builder.Services.AddQuickGridEntityFrameworkAdapter();
 
 // Register HttpClient
 builder.Services.AddHttpClient();

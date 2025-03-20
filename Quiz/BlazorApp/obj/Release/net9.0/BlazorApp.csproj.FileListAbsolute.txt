@@ -173,6 +173,16 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\BlazorApp.csproj.Assem
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\BlazorApp.csproj.Up2Date
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\5q2kff2jxk-80wymxouzf.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\m2ovrdilc6-uo5gvo3g9w.gz
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\io2m3ndci8-5c5wj4dpgj.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\wo77s772mi-5c5wj4dpgj.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\7loymvhq1e-ilfy1hbp47.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.AspNetCore.Components.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.JSInterop.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\unlu0xluo6-eu7w3d5g1a.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\3gin1ph7ub-25o87uqmvr.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\io2m3ndci8-llqmuxp6vf.gz

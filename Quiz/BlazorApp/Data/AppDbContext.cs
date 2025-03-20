@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Text.Json;
 using BlazorApp.Data.Models;
 using Microsoft.EntityFrameworkCore;
@@ -43,7 +44,10 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
 public class AppDbContextService(AppDbContext context)
 {
     private readonly AppDbContext _context = context;
-
+    public IQueryable<AnswerModel> Entity => this._context.AnswersTable
+        .Include(x => x.Survey)
+        .Include(y => y.Survey.Questions)
+        .AsNoTracking();
     public async Task AddAnswerAsync(AnswerModel answer)
     {
         _context.AnswersTable.Add(answer);

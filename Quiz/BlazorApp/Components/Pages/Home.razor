@@ -1,14 +1,19 @@
 ﻿@page "/"
 @rendermode InteractiveServer
 @inject HttpClient Http
-@inject NavigationManager NavigationManager
+@inject NavigationManager NavManager
 @inject AppDbContextService DbService
 <PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
 
-@if(String.IsNullOrEmpty(username)) {
-    <NameForm OnSubmit="(username) => this.username = username" />
+@{
+ #if !DEBUG
+    if(String.IsNullOrEmpty(username)) 
+    {
+        <NameForm OnSubmit="(username) => this.username = username" />
+    }
+ #endif
 }
-else if (surveyModel != null)
+@if (surveyModel != null)
 {
     <Survey 
     SurveyModel="surveyModel" 
@@ -17,14 +22,22 @@ else if (surveyModel != null)
     />
 }
 
-
 @code {
     private string username = "";
     private SurveyModel? surveyModel;
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if(firstRender) {
+            NavManager.NavigateTo("/admin");
+            StateHasChanged();
+        }
+        base.OnAfterRender(firstRender);
+    }
     protected override async Task OnInitializedAsync()
     {
         // Dynamically get the base address
-        Http.BaseAddress = new Uri(NavigationManager.Uri);
+        Http.BaseAddress = new Uri(NavManager.Uri);
+
 
 #if DEBUG
         // Ensure that HttpClient reads the content as UTF-8 encoded JSON.
