@@ -1,6 +1,7 @@
 ﻿@page "/admin"
-@inject AppDbContextService DbService
 @rendermode InteractiveServer
+@inject AppDbContextService DbService
+
 
 
 <div class="position-relative overflow-auto">
@@ -16,39 +17,39 @@
     </div>
 </div>
 
-<QuickGrid Items="Answers.AsQueryable().Where(x => x.Id == this.Id)" class="table table-secondary table-bordered text-center m-0 table-striped">
-    <TemplateColumn>
-        @foreach (var question in context.Survey.Questions)
-        {
-            <br />
-            <br />
-            <tr>
-                <td>@question.Text</td>  @* Display the question text *@
 
-                @* Loop through the options for each question *@
-                @foreach (var option in question.Options)
-                {
-                    <td>@option</td>  @* Display the option text *@
-                }
-            </tr>
-        }
-    </TemplateColumn>
-</QuickGrid>
+@if(this.Id > 0) {
+    <div class="position-relative overflow-auto">
+        <div class="table-responsive mb-5">
+            <h1 class="d-flex justify-content-center my-4">@($"{SelectedEntity.Survey.Title}{(!String.IsNullOrEmpty(SelectedEntity.Name) ? $" - {SelectedEntity.Name}" : "")} Answers")</h1>
+            <table class="table table-secondary table-bordered text-center m-0 table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Question</th>
+                        @for (int i = 0; i < SelectedEntity.Survey.Questions.Max(x => x.Options.Count); i++)
+                        {
+                            <th scope="col" class="text-center">@((i == 0) ? "Første" : (i == SelectedEntity.Survey.Questions[i].Options.Count - 1) ? "Sidste" : $"{i + 1}.") valg</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var question in SelectedEntity.Survey.Questions)
+                    {
+                        <tr>
+                            <td>@question.Text</td>
+                            @foreach (var option in question.Options)
+                            {
+                                <td>@option</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
 
-CREATE VIEW dbo.SurveyAnswerView AS
-SELECT
-a.Id AS AnswerID,
-s.Title AS SurveyTitle,
-q.Text AS Question,
-q.Options AS [Participant's answers],
-a.Name AS [Participant's name],
-a.Points AS [Participant's points]
-FROM
-SurveyModel s
-JOIN
-QuestionModel q ON s.Id = q.SurveyModelId
-JOIN
-AnswersTable a ON s.Id = a.SurveyId;
+
 
 
 @code {
@@ -56,6 +57,8 @@ AnswersTable a ON s.Id = a.SurveyId;
     static char ToAlphaChar(int index) => (char)('A' + (index % 26));
 
     private AnswerModel[] Answers => DbService.Entity.ToArray();
+    private AnswerModel SelectedEntity => Answers.First(x => x.Id == this.Id);
+
 
     private IEnumerable<string> GetPoints(IList<int> values) 
     {

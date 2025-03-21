@@ -18,11 +18,15 @@ builder.Services.AddHttpClient();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
 #if DEBUG
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"), sqlOptions =>
+    {
+    });
     options.EnableSensitiveDataLogging();
     options.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()));
 #else
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ProdConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProdConnection"), sqlOptions =>
+    {
+    });
 #endif
 });
 

@@ -1,6 +1,11 @@
-﻿@if (SurveyModel.Questions.Count != SurveyPage)
-{
-	<NavigationLock ConfirmExternalNavigation="true" />
+﻿
+@{
+	#if !DEBUG 
+	if (SurveyModel.Questions.Count != SurveyPage)
+	{
+		<NavigationLock ConfirmExternalNavigation="true" />
+	}
+	#endif
 }
 
 @if (SurveyNotice == null || IsSurveyNoticeAccepted)

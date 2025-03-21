@@ -1,6 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Text.Json;
+﻿using System.Text.Json;
 using BlazorApp.Data.Models;
 using Microsoft.EntityFrameworkCore;
 namespace BlazorApp.Data;
@@ -9,8 +7,6 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
 {
     public DbSet<AnswerModel> AnswersTable { get; set; } = null!;
     public DbSet<SurveyAnswerView> AnswerView { get; set; } = null!;
-
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Define the JsonSerializerOptions separately before using them in HasConversion
@@ -38,7 +34,6 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
 
         base.OnModelCreating(modelBuilder);
     }
-
 }
 
 public class AppDbContextService(AppDbContext context)

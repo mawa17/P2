@@ -7,7 +7,7 @@ public partial class NameForm
 {
     [SupplyParameterFromForm]
     [Required(ErrorMessage = "Name is required.")]
-    [StringLength(50, MinimumLength = 2, ErrorMessage = "Name must be between 2 and 50 characters.")]
+    [StringLength(100, MinimumLength = 2, ErrorMessage = "Name must be between 2 and 100 characters.")]
     [RegularExpression(@"^[a-zA-ZÆØÅæøå\s]+$", ErrorMessage = "Name can only contain letters, spaces")]
     public string Username { get; set; } = string.Empty;
 
