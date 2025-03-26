@@ -11,6 +11,18 @@
       "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\pages\\admin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\components\\controls\\nameform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\controls\\nameform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,24 +39,12 @@
       "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\wwwroot\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\wwwroot\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\data\\models\\surveymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\data\\models\\surveymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\data\\models\\answermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\data\\models\\answermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\migrations\\20250318092031_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\components\\controls\\nameform.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\controls\\nameform.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\components\\controls\\nameform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\controls\\nameform.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83EBC508-DD34-45B9-9108-38A0C82365A5}|BlazorApp\\BlazorApp.csproj|c:\\users\\maw\\desktop\\p2\\quiz\\blazorapp\\components\\controls\\survey.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,48 +149,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Admin.razor",
-              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Pages\\Admin.razor",
-              "RelativeDocumentMoniker": "BlazorApp\\Components\\Pages\\Admin.razor",
-              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Pages\\Admin.razor",
-              "RelativeToolTip": "BlazorApp\\Components\\Pages\\Admin.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "BasicAuth.razor",
+              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\BasicAuth.razor",
+              "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\BasicAuth.razor",
+              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\BasicAuth.razor",
+              "RelativeToolTip": "BlazorApp\\Components\\Controls\\BasicAuth.razor",
+              "ViewState": "AgIAACMAAAAAAAAAAAAmwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-21T08:36:09.214Z",
+              "WhenOpened": "2025-03-24T12:09:38.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SurveyModel.cs",
-              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Data\\Models\\SurveyModel.cs",
-              "RelativeDocumentMoniker": "BlazorApp\\Data\\Models\\SurveyModel.cs",
-              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Data\\Models\\SurveyModel.cs",
-              "RelativeToolTip": "BlazorApp\\Data\\Models\\SurveyModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T12:33:31.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AnswerModel.cs",
-              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Data\\Models\\AnswerModel.cs",
-              "RelativeDocumentMoniker": "BlazorApp\\Data\\Models\\AnswerModel.cs",
-              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Data\\Models\\AnswerModel.cs",
-              "RelativeToolTip": "BlazorApp\\Data\\Models\\AnswerModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T11:26:58.047Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\App.razor",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\App.razor",
@@ -202,11 +174,12 @@
               "RelativeToolTip": "BlazorApp\\Components\\App.razor",
               "ViewState": "AgIAABgAAAAAAAAAAAAAABUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-18T11:07:27.759Z"
+              "WhenOpened": "2025-03-18T11:07:27.759Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Routes.razor",
@@ -214,24 +187,25 @@
               "RelativeToolTip": "BlazorApp\\Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-04T08:23:02.148Z"
+              "WhenOpened": "2025-02-04T08:23:02.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Program.cs",
               "RelativeDocumentMoniker": "BlazorApp\\Program.cs",
               "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Program.cs",
               "RelativeToolTip": "BlazorApp\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAswB0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T07:53:41.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Pages\\Home.razor",
@@ -243,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Pages\\Login.razor",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Pages\\Login.razor",
@@ -255,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Pages\\Error.razor",
@@ -267,16 +241,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BasicAuth.razor",
-              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\BasicAuth.razor",
-              "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\BasicAuth.razor",
-              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\BasicAuth.razor",
-              "RelativeToolTip": "BlazorApp\\Components\\Controls\\BasicAuth.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "NameForm.razor",
+              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\NameForm.razor",
+              "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\NameForm.razor",
+              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\NameForm.razor",
+              "RelativeToolTip": "BlazorApp\\Components\\Controls\\NameForm.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T12:09:38.984Z",
+              "WhenOpened": "2025-03-14T07:10:34.459Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin.razor",
+              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Pages\\Admin.razor",
+              "RelativeDocumentMoniker": "BlazorApp\\Components\\Pages\\Admin.razor",
+              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Pages\\Admin.razor",
+              "RelativeToolTip": "BlazorApp\\Components\\Pages\\Admin.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T08:36:09.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SurveyModel.cs",
+              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Data\\Models\\SurveyModel.cs",
+              "RelativeDocumentMoniker": "BlazorApp\\Data\\Models\\SurveyModel.cs",
+              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Data\\Models\\SurveyModel.cs",
+              "RelativeToolTip": "BlazorApp\\Data\\Models\\SurveyModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:33:31.025Z"
             },
             {
               "$type": "Document",
@@ -292,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "auth.js",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\auth.js",
               "RelativeDocumentMoniker": "BlazorApp\\wwwroot\\auth.js",
@@ -304,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "QuestionPrompt.razor.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\QuestionPrompt.razor.cs",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\QuestionPrompt.razor.cs",
@@ -340,18 +339,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "NameForm.razor",
-              "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\NameForm.razor",
-              "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\NameForm.razor",
-              "ToolTip": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\NameForm.razor",
-              "RelativeToolTip": "BlazorApp\\Components\\Controls\\NameForm.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-14T07:10:34.459Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Survey.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\Survey.razor",
@@ -364,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Survey.razor.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\Survey.razor.cs",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\Survey.razor.cs",
@@ -376,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BlazorApp\\Data\\AppDbContext.cs",
@@ -388,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "20250318092054_CreateView.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Migrations\\20250318092054_CreateView.cs",
               "RelativeDocumentMoniker": "BlazorApp\\Migrations\\20250318092054_CreateView.cs",
@@ -400,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\appsettings.json",
               "RelativeDocumentMoniker": "BlazorApp\\appsettings.json",
@@ -412,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "SurveyCreator.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\SurveyCreator.razor",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\SurveyCreator.razor",
@@ -424,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\_Imports.razor",
@@ -436,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "SurveyDEBUG.json",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\SurveyDEBUG.json",
               "RelativeDocumentMoniker": "BlazorApp\\wwwroot\\SurveyDEBUG.json",
@@ -448,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "Survey.json",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\Survey.json",
               "RelativeDocumentMoniker": "BlazorApp\\wwwroot\\Survey.json",
@@ -460,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "BlazorApp\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -472,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Layout\\MainLayout.razor",
@@ -484,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "QuestionPrompt.razor.css",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Components\\Controls\\QuestionPrompt.razor.css",
               "RelativeDocumentMoniker": "BlazorApp\\Components\\Controls\\QuestionPrompt.razor.css",
@@ -496,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "BlazorApp",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\BlazorApp.csproj",
               "RelativeDocumentMoniker": "BlazorApp\\BlazorApp.csproj",
@@ -507,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "BlazorApp.csproj",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\BlazorApp.csproj",
               "RelativeDocumentMoniker": "BlazorApp\\BlazorApp.csproj",
@@ -519,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "20250313112554_Points.cs",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\Migrations\\20250313112554_Points.cs",
               "RelativeDocumentMoniker": "BlazorApp\\Migrations\\20250313112554_Points.cs",
@@ -530,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "bootstrap.css",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\bootstrap.css",
               "RelativeDocumentMoniker": "BlazorApp\\wwwroot\\bootstrap.css",
@@ -542,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "app.css",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\app.css",
               "RelativeDocumentMoniker": "BlazorApp\\wwwroot\\app.css",
@@ -554,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "bootstrap.bundle.js.map",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\bootstrap.bundle.js.map",
               "RelativeDocumentMoniker": "BlazorApp\\wwwroot\\bootstrap.bundle.js.map",
@@ -566,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -578,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "bootstrap.bundle.js",
               "DocumentMoniker": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\bootstrap.bundle.js",
               "RelativeDocumentMoniker": "BlazorApp\\wwwroot\\bootstrap.bundle.js",

@@ -3,18 +3,22 @@
 @inject AppDbContextService DbService
 
 
-<BasicAuth Username="a" Password="p">
+<BasicAuth Username="a" Password="p" Realm="AdminView">
 
     <div class="position-relative overflow-auto">
         <div class="table-responsive mb-5">
-            <QuickGrid Items="Answers.AsQueryable()" class="table table-secondary table-bordered text-center m-0 table-striped">
-                <PropertyColumn Property="@(p => p.Survey.Title)" Title="SurveyTitle" Sortable="true" />
-                <PropertyColumn Property="@(p => p.Name)" Title="Participant's name" Sortable="true" />
-                <PropertyColumn Property="@(p => String.Join(" | ", GetPoints(p.Points)))" Title="Points" Sortable="true" />
-                <TemplateColumn>
-                    <button @onclick="() => OnClick(context.Id)" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#SurveyAnswerModal">View Answers</button>
-                </TemplateColumn>
-            </QuickGrid>
+            <div class="m-3">
+                <input type="text" class="form-control mb-2" @bind="searchQuery" @bind:event="oninput" placeholder="Search..." />
+
+                <QuickGrid Items="FilteredAnswers.AsQueryable()" class="table table-secondary table-bordered text-center table-striped">
+                    <PropertyColumn Property="@(p => p.Survey.Title)" Title="SurveyTitle" Sortable="true" />
+                    <PropertyColumn Property="@(p => p.Name)" Title="Participant's name" Sortable="true" />
+                    <PropertyColumn Property="@(p => String.Join(" | ", GetPoints(p.Points)))" Title="Points" Sortable="true" />
+                    <TemplateColumn>
+                        <button @onclick="() => OnClick(context.Id)" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#SurveyAnswerModal">View Answers</button>
+                    </TemplateColumn>
+                </QuickGrid>
+            </div>
         </div>
     </div>
 
@@ -65,6 +69,7 @@
 </BasicAuth>
 
 @code {
+    private string searchQuery = string.Empty;
     private uint Id;
     static string ToAlpha(int index) {
         int cycle = index / 26;
@@ -86,4 +91,12 @@
         Console.WriteLine(index);
         this.Id = (uint)index;
     }
+
+    // Filtered answers based on search query
+    private IEnumerable<AnswerModel> FilteredAnswers => Answers.Where(answer =>
+        String.IsNullOrEmpty(searchQuery) ||
+        answer.Survey.Title.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ||
+        answer.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase) ||
+        String.Join(" | ", GetPoints(answer.Points)).Contains(searchQuery, StringComparison.OrdinalIgnoreCase)
+    );
 }

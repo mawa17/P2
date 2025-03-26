@@ -16,10 +16,10 @@
         if (String.IsNullOrEmpty(Username) || String.IsNullOrEmpty(Password))
             throw new ArgumentNullException($"{nameof(Username)} or {nameof(Password)} cannot be NULL!");
 
-        // Check if already authenticated, don't clear session if logged in
+        // Check if already authenticated logout
         if (isAuthenticated && context.Session.GetString(Realm) != null) Logout();
 
-        // Set up the realm for the session if it's not already set
+        // Create unique value in fixed realm
         if (context.Session.GetString(Realm) == null)
             context.Session.SetString(Realm, $"Secure-Area-{Guid.NewGuid()}");
 
@@ -46,10 +46,13 @@
         // Set user as authenticated
         isAuthenticated = true;
 
-        // Prevent browser caching
-        context.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0";
-        context.Response.Headers["Pragma"] = "no-cache";
-        context.Response.Headers["Expires"] = "-1";
+        try
+        {
+            // Prevent browser caching
+            context.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0";
+            context.Response.Headers["Pragma"] = "no-cache";
+            context.Response.Headers["Expires"] = "-1";
+        } catch { } // Headers already sent
 
         // Optional: Remove the realm session after successful authentication
         context.Session.Remove(Realm);
@@ -64,8 +67,7 @@
             // Use the session-stored realm, forcing login when needed
             context.Response.Headers["WWW-Authenticate"] = $"Basic realm=\"{context.Session.GetString(Realm)}\"";
             context.Response.StatusCode = 401;
-        }
-        catch { } // Headers already sent
+        } catch { } // Headers already sent
     }
 
     private (string username, string password)? ParseAuthorizationHeader(string authHeader)
@@ -98,5 +100,5 @@
 }
 else
 {
-    <h1>401 Unauthorized - Authentication Required</h1>
+    <h1 class="d-flex justify-content-center align-items-center mt-5">401 Unauthorized - Authentication Required</h1>
 }
