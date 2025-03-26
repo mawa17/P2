@@ -3,58 +3,74 @@
 @inject AppDbContextService DbService
 
 
+<BasicAuth Username="a" Password="p">
 
-<div class="position-relative overflow-auto">
-    <div class="table-responsive mb-5">
-        <QuickGrid Items="Answers.AsQueryable()" class="table table-secondary table-bordered text-center m-0 table-striped">
-            <PropertyColumn Property="@(p => p.Survey.Title)" Title="SurveyTitle" Sortable="true" />
-            <PropertyColumn Property="@(p => p.Name)" Title="Participant's name" Sortable="true" />
-            <PropertyColumn Property="@(p => String.Join(" | ", GetPoints(p.Points)))" Title="Points" Sortable="true" />
-            <TemplateColumn>
-                <button @onclick="() => OnClick(context.Id)" class="btn btn-dark">View Answers</button>
-            </TemplateColumn>
-        </QuickGrid>
-    </div>
-</div>
-
-
-@if(this.Id > 0) {
     <div class="position-relative overflow-auto">
         <div class="table-responsive mb-5">
-            <h1 class="d-flex justify-content-center my-4">@($"{SelectedEntity.Survey.Title}{(!String.IsNullOrEmpty(SelectedEntity.Name) ? $" - {SelectedEntity.Name}" : "")} Answers")</h1>
-            <table class="table table-secondary table-bordered text-center m-0 table-striped">
-                <thead class="table-dark">
-                    <tr>
-                        <th scope="col">Question</th>
-                        @for (int i = 0; i < SelectedEntity.Survey.Questions.Max(x => x.Options.Count); i++)
-                        {
-                            <th scope="col" class="text-center">@((i == 0) ? "Første" : (i == SelectedEntity.Survey.Questions[i].Options.Count - 1) ? "Sidste" : $"{i + 1}.") valg</th>
-                        }
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var question in SelectedEntity.Survey.Questions)
-                    {
-                        <tr>
-                            <td>@question.Text</td>
-                            @foreach (var option in question.Options)
-                            {
-                                <td>@option</td>
-                            }
-                        </tr>
-                    }
-                </tbody>
-            </table>
+            <QuickGrid Items="Answers.AsQueryable()" class="table table-secondary table-bordered text-center m-0 table-striped">
+                <PropertyColumn Property="@(p => p.Survey.Title)" Title="SurveyTitle" Sortable="true" />
+                <PropertyColumn Property="@(p => p.Name)" Title="Participant's name" Sortable="true" />
+                <PropertyColumn Property="@(p => String.Join(" | ", GetPoints(p.Points)))" Title="Points" Sortable="true" />
+                <TemplateColumn>
+                    <button @onclick="() => OnClick(context.Id)" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#SurveyAnswerModal">View Answers</button>
+                </TemplateColumn>
+            </QuickGrid>
         </div>
     </div>
-}
 
+    @if(this.Id > 0) {
+        <div class="modal fade" id="SurveyAnswerModal" tabindex="-1" aria-labelledby="SurveyAnswerModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl px-4" style="max-width: 1920px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="SurveyAnswerModalLabel">
+                            @($"{SelectedEntity.Survey.Title}{(!String.IsNullOrEmpty(SelectedEntity.Name) ? $" - {SelectedEntity.Name}" : "")} Answers")
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="position-relative overflow-auto">
+                            <div class="table-responsive">
+                                <table class="table table-secondary table-bordered text-center m-0 table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th scope="col">Question</th>
+                                            @for (int i = 0; i < SelectedEntity.Survey.Questions.Max(x => x.Options.Count); i++)
+                                            {
+                                                <th scope="col" class="text-center">@((i == 0) ? "Første" : (i == SelectedEntity.Survey.Questions[i].Options.Count - 1) ? "Sidste" : $"{i + 1}.") valg</th>
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var question in SelectedEntity.Survey.Questions)
+                                        {
+                                            <tr>
+                                                <td>@question.Text</td>
+                                                @foreach (var option in question.Options)
+                                                {
+                                                    <td>@option</td>
+                                                }
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
 
-
+</BasicAuth>
 
 @code {
     private uint Id;
-    static char ToAlphaChar(int index) => (char)('A' + (index % 26));
+    static string ToAlpha(int index) {
+        int cycle = index / 26;
+        char letter = (char)('A' + (index % 26));
+        return cycle > 0 ? $"{letter}{cycle}" : letter.ToString();
+    }
 
     private AnswerModel[] Answers => DbService.Entity.ToArray();
     private AnswerModel SelectedEntity => Answers.First(x => x.Id == this.Id);
@@ -62,7 +78,7 @@
 
     private IEnumerable<string> GetPoints(IList<int> values) 
     {
-        for (int i = 0; i < values.Count; i++) yield return $"{ToAlphaChar(i)} {values[i]}";
+        for (int i = 0; i < values.Count; i++) yield return $"{ToAlpha(i)} {values[i]}";
     }
 
     private void OnClick(int index) 

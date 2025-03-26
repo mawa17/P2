@@ -6,7 +6,9 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\wwwroot\SurveyDEBUG.json
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\wwwroot\app.css
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\wwwroot\bootstrap.css
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\wwwroot\bootstrap.css.map
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\wwwroot\auth.js
 wwwroot\app.css
+wwwroot\auth.js
 wwwroot\bootstrap.bundle.js
 wwwroot\bootstrap.bundle.js.map
 wwwroot\bootstrap.css

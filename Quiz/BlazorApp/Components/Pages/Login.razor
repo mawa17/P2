@@ -1,0 +1,29 @@
+﻿@page "/login"
+@inject HttpClient Http
+@code {
+    private string data;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var username = "admin";
+        var password = "password"; // In production, don't hard-code passwords.
+
+        var byteArray = System.Text.Encoding.ASCII.GetBytes($"{username}:{password}");
+        var authHeader = Convert.ToBase64String(byteArray);
+
+        // Use the correct API endpoint, such as localhost on the correct port
+        Http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", authHeader);
+
+        // This assumes your API is running on localhost:5001
+        var response = await Http.GetAsync("http://localhost:7211/login");
+
+        if (response.IsSuccessStatusCode)
+        {
+            data = await response.Content.ReadAsStringAsync();
+        }
+        else
+        {
+            data = "Unauthorized";
+        }
+    }
+}
