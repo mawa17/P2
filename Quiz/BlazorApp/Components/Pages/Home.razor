@@ -6,33 +6,28 @@
 <PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
 
 @{
- #if !DEBUG
-    if(String.IsNullOrEmpty(username)) 
+
+    #if !DEBUG
     {
-        <NameForm OnSubmit="(username) => this.username = username" />
+        if (String.IsNullOrEmpty(username))
+        {
+            <NameForm OnSubmit="(username) => this.username = username" />
+        }
     }
- #endif
-}
-@if (surveyModel != null)
-{
-    <Survey 
-    SurveyModel="surveyModel" 
-    OnComplete="OnSurveyComplete"
-    SurveyNotice="For hvert af nedenstående udsagn skal du tage stilling til tre svar. Det svar der passer bedst på dig giver du et 3-tal, det svar der passer næstbedst giver du et 2-tal og det svar der passer dårligst giver du et 1-tal." 
-    />
+    #endif
+    if (surveyModel != null)
+    {
+        <Survey SurveyModel="surveyModel"
+                OnComplete="OnSurveyComplete"
+                SurveyNotice="For hvert af nedenstående udsagn skal du tage stilling til tre svar. Det svar der passer bedst på dig giver du et 3-tal, det svar der passer næstbedst giver du et 2-tal og det svar der passer dårligst giver du et 1-tal." />
+    }
+
+
 }
 
 @code {
     private string username = "";
     private SurveyModel? surveyModel;
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if(firstRender) {
-            //NavManager.NavigateTo("/admin");
-            StateHasChanged();
-        }
-        base.OnAfterRender(firstRender);
-    }
     protected override async Task OnInitializedAsync()
     {
         // Dynamically get the base address
