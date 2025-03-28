@@ -15,14 +15,16 @@
         }
     }
     #endif
+    #if !DEBUG
+    if (surveyModel != null && !String.IsNullOrEmpty(username))
+    #else
     if (surveyModel != null)
+    #endif
     {
         <Survey SurveyModel="surveyModel"
                 OnComplete="OnSurveyComplete"
                 SurveyNotice="For hvert af nedenstående udsagn skal du tage stilling til tre svar. Det svar der passer bedst på dig giver du et 3-tal, det svar der passer næstbedst giver du et 2-tal og det svar der passer dårligst giver du et 1-tal." />
     }
-
-
 }
 
 @code {

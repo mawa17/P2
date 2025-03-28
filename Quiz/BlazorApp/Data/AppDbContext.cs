@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
+using BlazorApp.Components.Pages;
 using BlazorApp.Data.Models;
 using Microsoft.EntityFrameworkCore;
 namespace BlazorApp.Data;
@@ -7,8 +9,15 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
 {
     public DbSet<AnswerModel> AnswersTable { get; set; } = null!;
     public DbSet<SurveyAnswerView> AnswerView { get; set; } = null!;
+    public DbSet<LoginModel> Login { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+
+        // Seeding default data for the Login table
+        modelBuilder.Entity<LoginModel>().HasData(
+            new LoginModel { Id = 1, Username = "admin", Password = "Pa$$w0rd!" }
+        );
+
         // Define the JsonSerializerOptions separately before using them in HasConversion
         var jsonOptions = new JsonSerializerOptions
         {
@@ -39,10 +48,23 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
 public class AppDbContextService(AppDbContext context)
 {
     private readonly AppDbContext _context = context;
+    public LoginModel? Login => this._context.Login.AsNoTracking().FirstOrDefault();
     public IQueryable<AnswerModel> Entity => this._context.AnswersTable
         .Include(x => x.Survey)
         .Include(y => y.Survey.Questions)
         .AsNoTracking();
+
+    public void UpdateLogin(string username, string password)
+    {
+        var loginEntry = _context.Login.Find(1);
+        if (loginEntry != null)
+        {
+            loginEntry.Username = username;
+            loginEntry.Password = password;
+        }
+        else _context.Login.Add(new() { Username = username, Password = password});
+        _context.SaveChanges();
+    }
     public async Task AddAnswerAsync(AnswerModel answer)
     {
         _context.AnswersTable.Add(answer);
@@ -57,6 +79,13 @@ public class AppDbContextService(AppDbContext context)
         }
 #endif
     }
+}
+
+public sealed class LoginModel
+{
+    public int Id { get; set; }
+    public string Username { get; set; } = null!;
+    public string Password { get; set; } = null!;
 }
 
 public class SurveyAnswerView

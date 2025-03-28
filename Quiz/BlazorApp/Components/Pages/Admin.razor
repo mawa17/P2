@@ -3,7 +3,7 @@
 @inject AppDbContextService DbService
 
 
-<BasicAuth Username="a" Password="p" Realm="AdminView">
+<BasicAuth Username="@DbService.Login!.Username" Password="@DbService.Login!.Password" Realm="AdminView">
 
     <div class="position-relative overflow-auto">
         <div class="table-responsive mb-5">

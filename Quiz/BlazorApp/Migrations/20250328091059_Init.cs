@@ -11,6 +11,20 @@ namespace BlazorApp.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Login",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Login", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "SurveyModel",
                 columns: table => new
                 {
@@ -80,6 +94,9 @@ namespace BlazorApp.Migrations
         {
             migrationBuilder.DropTable(
                 name: "AnswersTable");
+
+            migrationBuilder.DropTable(
+                name: "Login");
 
             migrationBuilder.DropTable(
                 name: "QuestionModel");

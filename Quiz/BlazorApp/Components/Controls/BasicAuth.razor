@@ -65,7 +65,7 @@
         try
         {
             // Use the session-stored realm, forcing login when needed
-            context.Response.Headers["WWW-Authenticate"] = $"Basic realm=\"{context.Session.GetString(Realm)}\"";
+            context.Response.Headers["WWW-Authenticate"] = $"Basic realm=\"{context.Session!.GetString(Realm)}\"";
             context.Response.StatusCode = 401;
         } catch { } // Headers already sent
     }
