@@ -78,6 +78,11 @@ namespace BlazorApp.Migrations
                         principalColumn: "Id");
                 });
 
+            migrationBuilder.InsertData(
+                table: "Login",
+                columns: new[] { "Id", "Password", "Username" },
+                values: new object[] { 1, "Pa$$w0rd!", "Admin" });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AnswersTable_SurveyId",
                 table: "AnswersTable",

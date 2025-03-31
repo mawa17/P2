@@ -15,7 +15,7 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
 
         // Seeding default data for the Login table
         modelBuilder.Entity<LoginModel>().HasData(
-            new LoginModel { Id = 1, Username = "admin", Password = "Pa$$w0rd!" }
+            new LoginModel { Id = 1, Username = "Admin", Password = "Pa$$w0rd!" }
         );
 
         // Define the JsonSerializerOptions separately before using them in HasConversion

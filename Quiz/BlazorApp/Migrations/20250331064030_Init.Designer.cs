@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250328091059_Init")]
+    [Migration("20250331064030_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -43,6 +43,14 @@ namespace BlazorApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Login");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Password = "Pa$$w0rd!",
+                            Username = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("BlazorApp.Data.Models.AnswerModel", b =>

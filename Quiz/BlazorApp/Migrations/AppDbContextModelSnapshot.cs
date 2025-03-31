@@ -40,6 +40,14 @@ namespace BlazorApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Login");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Password = "Pa$$w0rd!",
+                            Username = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("BlazorApp.Data.Models.AnswerModel", b =>
