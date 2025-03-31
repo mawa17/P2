@@ -1,4 +1,5 @@
-﻿@code {
+﻿@using Microsoft.Net.Http.Headers
+@code {
     [Parameter, EditorRequired] public string Username { get; init; } = null!;
     [Parameter, EditorRequired] public string Password { get; init; } = null!;
     [Parameter] public RenderFragment? ChildContent { get; init; }
@@ -6,26 +7,20 @@
     [Inject] public IHttpContextAccessor accessor { get; init; } = default!;
     [Inject] public NavigationManager Navigation { get; init; } = default!;
     private HttpContext Context => accessor.HttpContext!;
-    private bool _isAuthenticated;
+    private bool HasServerAuth = false;
+    private bool HasSessionAuth => bool.TryParse(Context.Session?.GetString($"{Realm}-IsAuthenticated") ?? String.Empty, out bool result);
     private bool IsAuthenticated
     {
         get
         {
-            if (!_isAuthenticated)
+            if (!HasServerAuth && HasSessionAuth)
             {
-                _ = bool.TryParse(Context.Session.GetString($"{Realm}-IsAuthenticated"), out bool result);
-                if (result) _isAuthenticated = true;
+                HasServerAuth = true;
+                Context.Session.Remove($"{Realm}-IsAuthenticated");
             }
-            return _isAuthenticated;
-        }
-        set {
-            if (value) Context.Session.SetString($"{Realm}-IsAuthenticated", "true");
-            else Context.Session.Remove($"{Realm}-IsAuthenticated");
-            _isAuthenticated = value;
+            return HasServerAuth;
         }
     }
-
-    // A secure session identifier for the realm
     private string SecureArea
     {
         get
@@ -47,6 +42,7 @@
         Authenticate();
     }
 
+
     // Authenticate the user based on the Authorization header
     private void Authenticate()
     {
@@ -58,7 +54,6 @@
         }
 
         var credentials = ParseAuthorizationHeader(Context.Request.Headers["Authorization"].ToString());
-
         if (credentials == null || !ValidateUser(credentials.Value.username, credentials.Value.password))
         {
             RequestAuthentication();
@@ -66,19 +61,20 @@
         }
 
         // Set the user as authenticated securely in the session
-        IsAuthenticated = true;
-
+        HasServerAuth = true;
+        Context.Session.SetString($"{Realm}-IsAuthenticated", "true");
         StateHasChanged();
     }
 
+     
     // Method to trigger a login prompt
     private void RequestAuthentication()
     {
         if (!Context.Response.HasStarted)
         {
             // Use the session-stored realm, forcing login when needed
-            Context.Response.Headers["WWW-Authenticate"] = $"Basic realm=\"{SecureArea}\"";
-            Context.Response.StatusCode = 401;  // Unauthorized
+            Context.Response.Headers.WWWAuthenticate = $"Basic realm=\"{SecureArea}\"";
+            Context.Response.StatusCode = StatusCodes.Status401Unauthorized;
         }
     }
 
@@ -94,19 +90,6 @@
         return credentials.Length == 2 ? (credentials[0], credentials[1]) : null;
     }
 
-    // Logout method to clear the session and headers
-    private void Logout()
-    {
-        // Clear the session data and reset the private boolean
-
-        Context.Session.Clear();
-
-        IsAuthenticated = false;
-
-        Context.Request.Headers.Clear();
-
-        StateHasChanged();
-    }
 
     // Validate the provided username and password
     private bool ValidateUser(string username, string password) =>

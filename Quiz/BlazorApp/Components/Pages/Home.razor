@@ -3,7 +3,13 @@
 @inject HttpClient Http
 @inject NavigationManager NavManager
 @inject AppDbContextService DbService
-<PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
+
+
+<BasicAuth Username="a" Password="p" Realm="basic">
+    <h1>Hello!</h1>
+</BasicAuth>
+
+@* <PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
 
 @{
 
@@ -95,3 +101,4 @@
         await DbService.AddAnswerAsync(new(username, survey, points));
     }
 }
+ *@
