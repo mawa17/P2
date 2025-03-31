@@ -5,8 +5,36 @@
     [Parameter] public string Realm { get; init; } = "AuthRealm";
     [Inject] public IHttpContextAccessor accessor { get; init; } = default!;
     [Inject] public NavigationManager Navigation { get; init; } = default!;
-    private HttpContext context => accessor.HttpContext!;
-    private static bool isAuthenticated;
+    private HttpContext Context => accessor.HttpContext!;
+    private bool _isAuthenticated;
+    private bool IsAuthenticated
+    {
+        get
+        {
+            if (!_isAuthenticated)
+            {
+                _ = bool.TryParse(Context.Session.GetString($"{Realm}-IsAuthenticated"), out bool result);
+                if (result) _isAuthenticated = true;
+            }
+            return _isAuthenticated;
+        }
+        set {
+            if (value) Context.Session.SetString($"{Realm}-IsAuthenticated", "true");
+            else Context.Session.Remove($"{Realm}-IsAuthenticated");
+            _isAuthenticated = value;
+        }
+    }
+
+    // A secure session identifier for the realm
+    private string SecureArea
+    {
+        get
+        {
+            if (String.IsNullOrEmpty(Context.Session.GetString(Realm)))
+                Context.Session.SetString(Realm, $"Secure-Area-{Guid.NewGuid()}");
+            return (Context.Session.GetString(Realm)!);
+        }
+    }
 
     protected override void OnInitialized()
     {
@@ -16,26 +44,20 @@
         if (String.IsNullOrEmpty(Username) || String.IsNullOrEmpty(Password))
             throw new ArgumentNullException($"{nameof(Username)} or {nameof(Password)} cannot be NULL!");
 
-        // Check if already authenticated logout
-        if (isAuthenticated && context.Session.GetString(Realm) != null) Logout();
-
-        // Create unique value in fixed realm
-        if (context.Session.GetString(Realm) == null)
-            context.Session.SetString(Realm, $"Secure-Area-{Guid.NewGuid()}");
-
         Authenticate();
     }
 
+    // Authenticate the user based on the Authorization header
     private void Authenticate()
     {
         // If no Authorization header, force login
-        if (!context.Request.Headers.ContainsKey("Authorization"))
+        if (!Context.Request.Headers.ContainsKey("Authorization"))
         {
             RequestAuthentication();
             return;
         }
 
-        var credentials = ParseAuthorizationHeader(context.Request.Headers["Authorization"].ToString());
+        var credentials = ParseAuthorizationHeader(Context.Request.Headers["Authorization"].ToString());
 
         if (credentials == null || !ValidateUser(credentials.Value.username, credentials.Value.password))
         {
@@ -43,33 +65,24 @@
             return;
         }
 
-        // Set user as authenticated
-        isAuthenticated = true;
-
-        try
-        {
-            // Prevent browser caching
-            context.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0";
-            context.Response.Headers["Pragma"] = "no-cache";
-            context.Response.Headers["Expires"] = "-1";
-        } catch { } // Headers already sent
-
-        // Optional: Remove the realm session after successful authentication
-        context.Session.Remove(Realm);
+        // Set the user as authenticated securely in the session
+        IsAuthenticated = true;
 
         StateHasChanged();
     }
 
+    // Method to trigger a login prompt
     private void RequestAuthentication()
     {
-        try
+        if (!Context.Response.HasStarted)
         {
             // Use the session-stored realm, forcing login when needed
-            context.Response.Headers["WWW-Authenticate"] = $"Basic realm=\"{context.Session!.GetString(Realm)}\"";
-            context.Response.StatusCode = 401;
-        } catch { } // Headers already sent
+            Context.Response.Headers["WWW-Authenticate"] = $"Basic realm=\"{SecureArea}\"";
+            Context.Response.StatusCode = 401;  // Unauthorized
+        }
     }
 
+    // Parse the Basic Authorization header
     private (string username, string password)? ParseAuthorizationHeader(string authHeader)
     {
         if (!authHeader.StartsWith("Basic ", StringComparison.OrdinalIgnoreCase)) return null;
@@ -81,20 +94,27 @@
         return credentials.Length == 2 ? (credentials[0], credentials[1]) : null;
     }
 
-    private void Logout() 
+    // Logout method to clear the session and headers
+    private void Logout()
     {
-        context.Session.Clear();
-        isAuthenticated = false;
-        Navigation.Refresh(true);
+        // Clear the session data and reset the private boolean
+
+        Context.Session.Clear();
+
+        IsAuthenticated = false;
+
+        Context.Request.Headers.Clear();
+
         StateHasChanged();
     }
 
+    // Validate the provided username and password
     private bool ValidateUser(string username, string password) =>
         String.Equals(username, this.Username, StringComparison.Ordinal) &&
         String.Equals(password, this.Password, StringComparison.Ordinal);
 }
 
-@if (isAuthenticated)
+@if (IsAuthenticated)
 {
     @ChildContent
 }

@@ -27,7 +27,11 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddDistributedMemoryCache(); // Required for session storage
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromSeconds(300); // Session timeout
+    options.IdleTimeout = TimeSpan.FromSeconds(60); // Session timeout
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;  // Use only over HTTPS
+    options.Cookie.HttpOnly = true;  // Make cookie inaccessible via JavaScript
+    options.Cookie.SameSite = SameSiteMode.Strict;  // Prevent cross-site attacks
+    options.Cookie.IsEssential = true;  // Make sure the cookie is considered essential for session
 });
 
 
