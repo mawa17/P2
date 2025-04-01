@@ -7,18 +7,31 @@
     [Inject] public IHttpContextAccessor accessor { get; init; } = default!;
     [Inject] public NavigationManager Navigation { get; init; } = default!;
     private HttpContext Context => accessor.HttpContext!;
-    private bool HasServerAuth = false;
-    private bool HasSessionAuth => bool.TryParse(Context.Session?.GetString($"{Realm}-IsAuthenticated") ?? String.Empty, out bool result);
+    private bool HasSessionAuth => Boolean.TryParse(Context.Session?.GetString($"{Realm}-IsAuthenticated") ?? String.Empty, out bool result);
+    private bool _isAuthenticated = false;
     private bool IsAuthenticated
     {
         get
         {
-            if (!HasServerAuth && HasSessionAuth)
+
+            if (HasSessionAuth && !_isAuthenticated)
             {
-                HasServerAuth = true;
+                _isAuthenticated = true;
                 Context.Session.Remove($"{Realm}-IsAuthenticated");
             }
-            return HasServerAuth;
+            return _isAuthenticated;
+        }
+    }
+    private bool IsAuthorized
+    {
+        get
+        {
+            IHeaderDictionary headers = Context.Request.Headers;
+            var credentials = ParseAuthorizationHeader(headers.Authorization.ToString());
+            Console.WriteLine(headers.Authorization.ToString());
+            return headers.ContainsKey(HeaderNames.Authorization) &&
+                    credentials != null &&
+                    ValidateUser(credentials.Value.username, credentials.Value.password);
         }
     }
     private string SecureArea
@@ -39,39 +52,41 @@
         if (String.IsNullOrEmpty(Username) || String.IsNullOrEmpty(Password))
             throw new ArgumentNullException($"{nameof(Username)} or {nameof(Password)} cannot be NULL!");
 
-        Authenticate();
+        if(IsAuthorized && !IsAuthenticated) {
+            Console.WriteLine($"DIE {IsAuthorized} -> {IsAuthenticated}");
+            Context.Request.Headers.Remove(HeaderNames.Authorization);
+            Context.Request.Headers.Remove(HeaderNames.WWWAuthenticate);
+            Context.Session.Remove($"{Realm}-IsAuthenticated");
+            _isAuthenticated = false;
+        }
     }
-
 
     // Authenticate the user based on the Authorization header
-    private void Authenticate()
+    private void Authorize()
     {
-        // If no Authorization header, force login
-        if (!Context.Request.Headers.ContainsKey("Authorization"))
+        if(!IsAuthorized && !IsAuthenticated) 
         {
+            Console.WriteLine("NEED LOGIN!");
             RequestAuthentication();
             return;
         }
 
-        var credentials = ParseAuthorizationHeader(Context.Request.Headers["Authorization"].ToString());
-        if (credentials == null || !ValidateUser(credentials.Value.username, credentials.Value.password))
-        {
-            RequestAuthentication();
-            return;
-        }
-
-        // Set the user as authenticated securely in the session
-        HasServerAuth = true;
+        _isAuthenticated = true;
         Context.Session.SetString($"{Realm}-IsAuthenticated", "true");
-        StateHasChanged();
+        Console.WriteLine("APPROVED");
+
     }
 
-     
+
     // Method to trigger a login prompt
     private void RequestAuthentication()
     {
         if (!Context.Response.HasStarted)
         {
+            Context.Response.Headers.CacheControl = "no-store, no-cache, must-revalidate";
+            Context.Response.Headers.Pragma = "no-cache";
+            Context.Response.Headers.Expires = "0";
+
             // Use the session-stored realm, forcing login when needed
             Context.Response.Headers.WWWAuthenticate = $"Basic realm=\"{SecureArea}\"";
             Context.Response.StatusCode = StatusCodes.Status401Unauthorized;
@@ -91,13 +106,14 @@
     }
 
 
+
     // Validate the provided username and password
     private bool ValidateUser(string username, string password) =>
         String.Equals(username, this.Username, StringComparison.Ordinal) &&
         String.Equals(password, this.Password, StringComparison.Ordinal);
 }
 
-@if (IsAuthenticated)
+@if (IsAuthenticated && IsAuthenticated)
 {
     @ChildContent
 }
