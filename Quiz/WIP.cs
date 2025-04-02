@@ -1,84 +1,126 @@
-using System.ComponentModel.DataAnnotations;
-using BlazorApp.Data.Models;
-using Microsoft.AspNetCore.Components;
+@using Microsoft.Net.Http.Headers
+@code {
+    [Parameter, EditorRequired] public string Username { get; init; } = null!;
+    [Parameter, EditorRequired] public string Password { get; init; } = null!;
+    [Parameter] public RenderFragment? ChildContent { get; init; }
+    [Parameter] public string Realm { get; init; } = "AuthRealm";
+    [Inject] public IHttpContextAccessor accessor { get; init; } = default!;
+    [Inject] public NavigationManager Navigation { get; init; } = default!;
+    private HttpContext Context => accessor.HttpContext!;
+    private bool IsSessionAuthenticated => Boolean.TryParse(Context.Session?.GetString($"{Realm}-IsAuthenticated") ?? String.Empty, out bool result);
+    private bool _isAuthenticated = false;
+    private bool IsAuthenticated
+    {
+        get
+        {
 
-namespace BlazorApp.Components.Controls;
-
-
-public interface IComponentState<TState> where TState : struct
-{
-    TState State { get; set; }
-}
-
-public partial class QuestionPrompt : ComponentBase, IComponentState<QuestionState>
-{
-    private readonly string guid = Guid.NewGuid().ToString();
-    private int x, y; /*For Visualisation*/
-
-    [Parameter, EditorRequired]
-    public QuestionModel Question { get; init; } = default!;
-
-    [Parameter]
-    public EventCallback<QuestionModel> OnSubmit { get; set; }
-
-    [Parameter]
-    public QuestionState State { get; set; }
-
-    private bool CanSubmit => State.Answers.Count == Question.Options.Length;
+            if (IsSessionAuthenticated && !_isAuthenticated)
+            {
+                _isAuthenticated = true;
+                Context.Session.Remove($"{Realm}-IsAuthenticated");
+            }
+            return _isAuthenticated;
+        }
+    }
+    private bool IsAuthorized
+    {
+        get
+        {
+            IHeaderDictionary headers = Context.Request.Headers;
+            var credentials = ParseAuthorizationHeader(headers.Authorization.ToString());
+            Console.WriteLine(headers.Authorization.ToString());
+            return headers.ContainsKey(HeaderNames.Authorization) &&
+                    credentials != null &&
+                    ValidateUser(credentials.Value.username, credentials.Value.password);
+        }
+    }
+    private string SecureArea
+    {
+        get
+        {
+            if (String.IsNullOrEmpty(Context.Session.GetString(Realm)))
+                Context.Session.SetString(Realm, $"Secure-Area-{Guid.NewGuid()}");
+            return (Context.Session.GetString(Realm)!);
+        }
+    }
 
     protected override void OnInitialized()
     {
-        if (State.Equals(default)) State = new(Question.Options.Length);
-    }
+        if (accessor?.HttpContext == null)
+            throw new NullReferenceException($"{nameof(accessor)} service missing!");
 
-    private void OnSubmitData()
-    {
-        if (!CanSubmit) return;
-        OnSubmit.InvokeAsync(new(Question.Text, State.Answers.Values.ToArray()));
-#if DEBUG
-        Console.WriteLine("SUBMIT");
-#endif
-    }
+        if (String.IsNullOrEmpty(Username) || String.IsNullOrEmpty(Password))
+            throw new ArgumentNullException($"{nameof(Username)} or {nameof(Password)} cannot be NULL!");
 
-    private void ToggleColumnSelection(int x, int y)
-    {
-        string selection = $"SET{x}{y}";
-        string value = Question.Options[y];
-#if DEBUG
-        Console.WriteLine($"{value} ({x})");
-#endif
-        if (State.Grid[y] == selection)
+        if (IsAuthorized && !IsAuthenticated)
         {
-            State.Grid[y] = null;
-            State.UpdateAnswers(value, x, true);
+            Console.WriteLine($"DIE {IsAuthorized} -> {IsAuthenticated}");
+            Context.Request.Headers.Remove(HeaderNames.Authorization);
+            Context.Request.Headers.Remove(HeaderNames.WWWAuthenticate);
+            Context.Session.Remove($"{Realm}-IsAuthenticated");
+            _isAuthenticated = false;
         }
-        else
-        {
-            State.Grid[y] = selection;
-            State.UpdateAnswers(value, x);
-        }
-        this.x = x;
-        this.y = y;
-        StateHasChanged();
+
+        Authorize();
     }
 
+    // Authenticate the user based on the Authorization header
+    private void Authorize()
+    {
+        if (!IsAuthenticated)
+        {
+            Console.WriteLine("NEED LOGIN!");
+            RequestAuthentication();
+            return;
+        }
+
+        _isAuthenticated = true;
+        Context.Session.SetString($"{Realm}-IsAuthenticated", "true");
+        Console.WriteLine("APPROVED");
+
+    }
+
+
+    // Method to trigger a login prompt
+    private void RequestAuthentication()
+    {
+        if (!Context.Response.HasStarted)
+        {
+            Context.Response.Headers.CacheControl = "no-store, no-cache, must-revalidate";
+            Context.Response.Headers.Pragma = "no-cache";
+            Context.Response.Headers.Expires = "0";
+
+            // Use the session-stored realm, forcing login when needed
+            Context.Response.Headers.WWWAuthenticate = $"Basic realm=\"{SecureArea}\"";
+            Context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+        }
+    }
+
+    // Parse the Basic Authorization header
+    private (string username, string password)? ParseAuthorizationHeader(string authHeader)
+    {
+        if (!authHeader.StartsWith("Basic ", StringComparison.OrdinalIgnoreCase)) return null;
+
+        var encodedCredentials = authHeader["Basic ".Length..].Trim();
+        var credentialBytes = Convert.FromBase64String(encodedCredentials);
+        var credentials = System.Text.Encoding.UTF8.GetString(credentialBytes).Split(':', 2);
+
+        return credentials.Length == 2 ? (credentials[0], credentials[1]) : null;
+    }
+
+
+
+    // Validate the provided username and password
+    private bool ValidateUser(string username, string password) =>
+        String.Equals(username, this.Username, StringComparison.Ordinal) &&
+        String.Equals(password, this.Password, StringComparison.Ordinal);
 }
 
-public readonly struct QuestionState(int gridSize)
+@if (IsAuthenticated)
 {
-    public readonly SortedDictionary<int, string> Answers = new();
-    public readonly string?[] Grid = new string[gridSize];
-    public void UpdateAnswers(string value, int index, bool onlyRemove = false)
-    {
-        var keys = Answers.Where(x => x.Value == value);
-        bool hasKey = keys.Count() > 0;
-
-        if (hasKey)
-        {
-            Answers.Remove(keys.ElementAt(0).Key);
-            Answers.Remove(index);
-        }
-
-        if (!onlyRemove) Answers[index] = value;
-    }
+    @ChildContent
+}
+else
+{
+    <h1 class="d-flex justify-content-center align-items-center mt-5">401 Unauthorized - Authentication Required</h1>
 }
