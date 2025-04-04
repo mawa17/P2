@@ -4,8 +4,11 @@
 @inject NavigationManager NavManager
 @inject AppDbContextService DbService
 
+<BasicAuth Username="a" Password="1" Realm="AdminRealm">
+    <h1>Hey</h1>
+</BasicAuth>
 
-<PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
+@* <PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
 
 @{
 
@@ -97,3 +100,4 @@
         await DbService.AddAnswerAsync(new(username, survey, points));
     }
 }
+ *@

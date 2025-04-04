@@ -186,4 +186,3 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Release\net9.0\Microsoft.JSInterop.dl
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\unlu0xluo6-eu7w3d5g1a.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\3gin1ph7ub-25o87uqmvr.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\io2m3ndci8-llqmuxp6vf.gz
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\compressed\skfvdq1qzr-vk4xros96o.gz

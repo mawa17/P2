@@ -9,7 +9,7 @@
     [Parameter] public RenderFragment? ChildContent { get; init; }
     [Parameter] public string Realm { get; init; } = "AuthRealm";
 
-    private HttpContext Context => accessor.HttpContext!;
+    private HttpContext Context => accessor?.HttpContext;
 
     private string IdentifierKey => $"{Realm}-{Context?.Connection?.Id}";
     private string AuthKey => $"{IdentifierKey}-IsAuthenticated";

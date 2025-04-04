@@ -17,10 +17,6 @@
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\auth.js",
-      "PackagePath": "staticwebassets\\auth.js"
-    },
-    {
       "Id": "C:\\Users\\maw\\Desktop\\P2\\Quiz\\BlazorApp\\wwwroot\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\bootstrap.bundle.js"
     },

@@ -1,43 +1,24 @@
 using BlazorApp.Components;
 using BlazorApp.Data;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+// Add services to the container
+
+// Register HttpContextAccessor first (for access in other services)
+builder.Services.AddHttpContextAccessor();
+
+// Register state management service
+builder.Services.AddSingleton<IStateService, StateService>();
+
+// Register HttpClient for general use
+builder.Services.AddHttpClient();
 
 // Register QuickGrid's EF Adapter
 builder.Services.AddQuickGridEntityFrameworkAdapter();
 
-//// Add basic authentication service
-//builder.Services.AddAuthentication(BasicAuthenticationDefaults.AuthenticationScheme)
-//        .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>(
-//            BasicAuthenticationDefaults.AuthenticationScheme,
-//            options => { })
-
-// Register HttpClient
-builder.Services.AddHttpClient();
-
-// Register IHttpContextAccessor
-builder.Services.AddHttpContextAccessor();
-
-builder.Services.AddSingleton<IStateService, StateService>();
-
-builder.Services.AddDistributedMemoryCache(); // Required for session storage
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromSeconds(60); // Session timeout
-    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;  // Use only over HTTPS
-    options.Cookie.HttpOnly = true;  // Make cookie inaccessible via JavaScript
-    options.Cookie.SameSite = SameSiteMode.Strict;  // Prevent cross-site attacks
-    options.Cookie.IsEssential = true;  // Make sure the cookie is considered essential for session
-});
-
-
-// Register the database context
+// Register the database context with connection string configuration
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
 #if DEBUG
@@ -53,36 +34,41 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 #endif
 });
 
+// Register AppDbContextService for scoped DI
 builder.Services.AddScoped<AppDbContextService>();
 
+// Add Razor Components for interactive server-side rendering
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents(options =>
+    {
+        options.DetailedErrors = true; // Enable detailed error reporting for debugging
+    });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseHsts(); // HTTP Strict Transport Security
 }
 
-
-
-app.UseSession();
-
-app.UseHttpsRedirection();
-
+// Enable anti-forgery protection (important for securing requests)
 app.UseAntiforgery();
 
+// Static asset mapping (ensure proper static file handling)
 app.MapStaticAssets();
 
+// Static files middleware configuration
 app.UseStaticFiles(new StaticFileOptions
 {
-    ServeUnknownFileTypes = true, // Ensure the server can serve all file types
-    DefaultContentType = "application/json; charset=utf-8" // Set UTF-8 for JSON files
+    ServeUnknownFileTypes = true,  // Allow serving unknown file types
+    DefaultContentType = "application/json; charset=utf-8" // Default MIME type for JSON files
 });
 
+// Map Razor components for interactive server-side rendering
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
+// Run the application
 app.Run();
