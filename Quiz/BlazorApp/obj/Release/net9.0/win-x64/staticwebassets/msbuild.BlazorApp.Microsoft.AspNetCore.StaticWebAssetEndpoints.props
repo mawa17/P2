@@ -12,6 +12,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tqqzl9m4fa"},{"Name":"integrity","Value":"sha256-2zRhO\u002BQPCZzlgEG6LNTr\u002Bv4v6YqR7O606Vk6ufQu7rU="},{"Name":"label","Value":"_content/BlazorApp/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2523"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00222zRhO\u002BQPCZzlgEG6LNTr\u002Bv4v6YqR7O606Vk6ufQu7rU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Feb 2025 08:56:56 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BlazorApp/auth.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\auth.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kQ\u002BpuVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"777"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022kQ\u002BpuVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 07:19:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BlazorApp/auth.vk4xros96o.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\auth.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vk4xros96o"},{"Name":"integrity","Value":"sha256-kQ\u002BpuVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso="},{"Name":"label","Value":"_content/BlazorApp/auth.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"777"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022kQ\u002BpuVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso=\u0022"},{"Name":"Last-Modified","Value":"Thu, 03 Apr 2025 07:19:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlazorApp/BlazorApp.5c5wj4dpgj.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BlazorApp.5c5wj4dpgj.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -112,13 +124,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SurveyDEBUG.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MnCgPCEmRhq\u002BEqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"854"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022MnCgPCEmRhq\u002BEqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 11:23:04 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"854"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022MnCgPCEmRhq\u002BEqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Mar 2025 08:41:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BlazorApp/SurveyDEBUG.uo5gvo3g9w.json">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\SurveyDEBUG.json'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uo5gvo3g9w"},{"Name":"integrity","Value":"sha256-MnCgPCEmRhq\u002BEqDbEgguXTS/fozcPqi3L6WrKtK1Qdg="},{"Name":"label","Value":"_content/BlazorApp/SurveyDEBUG.json"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"854"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022MnCgPCEmRhq\u002BEqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\u0022"},{"Name":"Last-Modified","Value":"Wed, 12 Mar 2025 11:23:04 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"854"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022MnCgPCEmRhq\u002BEqDbEgguXTS/fozcPqi3L6WrKtK1Qdg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Mar 2025 08:41:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

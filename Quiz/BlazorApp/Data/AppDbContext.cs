@@ -54,16 +54,17 @@ public class AppDbContextService(AppDbContext context)
         .Include(y => y.Survey.Questions)
         .AsNoTracking();
 
-    public void UpdateLogin(string username, string password)
+    public bool UpdateLogin(string username, string password)
     {
         var loginEntry = _context.Login.Find(1);
+        if (loginEntry == null) return false;
         if (loginEntry != null)
         {
             loginEntry.Username = username;
             loginEntry.Password = password;
         }
         else _context.Login.Add(new() { Username = username, Password = password});
-        _context.SaveChanges();
+        return _context.SaveChanges() > 0;
     }
     public async Task AddAnswerAsync(AnswerModel answer)
     {

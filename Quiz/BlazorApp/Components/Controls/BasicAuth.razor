@@ -105,7 +105,7 @@
         return credentials.Length == 2 ? (credentials[0], credentials[1]) : null;
     }
 
-    private void Logout()
+    public void Logout()
     {
         StateService.Remove(AuthKey);
         StateService.Remove(SecureKey);
@@ -143,8 +143,11 @@
         Console.WriteLine($"GET\tWWW\t{Context.Request.Headers.WWWAuthenticate}");
         Console.WriteLine($"POST\tAUTH\t{(ParseAuthorizationHeader(Context.Response.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({Context.Response.Headers.Authorization})");
         Console.WriteLine($"POST\tWWW\t{Context.Response.Headers.WWWAuthenticate}");
-        Console.WriteLine($"IsAuthenticated: {IsAuthenticated}");
-        Console.WriteLine($"IsAuthorized: {IsAuthorized}");
+        Console.WriteLine($"IsAuthenticated\t{IsAuthenticated}");
+        Console.WriteLine($"IsAuthorized\t{IsAuthorized}");
+        Console.WriteLine($"IsRequestSent\t{IsRequestSent}");
+        Console.WriteLine($"IdentifierKey\t{IdentifierKey}");
+        Console.WriteLine($"SecureArea\t{SecureArea}");
         Console.WriteLine("".PadRight(32, '-'));
 #endif
     }

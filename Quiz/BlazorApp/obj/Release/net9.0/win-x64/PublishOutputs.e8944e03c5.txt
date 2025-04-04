@@ -6,6 +6,13 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Bla
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\BlazorApp.pdb
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Azure.Core.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Azure.Identity.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.AspNetCore.Authorization.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.AspNetCore.Components.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.AspNetCore.Metadata.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
@@ -29,6 +36,7 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Mic
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.JSInterop.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.SqlServer.Server.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\Microsoft.Win32.SystemEvents.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Release\net9.0\win-x64\PubTmp\Out\System.ClientModel.dll

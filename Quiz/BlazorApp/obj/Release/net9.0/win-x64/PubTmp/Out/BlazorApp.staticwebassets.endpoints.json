@@ -3,13 +3,13 @@
   "ManifestType": "Publish",
   "Endpoints": [
     {
-      "Route": "BlazorApp.5c5wj4dpgj.styles.css",
+      "Route": "BlazorApp.llqmuxp6vf.styles.css",
       "AssetFile": "BlazorApp.styles.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002277904328"
+          "Quality": "0.002020202020"
         }
       ],
       "ResponseHeaders": [
@@ -27,7 +27,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "438"
+          "Value": "494"
         },
         {
           "Name": "Content-Type",
@@ -35,15 +35,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
+          "Value": "\"fHwn5PLnBj3oxjd7cTmB2heADu14mdf/IgH6EX4l5j4=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
+          "Value": "W/\"171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         },
         {
           "Name": "Vary",
@@ -53,11 +57,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5c5wj4dpgj"
+          "Value": "llqmuxp6vf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
+          "Value": "sha256-171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4="
         },
         {
           "Name": "label",
@@ -66,13 +70,13 @@
       ]
     },
     {
-      "Route": "BlazorApp.5c5wj4dpgj.styles.css",
+      "Route": "BlazorApp.llqmuxp6vf.styles.css",
       "AssetFile": "BlazorApp.styles.css.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.002865329513"
+          "Quality": "0.002444987775"
         }
       ],
       "ResponseHeaders": [
@@ -90,7 +94,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "348"
+          "Value": "408"
         },
         {
           "Name": "Content-Type",
@@ -98,15 +102,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rp7pH8FVRJD7ivtu+zDQqt6SSy0qeblLBmZ3+Kgy9gk=\""
+          "Value": "\"vtI50IDeZ1l+03hKtS1R08Wmmkovm4NYOkm+FzkkTzo=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
+          "Value": "W/\"171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         },
         {
           "Name": "Vary",
@@ -116,11 +124,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5c5wj4dpgj"
+          "Value": "llqmuxp6vf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
+          "Value": "sha256-171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4="
         },
         {
           "Name": "label",
@@ -129,7 +137,7 @@
       ]
     },
     {
-      "Route": "BlazorApp.5c5wj4dpgj.styles.css",
+      "Route": "BlazorApp.llqmuxp6vf.styles.css",
       "AssetFile": "BlazorApp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -143,7 +151,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "780"
+          "Value": "913"
         },
         {
           "Name": "Content-Type",
@@ -151,21 +159,25 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
+          "Value": "\"171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5c5wj4dpgj"
+          "Value": "llqmuxp6vf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
+          "Value": "sha256-171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4="
         },
         {
           "Name": "label",
@@ -174,7 +186,7 @@
       ]
     },
     {
-      "Route": "BlazorApp.5c5wj4dpgj.styles.css.br",
+      "Route": "BlazorApp.llqmuxp6vf.styles.css.br",
       "AssetFile": "BlazorApp.styles.css.br",
       "Selectors": [],
       "ResponseHeaders": [
@@ -192,7 +204,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "348"
+          "Value": "408"
         },
         {
           "Name": "Content-Type",
@@ -200,11 +212,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rp7pH8FVRJD7ivtu+zDQqt6SSy0qeblLBmZ3+Kgy9gk=\""
+          "Value": "\"vtI50IDeZ1l+03hKtS1R08Wmmkovm4NYOkm+FzkkTzo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
         },
         {
           "Name": "Vary",
@@ -214,11 +226,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5c5wj4dpgj"
+          "Value": "llqmuxp6vf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rp7pH8FVRJD7ivtu+zDQqt6SSy0qeblLBmZ3+Kgy9gk="
+          "Value": "sha256-vtI50IDeZ1l+03hKtS1R08Wmmkovm4NYOkm+FzkkTzo="
         },
         {
           "Name": "label",
@@ -227,7 +239,7 @@
       ]
     },
     {
-      "Route": "BlazorApp.5c5wj4dpgj.styles.css.gz",
+      "Route": "BlazorApp.llqmuxp6vf.styles.css.gz",
       "AssetFile": "BlazorApp.styles.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
@@ -245,7 +257,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "438"
+          "Value": "494"
         },
         {
           "Name": "Content-Type",
@@ -253,11 +265,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
+          "Value": "\"fHwn5PLnBj3oxjd7cTmB2heADu14mdf/IgH6EX4l5j4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
         },
         {
           "Name": "Vary",
@@ -267,11 +279,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5c5wj4dpgj"
+          "Value": "llqmuxp6vf"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4="
+          "Value": "sha256-fHwn5PLnBj3oxjd7cTmB2heADu14mdf/IgH6EX4l5j4="
         },
         {
           "Name": "label",
@@ -286,7 +298,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002277904328"
+          "Quality": "0.002020202020"
         }
       ],
       "ResponseHeaders": [
@@ -304,7 +316,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "438"
+          "Value": "494"
         },
         {
           "Name": "Content-Type",
@@ -312,15 +324,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
+          "Value": "\"fHwn5PLnBj3oxjd7cTmB2heADu14mdf/IgH6EX4l5j4=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
+          "Value": "W/\"171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         },
         {
           "Name": "Vary",
@@ -330,7 +346,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
+          "Value": "sha256-171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4="
         }
       ]
     },
@@ -341,7 +357,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.002865329513"
+          "Quality": "0.002444987775"
         }
       ],
       "ResponseHeaders": [
@@ -359,7 +375,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "348"
+          "Value": "408"
         },
         {
           "Name": "Content-Type",
@@ -367,15 +383,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rp7pH8FVRJD7ivtu+zDQqt6SSy0qeblLBmZ3+Kgy9gk=\""
+          "Value": "\"vtI50IDeZ1l+03hKtS1R08Wmmkovm4NYOkm+FzkkTzo=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
+          "Value": "W/\"171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         },
         {
           "Name": "Vary",
@@ -385,7 +405,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
+          "Value": "sha256-171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4="
         }
       ]
     },
@@ -404,7 +424,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "780"
+          "Value": "913"
         },
         {
           "Name": "Content-Type",
@@ -412,17 +432,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w=\""
+          "Value": "\"171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BXbsMPbHn1ogTPA32tTU0FnhQw/d8fNexC7OxzMJi9w="
+          "Value": "sha256-171mykkrrzf2UabWe0tZviWnYbgmstMSZEulbI2WbZ4="
         }
       ]
     },
@@ -445,7 +469,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "348"
+          "Value": "408"
         },
         {
           "Name": "Content-Type",
@@ -453,11 +477,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rp7pH8FVRJD7ivtu+zDQqt6SSy0qeblLBmZ3+Kgy9gk=\""
+          "Value": "\"vtI50IDeZ1l+03hKtS1R08Wmmkovm4NYOkm+FzkkTzo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
         },
         {
           "Name": "Vary",
@@ -467,7 +491,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rp7pH8FVRJD7ivtu+zDQqt6SSy0qeblLBmZ3+Kgy9gk="
+          "Value": "sha256-vtI50IDeZ1l+03hKtS1R08Wmmkovm4NYOkm+FzkkTzo="
         }
       ]
     },
@@ -490,7 +514,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "438"
+          "Value": "494"
         },
         {
           "Name": "Content-Type",
@@ -498,11 +522,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4=\""
+          "Value": "\"fHwn5PLnBj3oxjd7cTmB2heADu14mdf/IgH6EX4l5j4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Mar 2025 10:29:54 GMT"
+          "Value": "Fri, 04 Apr 2025 07:56:49 GMT"
         },
         {
           "Name": "Vary",
@@ -512,7 +536,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z7Z4TncqZnVx+p1QfO9NCPvxj0GaKL6rVaI060jC+C4="
+          "Value": "sha256-fHwn5PLnBj3oxjd7cTmB2heADu14mdf/IgH6EX4l5j4="
         }
       ]
     },
@@ -1071,7 +1095,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         },
         {
           "Name": "Vary",
@@ -1126,7 +1150,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         },
         {
           "Name": "Vary",
@@ -1167,7 +1191,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1208,7 +1232,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         },
         {
           "Name": "Vary",
@@ -1253,7 +1277,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         },
         {
           "Name": "Vary",
@@ -1308,7 +1332,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         },
         {
           "Name": "Vary",
@@ -1371,7 +1395,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         },
         {
           "Name": "Vary",
@@ -1420,7 +1444,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1469,7 +1493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         },
         {
           "Name": "Vary",
@@ -1522,7 +1546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Mar 2025 11:23:04 GMT"
+          "Value": "Thu, 20 Mar 2025 08:41:03 GMT"
         },
         {
           "Name": "Vary",
@@ -1541,6 +1565,537 @@
         {
           "Name": "label",
           "Value": "SurveyDEBUG.json.gz"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 20:18:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25o87uqmvr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css.br",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1969"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CADNY+t22XPFoONZTvC8eNqsfDVXHXX8cdE1DUkJXSQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 20:18:02 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CADNY+t22XPFoONZTvC8eNqsfDVXHXX8cdE1DUkJXSQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css.gz",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R868nQYiRJmInncB4hqIN+LGaLDkdWBhE2rlxj8Iuco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 20:18:02 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R868nQYiRJmInncB4hqIN+LGaLDkdWBhE2rlxj8Iuco="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 20:18:02 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000405679513"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R868nQYiRJmInncB4hqIN+LGaLDkdWBhE2rlxj8Iuco=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 20:18:02 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000507614213"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1969"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CADNY+t22XPFoONZTvC8eNqsfDVXHXX8cdE1DUkJXSQ=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 20:18:02 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 19:54:08 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001474926254"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "677"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4t5yJSmyUgnD0ImOFbvl9u+D4L9fmycsnmwkPpnB80Y=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 19:54:08 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001177856302"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XJ/VwVGZppAEmCsH3lYr55tIOxGu//a/BTyrK3XCLB4=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 19:54:08 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js.br",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "677"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4t5yJSmyUgnD0ImOFbvl9u+D4L9fmycsnmwkPpnB80Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 19:54:08 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4t5yJSmyUgnD0ImOFbvl9u+D4L9fmycsnmwkPpnB80Y="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js.gz",
+      "AssetFile": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XJ/VwVGZppAEmCsH3lYr55tIOxGu//a/BTyrK3XCLB4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 19:54:08 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XJ/VwVGZppAEmCsH3lYr55tIOxGu//a/BTyrK3XCLB4="
         }
       ]
     },
@@ -2055,6 +2610,520 @@
         {
           "Name": "label",
           "Value": "app.css.gz"
+        }
+      ]
+    },
+    {
+      "Route": "auth.js",
+      "AssetFile": "auth.js.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.003225806452"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tc87C3Dgt47NpyK0NMPp+c66jVLWDYTNps5C618t6mc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso="
+        }
+      ]
+    },
+    {
+      "Route": "auth.js",
+      "AssetFile": "auth.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002762430939"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "361"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UsjqZngXTB/v0ia2WiSbyS6UY9usZZFbyxaSWJqthzA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso="
+        }
+      ]
+    },
+    {
+      "Route": "auth.js",
+      "AssetFile": "auth.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso="
+        }
+      ]
+    },
+    {
+      "Route": "auth.js.br",
+      "AssetFile": "auth.js.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tc87C3Dgt47NpyK0NMPp+c66jVLWDYTNps5C618t6mc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tc87C3Dgt47NpyK0NMPp+c66jVLWDYTNps5C618t6mc="
+        }
+      ]
+    },
+    {
+      "Route": "auth.js.gz",
+      "AssetFile": "auth.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "361"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UsjqZngXTB/v0ia2WiSbyS6UY9usZZFbyxaSWJqthzA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UsjqZngXTB/v0ia2WiSbyS6UY9usZZFbyxaSWJqthzA="
+        }
+      ]
+    },
+    {
+      "Route": "auth.vk4xros96o.js",
+      "AssetFile": "auth.js.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.003225806452"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tc87C3Dgt47NpyK0NMPp+c66jVLWDYTNps5C618t6mc=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk4xros96o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso="
+        },
+        {
+          "Name": "label",
+          "Value": "auth.js"
+        }
+      ]
+    },
+    {
+      "Route": "auth.vk4xros96o.js",
+      "AssetFile": "auth.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002762430939"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "361"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UsjqZngXTB/v0ia2WiSbyS6UY9usZZFbyxaSWJqthzA=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk4xros96o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso="
+        },
+        {
+          "Name": "label",
+          "Value": "auth.js"
+        }
+      ]
+    },
+    {
+      "Route": "auth.vk4xros96o.js",
+      "AssetFile": "auth.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk4xros96o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kQ+puVUi1daDeIIEWunkMIYijQ/sp5gwZudIucT5Tso="
+        },
+        {
+          "Name": "label",
+          "Value": "auth.js"
+        }
+      ]
+    },
+    {
+      "Route": "auth.vk4xros96o.js.br",
+      "AssetFile": "auth.js.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tc87C3Dgt47NpyK0NMPp+c66jVLWDYTNps5C618t6mc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk4xros96o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tc87C3Dgt47NpyK0NMPp+c66jVLWDYTNps5C618t6mc="
+        },
+        {
+          "Name": "label",
+          "Value": "auth.js.br"
+        }
+      ]
+    },
+    {
+      "Route": "auth.vk4xros96o.js.gz",
+      "AssetFile": "auth.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "361"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UsjqZngXTB/v0ia2WiSbyS6UY9usZZFbyxaSWJqthzA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 07:19:36 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vk4xros96o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UsjqZngXTB/v0ia2WiSbyS6UY9usZZFbyxaSWJqthzA="
+        },
+        {
+          "Name": "label",
+          "Value": "auth.js.gz"
         }
       ]
     },

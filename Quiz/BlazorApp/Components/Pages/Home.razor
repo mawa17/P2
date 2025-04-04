@@ -5,11 +5,7 @@
 @inject AppDbContextService DbService
 
 
-<BasicAuth Username="a" Password="pp" Realm="MyRealm1">
-    <h1>Hello MyRealm1!</h1>
-</BasicAuth>
-
-@* <PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
+<PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
 
 @{
 
@@ -101,4 +97,3 @@
         await DbService.AddAnswerAsync(new(username, survey, points));
     }
 }
- *@

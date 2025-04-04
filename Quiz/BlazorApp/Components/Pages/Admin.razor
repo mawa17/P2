@@ -2,12 +2,7 @@
 @rendermode InteractiveServer
 @inject AppDbContextService DbService
 
-<BasicAuth Username="a" Password="pp" Realm="MyRealm2">
-    <h1>Hello MyRealm2!</h1>
-</BasicAuth>
-
-
-@* <BasicAuth Username="@DbService.Login!.Username" Password="@DbService.Login!.Password" Realm="AdminView">
+<BasicAuth Username="@DbService.Login!.Username" Password="@DbService.Login!.Password" Realm="Admin-ViewPanel">
     <div class="position-relative overflow-auto">
         <div class="table-responsive mb-5">
             <div class="m-3">
@@ -69,7 +64,7 @@
         </div>
     }
 
-</BasicAuth> *@
+</BasicAuth>
 
 @code {
     private string searchQuery = string.Empty;

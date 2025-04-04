@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/maw/Desktop/P2/Quiz/BlazorApp/Components/Controls/BasicAuth.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xCYXNpY0F1dGgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/maw/Desktop/P2/Quiz/BlazorApp/Components/Controls/NameForm.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xOYW1lRm9ybS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,12 +48,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb250cm9sc1xTdXJ2ZXlDcmVhdG9yLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/maw/Desktop/P2/Quiz/BlazorApp/Components/Pages/Admin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/maw/Desktop/P2/Quiz/BlazorApp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/maw/Desktop/P2/Quiz/BlazorApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maw/Desktop/P2/Quiz/BlazorApp/Components/Pages/UpdateLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVcGRhdGVMb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/maw/Desktop/P2/Quiz/BlazorApp/Components/Routes.razor]
