@@ -5,9 +5,9 @@
     [Parameter] public RenderFragment? ChildContent { get; init; }
     [Parameter] public string Realm { get; init; } = "AuthRealm";
     [Inject] public IHttpContextAccessor accessor { get; init; } = default!;
-    [Inject] public NavigationManager Navigation { get; init; } = default!;
+    [Inject] public NavigationManager NavManager { get; init; } = default!;
     private HttpContext Context => accessor.HttpContext!;
-    private bool IsSessionAuthenticated => Boolean.TryParse(Context.Session?.GetString($"{Realm}-IsAuthenticated") ?? String.Empty, out bool result);
+    private bool IsSessionAuthenticated => Boolean.TryParse(Context?.Session?.GetString($"{Realm}-IsAuthenticated") ?? String.Empty, out bool result);
     private bool _isAuthenticated = false;
     private bool IsAuthenticated
     {
@@ -28,7 +28,6 @@
         {
             IHeaderDictionary headers = Context.Request.Headers;
             var credentials = ParseAuthorizationHeader(headers.Authorization.ToString());
-            Console.WriteLine(headers.Authorization.ToString());
             return headers.ContainsKey(HeaderNames.Authorization) &&
                     credentials != null &&
                     ValidateUser(credentials.Value.username, credentials.Value.password);
@@ -44,6 +43,27 @@
         }
     }
 
+    private void DisplayInfo(string? info = null) 
+    {
+#if DEBUG
+    if (!String.IsNullOrEmpty(info)) {
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine(info);
+    Console.ResetColor();
+    }
+    Console.WriteLine("".PadRight(32, '-'));
+    Console.WriteLine($"GET\tAUTH\t{(ParseAuthorizationHeader(Context.Request.Headers.Authorization)?.ToString() ?? "NULL")} -> ({Context.Request.Headers.Authorization})");
+    Console.WriteLine($"GET\tWWW\t{Context.Request.Headers.WWWAuthenticate}");
+    Console.WriteLine($"POST\tAUTH\t{(ParseAuthorizationHeader(Context.Response.Headers.Authorization)?.ToString() ?? "NULL")} -> ({Context.Response.Headers.Authorization})");
+    Console.WriteLine($"POST\tWWW\t{Context.Response.Headers.WWWAuthenticate}");
+    Console.WriteLine($"SESS\tAUTH\t{Context.Session.GetString($"{Realm}-IsAuthenticated") ?? "false"}");
+    Console.WriteLine("".PadRight(32, '-'));
+    Console.WriteLine($"IsAuthenticated {IsAuthenticated}");
+    Console.WriteLine($"IsAuthorized {IsAuthorized}");
+    Console.WriteLine("".PadRight(32, '-'));
+#endif
+    }
+
     protected override void OnInitialized()
     {
         if (accessor?.HttpContext == null)
@@ -52,37 +72,27 @@
         if (String.IsNullOrEmpty(Username) || String.IsNullOrEmpty(Password))
             throw new ArgumentNullException($"{nameof(Username)} or {nameof(Password)} cannot be NULL!");
 
-        if (IsAuthorized && !IsAuthenticated)
-        {
-            Console.WriteLine($"DIE {IsAuthorized} -> {IsAuthenticated}");
-            Context.Request.Headers.Remove(HeaderNames.Authorization);
-            Context.Request.Headers.Remove(HeaderNames.WWWAuthenticate);
-            Context.Session.Remove($"{Realm}-IsAuthenticated");
-            _isAuthenticated = false;
-        }
+        DisplayInfo();
 
         Authorize();
     }
 
-    // Authenticate the user based on the Authorization header
     private void Authorize()
     {
         if (!IsAuthenticated)
         {
-            Console.WriteLine("NEED LOGIN!");
-            RequestAuthentication();
+            DisplayInfo("NEED Authorization");
+            RequestAuthorization();
             return;
         }
 
         _isAuthenticated = true;
         Context.Session.SetString($"{Realm}-IsAuthenticated", "true");
-        Console.WriteLine("APPROVED");
-
+        DisplayInfo("APPROVED Authorization");
     }
 
 
-    // Method to trigger a login prompt
-    private void RequestAuthentication()
+    private void RequestAuthorization()
     {
         if (!Context.Response.HasStarted)
         {
@@ -90,16 +100,15 @@
             Context.Response.Headers.Pragma = "no-cache";
             Context.Response.Headers.Expires = "0";
 
-            // Use the session-stored realm, forcing login when needed
             Context.Response.Headers.WWWAuthenticate = $"Basic realm=\"{SecureArea}\"";
             Context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+            DisplayInfo("Send Headers");
         }
     }
 
-    // Parse the Basic Authorization header
     private (string username, string password)? ParseAuthorizationHeader(string authHeader)
     {
-        if (!authHeader.StartsWith("Basic ", StringComparison.OrdinalIgnoreCase)) return null;
+        if (String.IsNullOrEmpty(authHeader) || !authHeader.StartsWith("Basic ", StringComparison.OrdinalIgnoreCase)) return null;
 
         var encodedCredentials = authHeader["Basic ".Length..].Trim();
         var credentialBytes = Convert.FromBase64String(encodedCredentials);
@@ -108,9 +117,13 @@
         return credentials.Length == 2 ? (credentials[0], credentials[1]) : null;
     }
 
+    private void Logout() 
+    {
+        _isAuthenticated = false;
+        Context.Session.Clear();
+    }
 
 
-    // Validate the provided username and password
     private bool ValidateUser(string username, string password) =>
         String.Equals(username, this.Username, StringComparison.Ordinal) &&
         String.Equals(password, this.Password, StringComparison.Ordinal);
@@ -118,6 +131,7 @@
 
 @if (IsAuthenticated)
 {
+    <button @onclick="Logout" type="button" class="btn btn-outline-danger btn-sm">Logout</button>
     @ChildContent
 }
 else

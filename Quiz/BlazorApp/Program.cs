@@ -24,6 +24,8 @@ builder.Services.AddHttpClient();
 // Register IHttpContextAccessor
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddSingleton<IStateService, StateService>();
+
 builder.Services.AddDistributedMemoryCache(); // Required for session storage
 builder.Services.AddSession(options =>
 {
@@ -64,16 +66,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-// Add middleware to disable caching for all responses
-app.Use(async (context, next) =>
-{
-    context.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate";
-    context.Response.Headers["Pragma"] = "no-cache";
-    context.Response.Headers["Expires"] = "0";
 
-    // Call the next middleware in the pipeline
-    await next();
-});
 
 app.UseSession();
 

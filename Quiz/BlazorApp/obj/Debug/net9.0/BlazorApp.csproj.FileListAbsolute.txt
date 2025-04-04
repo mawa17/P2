@@ -186,4 +186,4 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\BlazorApp.pdb
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\BlazorApp.genruntimeconfig.cache
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\ref\BlazorApp.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\skfvdq1qzr-iblcgbbpyt.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\skfvdq1qzr-vk4xros96o.gz
