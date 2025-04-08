@@ -62,6 +62,12 @@
             return;
         }
 
+        if(!StateService.Get<bool>(RequestKey, false))
+        {
+            DisplayInfo("Missing request");
+            return;
+        }
+
         if (IsAuthorized)
         {
             MarkAsAuthenticated();
@@ -118,7 +124,7 @@
 
     private void Login()
     {
-        StateService.Remove(RequestKey);
+        StateService.Set(RequestKey, true);
 
         DisplayInfo("LOGIN");
 

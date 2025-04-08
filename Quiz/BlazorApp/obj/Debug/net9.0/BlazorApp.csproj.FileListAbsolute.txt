@@ -62,13 +62,11 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Composition.Runti
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Composition.TypedParts.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Drawing.Common.dll
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Runtime.Caching.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Security.Permissions.dll
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\System.Windows.Extensions.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -160,9 +158,9 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\scopedcss\bundle\BlazorA
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\scopedcss\projectbundle\BlazorApp.bundle.scp.css
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\unlu0xluo6-eu7w3d5g1a.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\niqfivrdr6-tqqzl9m4fa.gz
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\dv30ctcifg-6cfz1n2cew.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\dv30ctcifg-4094rpi4f9.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\734wzl6opd-6pdc2jztkx.gz
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\orid3unrtq-s35ty4nyc5.gz
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\orid3unrtq-zub09dkrxp.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\qe14k3n7xc-pj5nd1wqec.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\7loymvhq1e-ilfy1hbp47.gz
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\compressed\5q2kff2jxk-80wymxouzf.gz
@@ -179,10 +177,10 @@ C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\staticwebassets\msbuild.
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.BlazorApp.props
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.BlazorApp.props
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\BlazorApp.csproj.Up2Date
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\BlazorApp.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\refint\BlazorApp.dll
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\BlazorApp.pdb
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\BlazorApp.genruntimeconfig.cache
 C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\ref\BlazorApp.dll
-C:\Users\maw\Desktop\P2\Quiz\BlazorApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
