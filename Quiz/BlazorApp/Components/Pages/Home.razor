@@ -1,14 +1,9 @@
 ﻿@page "/"
-@rendermode InteractiveServer
 @inject HttpClient Http
-@inject NavigationManager NavManager
 @inject AppDbContextService DbService
+@rendermode InteractiveServer
 
-<BasicAuth Username="a" Password="b" Realm="MyRealm1">
-    <h1>Hey</h1>
-</BasicAuth>
-
-@* <PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
+<PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>
 
 @{
 
@@ -37,10 +32,6 @@
     private SurveyModel? surveyModel;
     protected override async Task OnInitializedAsync()
     {
-        // Dynamically get the base address
-        Http.BaseAddress = new Uri(NavManager.Uri);
-
-
 #if DEBUG
         // Ensure that HttpClient reads the content as UTF-8 encoded JSON.
         var jsonString = await Http.GetStringAsync("SurveyDEBUG.json");
@@ -100,4 +91,3 @@
         await DbService.AddAnswerAsync(new(username, survey, points));
     }
 }
- *@

@@ -1,7 +1,7 @@
 ﻿@using Microsoft.Net.Http.Headers
 @inject IHttpContextAccessor accessor
-@inject NavigationManager NavManager
 @inject IStateService StateService
+@inject NavigationManager NavManager
 
 @code {
     [Parameter, EditorRequired] public string Username { get; init; } = null!;
@@ -9,9 +9,9 @@
     [Parameter] public RenderFragment? ChildContent { get; init; }
     [Parameter] public string Realm { get; init; } = "AuthRealm";
 
-    private HttpContext Context => accessor?.HttpContext;
+    private HttpContext AccessorContext => accessor!.HttpContext!;
 
-    private string IdentifierKey => $"{Realm}-{Context?.Connection?.Id}";
+    private string IdentifierKey => $"{Realm}-{AccessorContext?.Connection?.Id}";
     private string AuthKey => $"{IdentifierKey}-IsAuthenticated";
     private string SecureKey => $"{IdentifierKey}-SecureArea";
     private string RequestKey => $"{IdentifierKey}-IsRequestSent";
@@ -23,7 +23,7 @@
     {
         get
         {
-            var headers = Context.Request.Headers;
+            var headers = AccessorContext.Request.Headers;
             var credentials = ParseAuthorizationHeader(headers.Authorization.ToString());
             return headers.ContainsKey(HeaderNames.Authorization) &&
                    credentials != null &&
@@ -88,13 +88,13 @@
 
     private void RequestAuthorization()
     {
-        if (!Context.Response.HasStarted)
+        if (!AccessorContext.Response.HasStarted)
         {
-            Context.Response.Headers.CacheControl = "no-store, no-cache, must-revalidate";
-            Context.Response.Headers.Pragma = "no-cache";
-            Context.Response.Headers.Expires = "0";
-            Context.Response.Headers.WWWAuthenticate = $"Basic realm=\"{SecureArea}\"";
-            Context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+            AccessorContext.Response.Headers.CacheControl = "no-store, no-cache, must-revalidate";
+            AccessorContext.Response.Headers.Pragma = "no-cache";
+            AccessorContext.Response.Headers.Expires = "0";
+            AccessorContext.Response.Headers.WWWAuthenticate = $"Basic realm=\"{SecureArea}\"";
+            AccessorContext.Response.StatusCode = StatusCodes.Status401Unauthorized;
             DisplayInfo("Sent WWW-Authenticate header");
         }
     }
@@ -122,7 +122,7 @@
         NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
     }
 
-    private void Login()
+    public void Login()
     {
         StateService.Set(RequestKey, true);
 
@@ -145,10 +145,10 @@
             Console.ResetColor();
         }
         Console.WriteLine("".PadRight(32, '-'));
-        Console.WriteLine($"GET\tAUTH\t{(ParseAuthorizationHeader(Context.Request.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({Context.Request.Headers.Authorization})");
-        Console.WriteLine($"GET\tWWW\t{Context.Request.Headers.WWWAuthenticate}");
-        Console.WriteLine($"POST\tAUTH\t{(ParseAuthorizationHeader(Context.Response.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({Context.Response.Headers.Authorization})");
-        Console.WriteLine($"POST\tWWW\t{Context.Response.Headers.WWWAuthenticate}");
+        Console.WriteLine($"GET\tAUTH\t{(ParseAuthorizationHeader(AccessorContext.Request.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({AccessorContext.Request.Headers.Authorization})");
+        Console.WriteLine($"GET\tWWW\t{AccessorContext.Request.Headers.WWWAuthenticate}");
+        Console.WriteLine($"POST\tAUTH\t{(ParseAuthorizationHeader(AccessorContext.Response.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({AccessorContext.Response.Headers.Authorization})");
+        Console.WriteLine($"POST\tWWW\t{AccessorContext.Response.Headers.WWWAuthenticate}");
         Console.WriteLine($"IsAuthenticated\t{IsAuthenticated}");
         Console.WriteLine($"IsAuthorized\t{IsAuthorized}");
         Console.WriteLine($"IsRequestSent\t{IsRequestSent}");

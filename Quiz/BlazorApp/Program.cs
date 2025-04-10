@@ -4,16 +4,25 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
-
 // Register HttpContextAccessor first (for access in other services)
 builder.Services.AddHttpContextAccessor();
 
+// Register HttpClient for general use (after adding HttpContextAccessor)
+builder.Services.AddHttpClient("Default", (serviceProvider, client) =>
+{
+    var httpContextAccessor = serviceProvider.GetRequiredService<IHttpContextAccessor>();
+    var request = httpContextAccessor.HttpContext?.Request;
+
+    // Use the request's scheme and host to create the base URL dynamically
+    if (request != null) client.BaseAddress = new($"{request.Scheme}://{request.Host}/");
+    else throw new NullReferenceException($"{nameof(request)} IS NULL!");
+});
+
+// Register the default HttpClient and inject it into services
+builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("Default"));
+
 // Register state management service
 builder.Services.AddSingleton<IStateService, StateService>();
-
-// Register HttpClient for general use
-builder.Services.AddHttpClient();
 
 // Register QuickGrid's EF Adapter
 builder.Services.AddQuickGridEntityFrameworkAdapter();
@@ -44,6 +53,9 @@ builder.Services.AddRazorComponents()
         options.DetailedErrors = true; // Enable detailed error reporting for debugging
     });
 
+// Add custom logging for better diagnostics (optional but helpful for production)
+builder.Logging.AddConsole(); // Logs to the console (also ensure this is not disabled in production)
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -51,6 +63,7 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
     app.UseHsts(); // HTTP Strict Transport Security
+    app.UseHttpsRedirection(); // Force HTTP requests to be redirected to HTTPS
 }
 
 // Enable anti-forgery protection (important for securing requests)
