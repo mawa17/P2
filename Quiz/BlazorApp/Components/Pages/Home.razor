@@ -1,6 +1,6 @@
 ﻿@page "/"
 @inject HttpClient Http
-@inject AppDbContextService DbService
+@inject IAppDbContextService DbService
 @rendermode InteractiveServer
 
 <PageTitle>@(surveyModel?.Title ?? "Survey")</PageTitle>

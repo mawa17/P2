@@ -1,8 +1,9 @@
 ﻿@page "/reset"
 @rendermode InteractiveServer
-@inject AppDbContextService DbService
+@inject IAppDbContextService DbService
 @inject NavigationManager NavManager
-@inject IJSRuntime JS
+@inject IAlertService alertService
+@using BlazorApp.Services;
 
 <BasicAuth @ref="BasicAuthComponent" Username="@DbService.Login!.Username" Password="@DbService.Login!.Password" Realm="Admin-UpdateLogin">
     <div class="container d-flex justify-content-center align-items-center vh-100">
@@ -44,11 +45,11 @@
     {
         if(!DbService.UpdateLogin(Username, Password)) {
             Console.WriteLine($"Updated Credentials FAILED");
-            await JS.InvokeVoidAsync("alert", "Login Credentials FAILED!");
+            await alertService.ShowAlertAsync("Login Credentials FAILED!");
             return;
         }
         Console.WriteLine($"Updated Credentials\tUsername: {Username}, Password: {Password}");
-        await JS.InvokeVoidAsync("alert", "Login Credentials Updated!");
+        await alertService.ShowAlertAsync("Login Credentials Updated!");
         BasicAuthComponent?.Logout();
         NavManager.Refresh(true);
     }

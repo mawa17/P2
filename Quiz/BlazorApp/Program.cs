@@ -1,7 +1,9 @@
 using BlazorApp.Components;
 using BlazorApp.Data;
+using BlazorApp.Services;
 using Microsoft.EntityFrameworkCore;
 
+#region Builder
 var builder = WebApplication.CreateBuilder(args);
 
 // Register HttpContextAccessor first (for access in other services)
@@ -21,8 +23,6 @@ builder.Services.AddHttpClient("Default", (serviceProvider, client) =>
 // Register the default HttpClient and inject it into services
 builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("Default"));
 
-// Register state management service
-builder.Services.AddSingleton<IStateService, StateService>();
 
 // Register QuickGrid's EF Adapter
 builder.Services.AddQuickGridEntityFrameworkAdapter();
@@ -31,20 +31,13 @@ builder.Services.AddQuickGridEntityFrameworkAdapter();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
 #if DEBUG
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"), sqlOptions =>
-    {
-    });
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"));
     options.EnableSensitiveDataLogging();
     options.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()));
 #else
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ProdConnection"), sqlOptions =>
-    {
-    });
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProdConnection"));
 #endif
 });
-
-// Register AppDbContextService for scoped DI
-builder.Services.AddScoped<AppDbContextService>();
 
 // Add Razor Components for interactive server-side rendering
 builder.Services.AddRazorComponents()
@@ -56,6 +49,20 @@ builder.Services.AddRazorComponents()
 // Add custom logging for better diagnostics (optional but helpful for production)
 builder.Logging.AddConsole(); // Logs to the console (also ensure this is not disabled in production)
 
+// Register custom services for DI
+foreach (var Service in Services.Collection())
+{
+    switch (Service.kind)
+    {
+        case Services.ServiceKind.Singleton: builder.Services.AddSingleton(Service.interfaceType, Service.implementationType); break;
+        case Services.ServiceKind.Scope: builder.Services.AddScoped(Service.interfaceType, Service.implementationType); break;
+        case Services.ServiceKind.Transient: builder.Services.AddTransient(Service.interfaceType, Service.implementationType); break;
+    }
+    Console.WriteLine($"[{Service.kind}]\tiface: {Service.interfaceType.FullName} -> impl: {Service.implementationType.FullName} ADDED");
+}
+#endregion
+
+#region Middleware 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -85,3 +92,4 @@ app.MapRazorComponents<App>()
 
 // Run the application
 app.Run();
+#endregion

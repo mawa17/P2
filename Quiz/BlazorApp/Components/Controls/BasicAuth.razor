@@ -1,6 +1,6 @@
 ﻿@using Microsoft.Net.Http.Headers
 @inject IHttpContextAccessor accessor
-@inject IStateService StateService
+@inject IDataService DataService
 @inject NavigationManager NavManager
 
 @code {
@@ -16,8 +16,8 @@
     private string SecureKey => $"{IdentifierKey}-SecureArea";
     private string RequestKey => $"{IdentifierKey}-IsRequestSent";
 
-    private bool IsAuthenticated => StateService.Get<bool>(AuthKey, false);
-    private bool IsRequestSent => StateService.Get<bool>(RequestKey, false);
+    private bool IsAuthenticated => DataService.Get<bool>(AuthKey, false);
+    private bool IsRequestSent => DataService.Get<bool>(RequestKey, false);
 
     private bool IsAuthorized
     {
@@ -34,11 +34,11 @@
     {
         get
         {
-            if (!StateService.Contains(SecureKey))
+            if (!DataService.Contains(SecureKey))
             {
-                StateService.Set(SecureKey, $"Secure-Area-{Guid.NewGuid()}");
+                DataService.Set(SecureKey, $"Secure-Area-{Guid.NewGuid()}");
             }
-            return StateService.Get<string>(SecureKey, string.Empty);
+            return DataService.Get<string>(SecureKey, string.Empty);
         }
     }
 
@@ -62,7 +62,7 @@
             return;
         }
 
-        if(!StateService.Get<bool>(RequestKey, false))
+        if(!DataService.Get<bool>(RequestKey, false))
         {
             DisplayInfo("Missing request");
             return;
@@ -82,8 +82,8 @@
 
     private void MarkAsAuthenticated()
     {
-        StateService.Set(AuthKey, true);
-        StateService.Set(RequestKey, true);
+        DataService.Set(AuthKey, true);
+        DataService.Set(RequestKey, true);
     }
 
     private void RequestAuthorization()
@@ -113,9 +113,9 @@
 
     public void Logout()
     {
-        StateService.Remove(AuthKey);
-        StateService.Remove(SecureKey);
-        StateService.Remove(RequestKey);
+        DataService.Remove(AuthKey);
+        DataService.Remove(SecureKey);
+        DataService.Remove(RequestKey);
 
         DisplayInfo("LOGOUT");
 
@@ -124,7 +124,7 @@
 
     public void Login()
     {
-        StateService.Set(RequestKey, true);
+        DataService.Set(RequestKey, true);
 
         DisplayInfo("LOGIN");
 
