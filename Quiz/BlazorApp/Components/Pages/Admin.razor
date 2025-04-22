@@ -1,6 +1,6 @@
 ﻿@page "/admin"
 @rendermode InteractiveServer
-@inject IAppDbContextService DbService
+@inject AppDbContextService DbService
 
 <BasicAuth Username="@DbService.Login!.Username" Password="@DbService.Login!.Password" Realm="Admin-ViewPanel">
     <div class="position-relative overflow-auto">

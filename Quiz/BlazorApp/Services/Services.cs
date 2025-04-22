@@ -1,4 +1,5 @@
 ﻿using BlazorApp.Services.Collection;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BlazorApp.Services;
 
@@ -10,11 +11,11 @@ public static class Services
         Scope,
         Transient
     }
-    public static IEnumerable<(ServiceKind kind, Type interfaceType, Type implementationType)> Collection()
+    public static IEnumerable<(ServiceKind kind, Type implementationType, Type? interfaceType)> Collection()
     {
-        yield return (ServiceKind.Singleton, typeof(IDataService), typeof(DataService));
-        yield return (ServiceKind.Singleton, typeof(IAppDbContextService), typeof(AppDbContextService));
-        yield return (ServiceKind.Scope, typeof(IAlertService), typeof(AlertService));
+        yield return (ServiceKind.Scope, typeof(AppDbContextService), null);
+        yield return (ServiceKind.Singleton, typeof(DataService), typeof(IDataService));
+        yield return (ServiceKind.Scope, typeof(AlertService), typeof(IAlertService));
         yield break;
     }
 }

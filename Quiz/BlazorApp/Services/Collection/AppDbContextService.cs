@@ -4,15 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp.Services.Collection;
 
-public interface IAppDbContextService
-{
-    LoginModel? Login { get; }
-    IQueryable<AnswerModel> Entity { get; }
-    bool UpdateLogin(string username, string password);
-    Task AddAnswerAsync(AnswerModel answer);
-}
 
-public class AppDbContextService(AppDbContext context) : IAppDbContextService
+
+public class AppDbContextService(AppDbContext context)
 {
     private readonly AppDbContext _context = context;
     public LoginModel? Login => this._context.Login.AsNoTracking().FirstOrDefault();

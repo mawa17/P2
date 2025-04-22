@@ -50,16 +50,31 @@ builder.Services.AddRazorComponents()
 builder.Logging.AddConsole(); // Logs to the console (also ensure this is not disabled in production)
 
 // Register custom services for DI
-foreach (var Service in Services.Collection())
+foreach (var service in Services.Collection())
 {
-    switch (Service.kind)
+    if (service.interfaceType != null)
     {
-        case Services.ServiceKind.Singleton: builder.Services.AddSingleton(Service.interfaceType, Service.implementationType); break;
-        case Services.ServiceKind.Scope: builder.Services.AddScoped(Service.interfaceType, Service.implementationType); break;
-        case Services.ServiceKind.Transient: builder.Services.AddTransient(Service.interfaceType, Service.implementationType); break;
+        switch (service.kind)
+        {
+            case Services.ServiceKind.Singleton:builder.Services.AddSingleton(service.interfaceType, service.implementationType); break;
+            case Services.ServiceKind.Scope:builder.Services.AddScoped(service.interfaceType, service.implementationType);break;
+            case Services.ServiceKind.Transient:builder.Services.AddTransient(service.interfaceType, service.implementationType);break;
+        }
+        Console.WriteLine($"[{service.kind}]\tiface: {service.interfaceType.FullName} -> impl: {service.implementationType.FullName} ADDED");
     }
-    Console.WriteLine($"[{Service.kind}]\tiface: {Service.interfaceType.FullName} -> impl: {Service.implementationType.FullName} ADDED");
+    else
+    {
+        // Handle case where no interface is provided, just register the implementation itself.
+        switch (service.kind)
+        {
+            case Services.ServiceKind.Singleton:builder.Services.AddSingleton(service.implementationType);break;
+            case Services.ServiceKind.Scope:builder.Services.AddScoped(service.implementationType);break;
+            case Services.ServiceKind.Transient:builder.Services.AddTransient(service.implementationType);break;
+        }
+        Console.WriteLine($"[{service.kind}]\timpl: {service.implementationType.FullName} ADDED");
+    }
 }
+
 #endregion
 
 #region Middleware 
