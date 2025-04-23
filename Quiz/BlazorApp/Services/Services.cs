@@ -1,20 +1,13 @@
 ﻿using BlazorApp.Services.Collection;
-
 namespace BlazorApp.Services;
 
 public static class Services
 {
-    public enum ServiceKind
+    public static void AddCustomServices(this IServiceCollection services)
     {
-        Singleton = 1,
-        Scope,
-        Transient
-    }
-    public static IEnumerable<(ServiceKind kind, Type implementationType, Type? interfaceType)> Collection()
-    {
-        yield return (ServiceKind.Scope, typeof(AppDbContextService), null);
-        yield return (ServiceKind.Singleton, typeof(DataService), typeof(IDataService));
-        yield return (ServiceKind.Scope, typeof(AlertService), typeof(IAlertService));
-        yield break;
+        services.AddScoped<AppDbContextService>();
+        services.AddSingleton<IDataService, DataService>();
+        services.AddScoped<IBasicAuthService, BasicAuthService>();
+        services.AddScoped<IAlertService, AlertService>();
     }
 }

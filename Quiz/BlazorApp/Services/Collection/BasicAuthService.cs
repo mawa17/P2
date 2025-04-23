@@ -1,10 +1,12 @@
-﻿using System.Text;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Text;
 
 namespace BlazorApp.Services.Collection;
 
 public interface IAuthentication
 {
     bool IsAuthenticated(string keyId);
+    bool HasRequest(string keyId);
     void MarkAuthenticated(string keyId);
     void Logout(string keyId);
     void Login(string keyId);
@@ -28,6 +30,7 @@ public sealed class BasicAuthService(IDataService dataService) : IBasicAuthServi
 
     public string GenerateKey(string seed)
     {
+        var x = new BasicAuthService(default);
         string secureKey = $"{seed}-SecureArea";
         if (!_dataService.Contains(secureKey))
         {
@@ -36,6 +39,7 @@ public sealed class BasicAuthService(IDataService dataService) : IBasicAuthServi
         return _dataService.Get<string>(secureKey, String.Empty)!;
     }
 
+    public bool HasRequest(string keyId) => _dataService.Get<bool>($"{keyId}-IsRequestSent", false);
     public bool IsAuthenticated(string keyId) => _dataService.Get<bool>($"{keyId}-IsAuthenticated", false);
 
     public bool IsAuthorized(string? authHeader, string user, string pass)
@@ -63,7 +67,7 @@ public sealed class BasicAuthService(IDataService dataService) : IBasicAuthServi
     public void MarkAuthenticated(string keyId)
     {
         _dataService.Set($"{keyId}-IsAuthenticated", true);
-        _dataService.Set($"{keyId}-IsRequestSent", true);
+        _dataService.Set($"{keyId}-IsRequestSent", false);
     }
 
     public void RequestAuthorization(HttpContext context, string realm)

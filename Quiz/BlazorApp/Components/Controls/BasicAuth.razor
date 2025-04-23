@@ -1,166 +1,86 @@
 ﻿@using Microsoft.Net.Http.Headers
-@inject IHttpContextAccessor accessor
+
+@inject IBasicAuthService AuthService
+@inject IHttpContextAccessor Accessor
 @inject IDataService DataService
 @inject NavigationManager NavManager
 
 @code {
     [Parameter, EditorRequired] public string Username { get; init; } = null!;
     [Parameter, EditorRequired] public string Password { get; init; } = null!;
-    [Parameter] public RenderFragment? ChildContent { get; init; }
     [Parameter] public string Realm { get; init; } = "AuthRealm";
+    [Parameter] public RenderFragment? ChildContent { get; init; }
 
-    private HttpContext AccessorContext => accessor!.HttpContext!;
+    private HttpContext Context => Accessor!.HttpContext!;
 
-    private string IdentifierKey => $"{Realm}-{AccessorContext?.Connection?.Id}";
-    private string AuthKey => $"{IdentifierKey}-IsAuthenticated";
-    private string SecureKey => $"{IdentifierKey}-SecureArea";
-    private string RequestKey => $"{IdentifierKey}-IsRequestSent";
+    private string Key => $"{Realm}-{Context.Connection.Id}";
 
-    private bool IsAuthenticated => DataService.Get<bool>(AuthKey, false);
-    private bool IsRequestSent => DataService.Get<bool>(RequestKey, false);
-
-    private bool IsAuthorized
-    {
-        get
-        {
-            var headers = AccessorContext.Request.Headers;
-            var credentials = ParseAuthorizationHeader(headers.Authorization.ToString());
-            return headers.ContainsKey(HeaderNames.Authorization) &&
-                   credentials != null &&
-                   ValidateUser(credentials.Value.username, credentials.Value.password);
-        }
-    }
-    private string SecureArea
-    {
-        get
-        {
-            if (!DataService.Contains(SecureKey))
-            {
-                DataService.Set(SecureKey, $"Secure-Area-{Guid.NewGuid()}");
-            }
-            return DataService.Get<string>(SecureKey, string.Empty);
-        }
-    }
 
     protected override void OnInitialized()
     {
- 
-        if (accessor?.HttpContext == null)
-            throw new NullReferenceException($"{nameof(accessor)} service missing!");
+        if (Accessor?.HttpContext == null)
+            throw new NullReferenceException($"{nameof(Accessor)} service missing!");
 
-        if (string.IsNullOrEmpty(Username) || string.IsNullOrEmpty(Password))
-            throw new ArgumentNullException($"{nameof(Username)} or {nameof(Password)} cannot be NULL!");
+            
+        if (String.IsNullOrWhiteSpace(Username) || String.IsNullOrWhiteSpace(Password))
+            throw new ArgumentNullException("Username and Password are required");
 
-        DisplayInfo("INIT");
-        Authorize();
+
+        if (!AuthService.IsAuthenticated(Key))
+        {
+            var authHeader = Context.Request.Headers.Authorization.ToString();
+            if (AuthService.IsAuthorized(authHeader, Username, Password) && AuthService.HasRequest(Key))
+            {
+                AuthService.MarkAuthenticated(Key);
+            }
+            else
+            {
+                AuthService.RequestAuthorization(Context, Realm);
+            }
+        }
+
     }
 
-    private void Authorize()
+
+    public void Login()
     {
-        if (IsAuthenticated)
-        {
-            DisplayInfo("Already authenticated");
-            return;
-        }
-
-        if(!DataService.Get<bool>(RequestKey, false))
-        {
-            DisplayInfo("Missing request");
-            return;
-        }
-
-        if (IsAuthorized)
-        {
-            MarkAsAuthenticated();
-            DisplayInfo("Authorization APPROVED");
-        }
-        else
-        {
-            DisplayInfo("Authorization FAILED - prompting again");
-            RequestAuthorization();
-        }
-    }
-
-    private void MarkAsAuthenticated()
-    {
-        DataService.Set(AuthKey, true);
-        DataService.Set(RequestKey, true);
-    }
-
-    private void RequestAuthorization()
-    {
-        if (!AccessorContext.Response.HasStarted)
-        {
-            AccessorContext.Response.Headers.CacheControl = "no-store, no-cache, must-revalidate";
-            AccessorContext.Response.Headers.Pragma = "no-cache";
-            AccessorContext.Response.Headers.Expires = "0";
-            AccessorContext.Response.Headers.WWWAuthenticate = $"Basic realm=\"{SecureArea}\"";
-            AccessorContext.Response.StatusCode = StatusCodes.Status401Unauthorized;
-            DisplayInfo("Sent WWW-Authenticate header");
-        }
-    }
-
-    private (string username, string password)? ParseAuthorizationHeader(string authHeader)
-    {
-        if (string.IsNullOrEmpty(authHeader) || !authHeader.StartsWith("Basic ", StringComparison.OrdinalIgnoreCase))
-            return null;
-
-        var encodedCredentials = authHeader["Basic ".Length..].Trim();
-        var credentialBytes = Convert.FromBase64String(encodedCredentials);
-        var credentials = System.Text.Encoding.UTF8.GetString(credentialBytes).Split(':', 2);
-
-        return credentials.Length == 2 ? (credentials[0], credentials[1]) : null;
+        AuthService.Login(Key);
+        NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
     }
 
     public void Logout()
     {
-        DataService.Remove(AuthKey);
-        DataService.Remove(SecureKey);
-        DataService.Remove(RequestKey);
-
-        DisplayInfo("LOGOUT");
-
+        AuthService.Logout(Key);
         NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
     }
 
-    public void Login()
-    {
-        DataService.Set(RequestKey, true);
 
-        DisplayInfo("LOGIN");
 
-        NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
-    }
-
-    private bool ValidateUser(string username, string password) =>
-        String.Equals(username, this.Username, StringComparison.Ordinal) &&
-        String.Equals(password, this.Password, StringComparison.Ordinal);
-
-    private void DisplayInfo(string? info = null)
-    {
-#if DEBUG
-        if (!String.IsNullOrEmpty(info))
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(info);
-            Console.ResetColor();
-        }
-        Console.WriteLine("".PadRight(32, '-'));
-        Console.WriteLine($"GET\tAUTH\t{(ParseAuthorizationHeader(AccessorContext.Request.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({AccessorContext.Request.Headers.Authorization})");
-        Console.WriteLine($"GET\tWWW\t{AccessorContext.Request.Headers.WWWAuthenticate}");
-        Console.WriteLine($"POST\tAUTH\t{(ParseAuthorizationHeader(AccessorContext.Response.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({AccessorContext.Response.Headers.Authorization})");
-        Console.WriteLine($"POST\tWWW\t{AccessorContext.Response.Headers.WWWAuthenticate}");
-        Console.WriteLine($"IsAuthenticated\t{IsAuthenticated}");
-        Console.WriteLine($"IsAuthorized\t{IsAuthorized}");
-        Console.WriteLine($"IsRequestSent\t{IsRequestSent}");
-        Console.WriteLine($"IdentifierKey\t{IdentifierKey}");
-        Console.WriteLine($"SecureArea\t{SecureArea}");
-        Console.WriteLine("".PadRight(32, '-'));
-#endif
-    }
+//     private void DisplayInfo(string? info = null)
+//     {
+// #if DEBUG
+//         if (!String.IsNullOrEmpty(info))
+//         {
+//             Console.ForegroundColor = ConsoleColor.Green;
+//             Console.WriteLine(info);
+//             Console.ResetColor();
+//         }
+//         Console.WriteLine("".PadRight(32, '-'));
+//         Console.WriteLine($"GET\tAUTH\t{(ParseAuthorizationHeader(AccessorContext.Request.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({AccessorContext.Request.Headers.Authorization})");
+//         Console.WriteLine($"GET\tWWW\t{AccessorContext.Request.Headers.WWWAuthenticate}");
+//         Console.WriteLine($"POST\tAUTH\t{(ParseAuthorizationHeader(AccessorContext.Response.Headers.Authorization.ToString())?.ToString() ?? "NULL")} -> ({AccessorContext.Response.Headers.Authorization})");
+//         Console.WriteLine($"POST\tWWW\t{AccessorContext.Response.Headers.WWWAuthenticate}");
+//         Console.WriteLine($"IsAuthenticated\t{IsAuthenticated}");
+//         Console.WriteLine($"IsAuthorized\t{IsAuthorized}");
+//         Console.WriteLine($"IsRequestSent\t{IsRequestSent}");
+//         Console.WriteLine($"IdentifierKey\t{IdentifierKey}");
+//         Console.WriteLine($"SecureArea\t{SecureArea}");
+//         Console.WriteLine("".PadRight(32, '-'));
+// #endif
+//     }
 }
 
-@if (IsAuthenticated)
+@if (AuthService.IsAuthenticated(Key))
 {
     <button @onclick="Logout" type="button" class="btn btn-outline-danger btn-sm">Logout</button>
     @ChildContent
