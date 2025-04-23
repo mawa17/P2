@@ -1,5 +1,4 @@
 ﻿using System.Collections.Concurrent;
-
 namespace BlazorApp.Services.Collection;
 
 public interface IDataService
@@ -11,7 +10,7 @@ public interface IDataService
     bool Contains(string key);
 }
 
-public class DataService : IDataService
+public sealed class DataService : IDataService
 {
     private readonly ConcurrentDictionary<string, object?> _data = new();
     public void Set<T>(string key, T? value) => _ = _data.AddOrUpdate(key, value, (_, _) => value);

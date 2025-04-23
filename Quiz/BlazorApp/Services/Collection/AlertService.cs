@@ -6,9 +6,8 @@ public interface IAlertService
 {
     Task ShowAlertAsync(string message);
 }
-public sealed class AlertService(IServiceProvider serviceProvider) : IAlertService
+public sealed class AlertService(IJSRuntime jsRuntime) : IAlertService
 {
-    private readonly IServiceProvider _serviceProvider = serviceProvider;
-    private IJSRuntime JS => _serviceProvider.GetRequiredService<IJSRuntime>();
-    public async Task ShowAlertAsync(string message) => await JS.InvokeVoidAsync("alert", message);
+    private readonly IJSRuntime _jsRuntime = jsRuntime;
+    public async Task ShowAlertAsync(string message) => await _jsRuntime.InvokeVoidAsync("alert", message);
 }

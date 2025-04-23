@@ -44,6 +44,7 @@
 
     protected override void OnInitialized()
     {
+ 
         if (accessor?.HttpContext == null)
             throw new NullReferenceException($"{nameof(accessor)} service missing!");
 
