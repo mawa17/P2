@@ -67,7 +67,7 @@ public sealed class BasicAuthService(IDataService dataService) : IBasicAuthServi
     public void MarkAuthenticated(string keyId)
     {
         _dataService.Set($"{keyId}-IsAuthenticated", true);
-        _dataService.Set($"{keyId}-IsRequestSent", false);
+        _dataService.Set($"{keyId}-IsRequestSent", true);
     }
 
     public void RequestAuthorization(HttpContext context, string realm)
@@ -79,6 +79,6 @@ public sealed class BasicAuthService(IDataService dataService) : IBasicAuthServi
             context.Response.Headers.Expires = "0";
             context.Response.Headers.WWWAuthenticate = $"Basic realm=\"{realm}\"";
             context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-        }
+        }   
     }
 }
