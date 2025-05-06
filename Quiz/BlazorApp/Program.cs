@@ -6,28 +6,38 @@ using Microsoft.EntityFrameworkCore;
 #region Builder
 var builder = WebApplication.CreateBuilder(args);
 
-// Register HttpContextAccessor first (for access in other services)
+// Enable detailed logs
+builder.Logging.AddConsole();
+
+// Register IHttpContextAccessor
 builder.Services.AddHttpContextAccessor();
 
-// Register HttpClient for general use (after adding HttpContextAccessor)
+// Named HttpClient with dynamic BaseAddress and optional cert bypass (DEV only)
 builder.Services.AddHttpClient("Default", (serviceProvider, client) =>
 {
     var httpContextAccessor = serviceProvider.GetRequiredService<IHttpContextAccessor>();
     var request = httpContextAccessor.HttpContext?.Request;
 
-    // Use the request's scheme and host to create the base URL dynamically
-    if (request != null) client.BaseAddress = new($"{request.Scheme}://{request.Host}/");
-    else throw new NullReferenceException($"{nameof(request)} IS NULL!");
+    if (request == null)
+        throw new InvalidOperationException("HttpContext is not available during HttpClient configuration.");
+
+    // Dynamically set base address with correct scheme
+    client.BaseAddress = new Uri($"{request.Scheme}://{request.Host}/");
+}).ConfigurePrimaryHttpMessageHandler(() =>
+new HttpClientHandler
+{
+    // Bypass cert validation
+    ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
 });
 
-// Register the default HttpClient and inject it into services
-builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("Default"));
 
+// Register default HttpClient for DI
+builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("Default"));
 
 // Register QuickGrid's EF Adapter
 builder.Services.AddQuickGridEntityFrameworkAdapter();
 
-// Register the database context with connection string configuration
+// DB Context with conditional config
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
 #if DEBUG
@@ -39,48 +49,39 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 #endif
 });
 
-// Add Razor Components for interactive server-side rendering
+// Razor Components & SSR
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents(options =>
     {
-        options.DetailedErrors = true; // Enable detailed error reporting for debugging
+        options.DetailedErrors = true;
     });
 
-// Add custom logging for better diagnostics (optional but helpful for production)
-builder.Logging.AddConsole(); // Logs to the console (also ensure this is not disabled in production)
-
-// Register custom services for DI
+// Register custom services
 builder.Services.AddCustomServices();
 #endregion
 
-#region Middleware 
+#region Middleware
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    app.UseHsts(); // HTTP Strict Transport Security
-    app.UseHttpsRedirection(); // Force HTTP requests to be redirected to HTTPS
+    app.UseHsts();
+    app.UseHttpsRedirection();
 }
 
-// Enable anti-forgery protection (important for securing requests)
 app.UseAntiforgery();
 
-// Static asset mapping (ensure proper static file handling)
 app.MapStaticAssets();
 
-// Static files middleware configuration
 app.UseStaticFiles(new StaticFileOptions
 {
-    ServeUnknownFileTypes = true,  // Allow serving unknown file types
-    DefaultContentType = "application/json; charset=utf-8" // Default MIME type for JSON files
+    ServeUnknownFileTypes = true,
+    DefaultContentType = "application/json; charset=utf-8"
 });
 
-// Map Razor components for interactive server-side rendering
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
-// Run the application
 app.Run();
 #endregion
