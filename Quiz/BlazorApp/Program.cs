@@ -63,7 +63,7 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
     app.UseHsts(); // HTTP Strict Transport Security
-    app.UseHttpsRedirection(); // Force HTTP requests to be redirected to HTTPS
+    //app.UseHttpsRedirection(); // Force HTTP requests to be redirected to HTTPS
 }
 
 // Enable anti-forgery protection (important for securing requests)

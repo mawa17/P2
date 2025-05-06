@@ -2,6 +2,13 @@
 using CLI.Interfaces;
 using System.Text.RegularExpressions;
 
+
+
+IFruit fruit1 = new Apple();
+IFruit fruit2 = new Banana();
+fruit2 = fruit1;
+Console.WriteLine(fruit2.GetColor());
+
 /*
     ^                       Start anchor
     (?=(.*\\d){2,})         Positiv lookahead gruppe som leder efter tal med 2 eller flere
@@ -20,7 +27,9 @@ IPasswordValidator ruleValidator = new RulePasswordValidator(ruleSet);
 Console.WriteLine("Tryk (1) for at vælge regexValidator");
 Console.WriteLine("Tryk (2) for at vælge ruleValidator");
 ConsoleKey key = Console.ReadKey().Key;
-IPasswordValidator? validator = key == ConsoleKey.D1 ? regexValidator : key == ConsoleKey.D2 ? ruleValidator : null;
+IPasswordValidator? validator = 
+    key == ConsoleKey.D1 ? regexValidator : 
+    key == ConsoleKey.D2 ? ruleValidator : null;
 
 if(validator is null)
 {
