@@ -83,5 +83,12 @@ app.UseStaticFiles(new StaticFileOptions
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
+// Automatically apply EF Core migrations at runtime
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+}
+
 app.Run();
 #endregion
